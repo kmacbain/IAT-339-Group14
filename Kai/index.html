@@ -1,0 +1,452 @@
+<!doctype html>
+<!-- All code except those portions with comments indicating otherwise are from the SFU class IAT 339, taught by Paul Brokenshire, in the winter semester of 2021-->
+
+<html lang="en">
+
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<title>Basic Styles</title>
+
+			<!-- help linking Google fonts from my wife, Bri -->
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/grids.css">
+	</head>
+
+
+	<body>
+		<div class="grid-container">
+			<header>
+				<div ><h1>THE LOFT</h1></div>
+				<div ><hr></div>
+
+				<div class="nav-row-container" >
+					
+					<!-- Advice for how to reference an html document instead of a section ID in an anchor tag was from my wife, Bri MacBain, who's a programmer. -->
+					<div>
+						<section class="mainNav" class="main-nav-item"><a href="index.html">Basic Styles</a></section>
+					</div>
+					<div>
+						<section class="mainNav" class="main-nav-item"><a href="UIPatternElements.html">UI Pattern Elements</a></section>
+					</div>
+					<div>
+						<section class="mainNav" class="main-nav-item"><a href="Citations.html">Citations</a></section>
+					</div>
+					<div>
+						<section class="mainNav" class="main-nav-item"><a href="Wireframes.html">Wireframes</a></section>
+					</div>
+					
+				</div>
+
+			</header>
+		
+			<main>
+				<h2>Style Guide: Basic Styles</h2>
+
+				<section>
+					<h3>COLOR</h3>
+						<p>Background is charcoal while accents and headings are beige. The site title/logo is white, as well as the body text.</p>
+
+					<!-- Advice for how to set up my swatches was from my wife, Bri MacBain, who's a programmer. I was confused by the use of the word "image" on the project page and thought I had to use the img tag, but she explained that I could make it a div and style the size and color of the flat color square later in CSS -->
+					<h4>Background</h4>
+						<figure class="swatchFigure">
+							<div class="colorSwatch charcoal"></div>
+							<figcaption>Hex Value: #131313<br>rgb(19,19,19)</figcaption>
+						</figure>
+
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;body&gt;&lt;/body&gt;
+</code></pre>
+
+							<h5>CSS Sample Code</h5>
+<pre><code>
+<!-- CSS sample code from https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/ -->
+body {
+	background-color:#131313;
+	color:#FFFFFF;
+	font-weight:normal;
+	margin-top:0;
+	font-size:1rem;
+}
+</code></pre>
+
+					<h4>Headings and Interactives</h4>
+						<figure class="swatchFigure">
+							<div class="colorSwatch beige"></div>
+							<figcaption>Hex Value: #908272<br>rgb(144,130,114)</figcaption>
+						</figure>
+
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;h2&gt;&lt;/h2&gt;
+</code></pre>
+							<h5>CSS Sample Code</h5>
+<pre><code>
+h2 {
+	font-size:3rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+</code></pre>
+
+					<h4>Body Text</h4>
+						<figure class="swatchFigure">
+							<div class="colorSwatch white"></div>
+							<figcaption>Hex Value: #FFFFFF<br>rgb(255,255,255)</figcaption>
+						</figure>
+
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;body&gt;&lt;/body&gt;
+</code></pre>
+								<h5>CSS Sample Code</h5>
+<pre><code>
+body {
+	background-color:#131313;
+	color:#FFFFFF;
+	font-weight:normal;
+	margin-top:0;
+	font-size:1rem;
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h3>TEXT STYLING</h3>
+						<p>Italiana is used for the text logo, while Cinzel is used for headings and Mulish used for all other text, links, and buttons.</p>
+
+					<section>
+						<h4>TITLE/LOGO</h4>
+							<h1>ITALIANA Regular 64</h1>
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;h1&gt;&lt;/h1&gt;
+</code></pre>
+							<h5>CSS Sample Code</h5>
+<pre><code>
+h1 {
+	font-size:4rem;
+	font-family:'Italiana', Times New Roman, serif;
+	color:#FFFFFF;
+	margin-bottom:0;
+	/*How to center align text taken from:
+	https://www.w3schools.com/css/css_align.asp*/
+	text-align:center;
+	font-weight:400;
+}
+</code></pre>
+					
+						<h4>HEADINGS</h4>
+							<h5>HEADING 2</h5>
+								<h2>CINZEL Light 36</h2>
+								<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;h2&gt;&lt;/h2&gt;
+</code></pre>
+								<h5>CSS Sample Code</h5>
+<pre><code>
+h2 {
+	font-size:3rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+</code></pre>
+
+							<h5>HEADING 3</h5>
+								<h3>CINZEL Regular 24</h3>
+								<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;h3&gt;&lt;/h3&gt;
+</code></pre>
+								<h5>CSS Sample Code</h5>
+<pre><code>
+h3 {
+	font-size:2rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+</code></pre>
+
+							<h5>HEADING 4</h5>
+								<h4>CINZEL Regular 18</h4>
+								<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;h4&gt;&lt;/h4&gt;
+</code></pre>
+								<h5>CSS Sample Code</h5>
+<pre><code>
+h4 {
+	font-size:1.5rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+</code></pre>
+					</section>
+
+					<section>
+						<h4>BODY</h4>
+							<p>Mulish Regular 12</p>
+							<h4>SAMPLE PARAGRAPH</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo cursus lectus ut malesuada. Integer ultrices et ex at gravida. Duis fringilla fermentum mauris. Proin neque odio, rutrum et rhoncus sit amet, euismod at tortor. Vivamus diam magna, malesuada ut sagittis et, mollis in erat.</p>
+								<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;p&gt;&lt;/p&gt;
+</code></pre>
+								<h5>CSS Sample Code</h5>
+<pre><code>
+p {
+	font-family:'Mulish', Arial, sans-serif;
+	font-size:1rem;
+	font-weight:thin;
+	width:clamp(45ch, 70%, 75ch);
+}
+</code></pre>
+					</section>
+
+					<section>
+						<h4>BULLETED LIST</h4>
+						<!-- How to make bulleted lists taken from:
+							https://www.w3schools.com/html/html_lists.asp -->
+							<ul>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Maecenas commodo cursus lectus ut malesuada</li>
+								<li>Integer ultrices et ex at gravida</li>
+								<li>Duis fringilla fermentum mauris</li>
+							</ul>
+								<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+	&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+	&lt;li&gt;Maecenas commodo cursus lectus ut malesuada&lt;/li&gt;
+	&lt;li&gt;Integer ultrices et ex at gravida&lt;/li&gt;
+	&lt;li&gt;Duis fringilla fermentum mauris&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+								<h5>CSS Sample Code</h5>
+<pre>
+<code>
+ul {
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+}
+</code>
+</pre>
+					</section>
+
+					<section>
+						<h4>NUMBERED LIST</h4>
+						<!-- How to make bulleted lists taken from:
+							https://www.w3schools.com/html/html_lists.asp -->
+							<ol>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Maecenas commodo cursus lectus ut malesuada</li>
+								<li>Integer ultrices et ex at gravida</li>
+								<li>Duis fringilla fermentum mauris</li>
+							</ol>
+								<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;ol&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+	&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+	&lt;li&gt;Maecenas commodo cursus lectus ut malesuada&lt;/li&gt;
+	&lt;li&gt;Integer ultrices et ex at gravida&lt;/li&gt;
+	&lt;li&gt;Duis fringilla fermentum mauris&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+								<h5>CSS Sample Code</h5>
+<pre><code>
+ol {
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+}
+</code></pre>
+					</section>
+
+					<section>
+						<h4>LINKS</h4>
+							<p><a href="">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit.</p>
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;a href="link goes here"&gt;&lt;/a&gt;
+</code></pre>
+							<h5>CSS Sample Code</h5>
+<pre><code>
+a {
+	color:#908272;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#BEA384;
+	text-decoration:underline;
+}
+</code></pre>
+					</section>
+
+					<section>
+						<h4>CALL TO ACTION BUTTON</h4>
+						<!-- button code taken from IAT 339 HTML Basics assignment page on Canvas -->
+							<a href="#" class="blackButton">Explore New Collection</a>
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;a href="#" class="blackButton"&gt;Explore New Collection&lt;/a&gt;
+</code></pre>
+							<h5>CSS Sample Code</h5>
+<pre><code>
+.blackButton {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:black;
+	color:#FFFFFF;
+	padding:1rem 2rem;
+	outline: 1px solid rgb(255 255 255 / 50%);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.blackButton:hover {
+	background-color:white;
+	color:black;
+	outline: 1px solid rgb(0 0 0 / 50%);
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+</code></pre>
+					</section>
+
+					<section class="whiteBackground">
+						<h4>SUBMIT AND RESET BUTTON FOR FORMS</h4>
+						<!-- button code taken from IAT 339 HTML Basics assignment page on Canvas -->
+							<a href="#" class="greyButton">Submit</a>
+							<a href="#" class="whiteButton">Reset</a>
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;a href="#" class="greyButton"&gt;Submit&lt;/a&gt;
+&lt;a href="#" class="whiteButton"&gt;Reset&lt;/a&gt;
+</code></pre>
+							<h5>CSS Sample Code</h5>
+<pre><code>
+.greyButton {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:#131313;
+	color:white;
+	padding:1rem 2rem;
+	outline: 1px solid rgb(0 0 0 / 50%);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.whiteButton {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:white;
+	color:black;
+	padding:1rem 2rem;
+	outline: 1px solid rgb(0 0 0 / 50%);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.greyButton:hover {
+	background-color:white;
+	color:black;
+	outline: 1px solid rgb(0 0 0 / 50%);
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.whiteButton:hover {
+	background-color:#C7C6C4;
+	color:white;
+	outline: 1px solid rgb(0 0 0 / 50%);
+	text-decoration:none;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+</code></pre>
+					
+					</section><!-- end of Submit and Reset Button section -->
+
+					<section>
+						<h4>INPUT FIELD AND LABEL</h4>
+
+						<!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
+							<div class="contactUsParent">
+								<form action="#" class="contactUs">
+									<label for="email" class="contactUs">Subscribe to our newsletter</label>
+									<!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
+									<input type="text" id="email" name="email" placeholder="EMAIL" class="contactUs">
+									<a href="#" class="greyButton">Subscribe</a>
+								</form>
+							</div>
+							
+							<h5>HTML Sample Code</h5>
+<pre><code>
+&lt;div class="contactUsParent"&gt;
+	&lt;form action="#" class="contactUs"&gt;
+		&lt;label for="email" class="contactUs"&gt;Subscribe to our newsletter&lt;/label&gt;
+		&lt;!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri--&gt;
+		&lt;input type="text" id="email" name="email" placeholder="EMAIL" class="contactUs"&gt;
+		&lt;a href="#" class="greyButton"&gt;Subscribe&lt;/a&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+							<h5>CSS Sample Code</h5>
+<pre><code>
+form.contactUs {
+	font-family:'Mulish', Arial, sans-serif;
+	margin:2rem 0rem;
+	/*Code for flex box from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+	display:inline-flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+form.contactUs .greyButton{
+	margin:2rem;
+}
+
+label.contactUs {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:0.75rem;
+	margin:1rem 0 0 0;
+}
+
+input.contactUs {
+	width:clamp(15rem, 30vw, 75rem);
+	height:2.5rem;
+	margin-top:2rem;
+	padding:0 1rem;
+	border-color:#C7C6C4;
+	border-width: 1px;
+	border-radius: 2px;
+}
+</code></pre>
+					</section>
+					
+				</section><!-- end of Text Styling section -->		
+
+			</main>
+		</div>
+	</body>
+
+</html>
