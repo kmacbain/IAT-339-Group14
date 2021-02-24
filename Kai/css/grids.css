@@ -1,0 +1,51 @@
+/* All code except those portions with comments indicating otherwise are from the SFU class IAT 339, taught by Paul Brokenshire, in the winter semester of 2021*/
+
+* {
+	box-sizing: border-box;
+
+}
+
+.grid-container{
+ 	display: grid;
+	min-height: 100vh;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto auto;
+
+}
+
+header {
+	display: grid;
+	grid-column: span 6;
+}
+
+main {
+	grid-column: span 6;
+}
+
+.contactUsParent{
+	display:grid;
+}
+
+.nav-row-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/*grid-column-start: 2;
+	grid-column-end:span 6;*/
+	/*grid-column: 2 / 6;*/
+}
+
+.main-nav-item {
+
+}
+
+.product-thumbnail {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+
+}
+
+@media screen and (max-width: 41em) {
+	.nav-row-container {
+		grid-template-columns: 1fr;
+	}
+}
