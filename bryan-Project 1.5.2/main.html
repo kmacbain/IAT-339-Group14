@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device=width, initial-scale=1">
+            
+            <title>Style Guide and Pattern Library</title>
+
+            <link rel="stylesheet" href="css/main.css">
+            <link rel="stylesheet" href="css/grids.css">
+
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+        </head>
+        
+        <body>
+            <div class="grid-container">
+                <!-- <section class="navigationBar"> -->
+                    <header>
+                        <nav>
+                            <a class="navButton" href="main.html">Main</a>
+                            <a class="navButton" href="wireFrames.html">Wireframes</a> 
+                            <a class="navButton" href="citations.html">Citations</a>
+                        </nav> 
+                    </header> 
+                <!-- </section> -->
+
+                <h1 id="title">Project 1.5.2: Pattern Library - CSS and Layout Phase</h1>
+
+                <section class="interactiveElements"> 
+                    <h2>Basic Interactive Elements</h2>
+
+                    <section class="required">
+
+                        <div class="inLineLinkGrid">
+                            <h3>An In-line Link</h3>
+                                <p>This is an example of an in-line <a href="" id="inLineLink">Link</a> (doesn't do anthing).</p>
+                                
+<pre><code>&lt;p&gt;This is how you could add a link in a line of text. &lt;a href=&quot;add URL here&quot;&gt;Word you want to be the link holder&lt;/a&gt;&lt;/p&gt;</code></pre>
+                        </div>
+
+                        <div class="callToActionGrid">
+                            <h3>A Call To Action Button</h3>
+                                <a href="" class="callToActionButton">Shop Now</a>
+
+                                <pre>This is how you would make a call to action <code>&lt;a href=&quot;insertPageName.html&quot;&gt;Button Name&lt;/a&gt;</code></pre>
+                        </div>
+
+                        <div class="submitAndResetGrid">
+                            <h3>A Submit & Reset Button</h3>
+                                <input type="submit" value="Submit">
+
+                                <pre>submit button for the Text input field in the customer service page <code>&lt;input type="submit" value="Submit"&gt;</code></pre>
+                        </div>
+
+                        <div class="textInputFieldGrid">
+                            <h3>A Text Input Field and Label</h3>
+                                <form>
+                                    <label for="firstName">First Name: </label>
+                                    <input class="halfLabels" type="text" id="firstName" name="firstName">
+                                    <label for="lastName">Last Name: </label>
+                                    <input class="halfLabels" type="text" id="lastName" name="lastName">
+                                </form>
+
+<pre><code>
+&lt;form&gt;
+    &lt;label for="firstName"&gt;First Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="firstName" name="firstName"&gt;
+    &lt;label for="lastName"&gt;Last Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="lastName" name="lastName"&gt;
+&lt;/form&gt;</code></pre>
+                        </div>
+
+                        <h3>Website color swatches</h3> 
+                            <div class="palette">
+                                <div class="paletteItem">
+                                    <div class="paletteColor1">
+                                        <div class="paletteDesc">Charcoal</div>
+                                    </div>
+                                    <input type="text" class="paletteInput" value="#131313: rgb(19,19,19)">
+                                </div>
+                                <div class="paletteItem">
+                                    <div class="paletteColor2">
+                                        <div class="paletteDesc">Beige</div>
+                                    </div>
+                                    <input type="text" class="paletteInput" value="#908272: rgb(144,130,114)">
+                                </div>
+                                <div class="paletteItem">
+                                    <div class="paletteColor3">
+                                        <div class="paletteDesc">Light Beige</div>
+                                    </div>
+                                    <input type="text" class="paletteInput" value="#BEA384: rgb(190,163,132)">
+                                </div>
+                                <div class="paletteItem">
+                                    <div class="paletteColor4">
+                                        <div class="paletteDesc">White</div>
+                                    </div>
+                                    <input type="text" class="paletteInput" value="#FFFFFF: rgb(255,255,255)">
+                                </div>
+                                <div class="paletteItem">
+                                    <div class="paletteColor5">
+                                        <div class="paletteDesc">Light Grey</div>
+                                    </div>
+                                    <input type="text" class="paletteInput" value="#C7C6C4: rgb(199,198,196)">
+                                </div>
+                            </div>
+
+<pre><code>
+&lt;div class="palette"&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor1"&gt;
+            &lt;div class="paletteDesc"&gt;Charcoal&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#131313: rgb(19,19,19)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor2"&gt;
+            &lt;div class="paletteDesc"&gt;Beige&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#908272: rgb(144,130,114)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+         &lt;div class="paletteColor3"&gt;
+            &lt;div class="paletteDesc"&gt;Light Beige&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#BEA384: rgb(190,163,132)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor4"&gt;
+            &lt;div class="paletteDesc"&gt;White&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#FFFFFF: rgb(255,255,255)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor5"&gt;
+            &lt;div class="paletteDesc"&gt;Light Grey&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#C7C6C4: rgb(199,198,196)"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                    </section>
+                </section>
+
+                <section class="textStyling"> 
+                    <h2>Text Styling</h2>
+
+                    <section class="required">
+                        <h3>Three Levels Of Headings</h3>
+
+                            <h2>Heading 1 example</h2>
+                            <h3>Heading 2 example</h3>
+                            <h4>Heading 3 example</h4>
+
+<pre><code>
+&lt;h2&gt;Heading 1 Example&lt;/h2&gt;
+&lt;h3&gt;Heading 2 Example&lt;/h3&gt;
+&lt;h4&gt;Heading 3 example&lt;/h4&gt;
+</code></pre>
+
+                        <h3>A paragraph</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non mattis mi, nec pharetra enim. 
+                                Curabitur euismod est et magna venenatis suscipit. Curabitur sagittis nec felis sit amet luctus. 
+                                Suspendisse nec eleifend enim, ut elementum risus. Duis risus tortor, congue vel quam vitae, pharetra euismod justo. 
+                                Integer bibendum tellus quis metus aliquam, a interdum massa commodo. 
+                                Maecenas odio nisl, accumsan vitae ligula nec, sagittis tincidunt odio. 
+                                In augue risus, lacinia id dignissim ut, iaculis vitae purus. 
+                                Curabitur sed urna bibendum, ultricies turpis at, placerat dui.
+                            </p>
+
+<pre><code>
+&lt;p&gt;Paraphraph in here&lt;/p&gt;
+</code></pre>
+
+                        <h3>Bullet List</h3>
+                            <ul>
+                                <li>one</li>
+                                <li>two</li>
+                                <li>three</li>
+                            </ul>
+
+<pre><code>
+&lt;ul&gt;
+    &lt;li&gt;one&lt;/li&gt;
+    &lt;li&gt;two&lt;/li&gt;
+    &lt;li&gt;three&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+                        <h3>Numbered List</h3>
+                            <ol>
+                                <li>one</li>
+                                <li>two</li>
+                                <li>three</li>
+                            </ol>
+
+<pre><code>
+&lt;ol&gt;
+    &lt;li&gt;one&lt;/li&gt;
+    &lt;li&gt;two&lt;/li&gt;
+    &lt;li&gt;three&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+                        </section>
+                </section>
+
+                <section class="patternElements"> 
+                    <h2>Modular Pattern Elements</h2>
+
+                    <section class="required">
+
+                        <h3>Main Navigation Moduel</h3>
+                            <div class="navModule">
+
+                                <a class="logo">THE LOFT</a>
+
+                                <div class="rightSideNav">
+                                    <a class="rightStuff">SEARCH</a>
+                                    <a class="rightStuff">SIGN IN</a>
+                                    <a class="rightStuff">CART</a>
+                                </div>
+                                
+                                <div class="pages">
+                                    <a class="page">OFFICE</a>
+                                    <a class="page">LIVING</a>
+                                    <a class="page">BEDROOM</a>
+                                    <a class="page">DINING</a>
+                                    <a class="page">NEW ARRIVALS</a>
+                                    <a class="page">LOOKBOOK</a>
+                                </div>
+                            </div>
+
+<pre><code>
+&lt;h3&gt;Main Navigation Moduel&lt;/h3&gt;
+    &lt;div class="navModule"&gt;
+
+        &lt;a class="logo"&gt;THE LOFT&lt;/a&gt;
+
+        &lt;div class="rightSideNav"&gt;
+            &lt;a class="rightStuff"&gt;SEARCH&lt;/a&gt;
+            &lt;a class="rightStuff"&gt;SIGN IN&lt;/a&gt;
+            &lt;a class="rightStuff"&gt;CART&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="pages"&gt;
+            &lt;a class="page"&gt;OFFICE&lt;/a&gt;
+            &lt;a class="page"&gt;LIVING&lt;/a&gt;
+            &lt;a class="page"&gt;BEDROOM&lt;/a&gt;
+            &lt;a class="page"&gt;DINING&lt;/a&gt;
+            &lt;a class="page"&gt;NEW ARRIVALS&lt;/a&gt;
+            &lt;a class="page"&gt;LOOKBOOK&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+
+                        <h3>UI Organism For A Detalied View Of Single Product</h3>
+
+                        <div class="uiOrganism">
+
+                            <div class="leftSide">
+                                <div class="breadCrum">
+                                    <a >Home/ </a>
+                                    <a >Office/ </a>
+                                    <a >Desk</a>
+                                </div>
+
+                                <h4 class="descriptionTitle">Description</h4>
+
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non mattis mi, nec pharetra enim. Curabitur euismod est et magna venenatis suscipit. Curabitur sagittis nec felis sit amet luctus. Suspendisse nec eleifend enim, ut elementum risus. Duis risus tortor, congue vel quam vitae, pharetra euismod justo.</p>
+
+                                <ul class="productList">
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="rightSide">
+                                
+                                <h5 class="category">Office Desk</h5>
+
+                                <h3 class="itemTitle">Copper And Walnut Desk</h3>
+
+                                <p class="price">$8000</p>
+                                
+                                <div class="buttonsForShop">
+                                    <a href="" class="callToActionButton">Shop Now</a>
+                                    <a href="" class="callToActionButton">Share</a>
+                                    <a href="" class="callToActionButton">Add To Wish List Button</a>
+                                </div>
+                            </div>
+                        </div>
+
+<pre><code>
+&lt;div class="uiOrganism"&gt;
+
+    &lt;div class="leftSide"&gt;
+        &lt;div class="breadCrum"&gt;
+            &lt;a &gt;Home/ &lt;/a&gt;
+            &lt;a &gt;Office/ &lt;/a&gt;
+            &lt;a &gt;Desk&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;h4 class="descriptionTitle"&gt;Description&lt;/h4&gt;
+
+        &lt;p class="description"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non mattis mi, nec pharetra enim. Curabitur euismod est et magna venenatis suscipit. Curabitur sagittis nec felis sit amet luctus. Suspendisse nec eleifend enim, ut elementum risus. Duis risus tortor, congue vel quam vitae, pharetra euismod justo.&lt;/p&gt;
+
+        &lt;ul class="productList"&gt;
+            &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+            &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+            &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="rightSide"&gt;
+        
+        &lt;h5 class="category"&gt;Office Desk&lt;/h5&gt;
+
+        &lt;h3 class="itemTitle"&gt;Copper And Walnut Desk&lt;/h3&gt;
+
+        &lt;p class="price"&gt;$8000&lt;/p&gt;
+        
+        &lt;div class="buttonsForShop"&gt;
+            &lt;a href="" class="callToActionButton"&gt;Shop Now&lt;/a&gt;
+            &lt;a href="" class="callToActionButton"&gt;Share&lt;/a&gt;
+            &lt;a href="" class="callToActionButton"&gt;Add To Wish List Button&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                        <h3>Grid Structure</h3>
+
+                        <div class="gridExample">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                        </div>
+
+                        <h3>The Customer Service Input </h3>
+                        <form>
+                            <label for="firstName2">First Name: </label>
+                            <input class="halfLabels" type="text" id="firstName2" name="firstName2">
+
+                            <label for="lastName2">Last Name: </label>
+                            <input class="halfLabels" type="text" id="lastName2" name="lastName2">
+
+                            <label for="email">E-Mail Adress: </label>
+                            <input class="fullLabels" type="text" id="email" name="email">
+
+                            <label for="phoneNumber">Phone Number: </label>
+                            <input class="fullLabels" type="text" id="phoneNumber" name="phoneNumber">
+
+                            <label for="address">Address: </label>
+                            <input class="fullLabels" type="text" id="address" name="address">
+
+                            <label for="city">City: </label>
+                            <input class="fullLabels" type="text" id="city" name="city">
+
+                            <label for="country">Country: </label>
+                            <input class="fullLabels" type="text" id="country" name="country">
+
+                            <label for="postalOrZip">Postal or Zip Code: </label>
+                            <input class="fullLabels" type="text" id="postalOrZip" name="postalOrZip">
+                        </form>
+
+<pre><code>
+&lt;form&gt;
+    &lt;label for="firstName"&gt;First Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="firstName" name="firstName"&gt;
+                
+    &lt;label for="lastName"&gt;Last Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="lastName" name="lastName"&gt;
+                
+    &lt;label for="email"&gt;E-Mail Adress: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="email" name="email"&gt;
+                
+    &lt;label for="phoneNumber"&gt;Phone Number: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="phoneNumber" name="phoneNumber"&gt;
+                
+    &lt;label for="address"&gt;Address: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="address" name="address"&gt;
+                
+    &lt;label for="city"&gt;City: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="city" name="city"&gt;
+                
+    &lt;label for="country"&gt;Country: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="country" name="country"&gt;
+
+    &lt;label for="postalOrZip"&gt;Postal or Zip Code: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="postalOrZip" name="postalOrZip"&gt;
+&lt;/form&gt;
+</code></pre>
+
+                    </section>
+                </section>
+            </div>
+        </body>
+    </html>
