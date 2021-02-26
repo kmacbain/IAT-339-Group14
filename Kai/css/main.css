@@ -100,25 +100,7 @@ ol {
 }
 
 
-/* Help understanding why centering the text and removing the underline for my mainNav class wasn't working the way I expected and advice to target mainNav and mainNav anchor elements separately from my wife, Bri */
-.mainNav {
-	text-align:center;
-}
 
-.mainNav a {
-	padding:0.5em 2em;
-	display:inline-block;
-	text-decoration:none;
-	color:#FFFFFF;
-	font-family:'Mulish', Arial, sans-serif;
-	font-weight:400;
-	text-transform:uppercase;
-	font-size:0.65rem;
-}
-
-.mainNav a:hover {
-	text-decoration:underline;
-	}
 
 .colorSwatch {
 		height:100px;
@@ -215,6 +197,26 @@ https://css-tricks.com/full-browser-width-bars/*/
 	padding:1rem 2000px;
 }
 
+/* Help understanding why centering the text and removing the underline for my mainNav class wasn't working the way I expected and advice to target mainNav and mainNav anchor elements separately from my wife, Bri */
+.mainNav {
+	text-align:center;
+}
+
+.mainNav a {
+	padding:0.5em 2em;
+	display:inline-block;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:0.65rem;
+}
+
+.mainNav a:hover {
+	text-decoration:underline;
+	}
+
 form.contactUs {
 	font-family:'Mulish', Arial, sans-serif;
 	margin:2rem 0rem;
@@ -245,9 +247,8 @@ input.contactUs {
 	border-radius: 2px;
 }
 
-
-
 /*I was trying to figure out how to style the main navigation bar, but at this point realized I actually only needed to do the HTML for this submission so am going to leave it for now and hopefully it'll make more sense after next class*/
+
 ul.siteMainNav {
 	list-style-type:none;
 	margin:0;
@@ -288,3 +289,46 @@ input.searchBar {
 }
 
 
+/*Styling for the site footer menu*/
+
+.footer {
+	margin: 5rem 0;
+}
+
+.footer_menu a {
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:0.65rem;
+}
+
+.footer_menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+}
+
+#footer_menu_links {
+	display:flex;
+	flex-direction: row;
+}
+
+#footer_menu_links a {
+	margin-right: 2rem;
+}
+
+#footer_menu_socials {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	
+	align-items: center;
+}
+
+#footer_menu_socials a {
+	margin:0 0.5rem;
+}
