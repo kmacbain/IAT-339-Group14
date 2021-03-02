@@ -1,0 +1,382 @@
+
+
+body {
+	font-weight:normal;
+	margin-top:0;
+	font-size:1rem;
+}
+
+.black_background {
+	background-color:#131313;
+	color:#FFFFFF;
+}
+
+h1 {
+	font-size:4rem;
+	font-family:'Italiana', Times New Roman, serif;
+	color:#FFFFFF;
+	margin-bottom:0;
+	/*How to center align text taken from:
+	https://www.w3schools.com/css/css_align.asp*/
+	text-align:center;
+	font-weight:400;
+	line-height: 0.8;
+}
+
+/* How to style horizontal lines taken from:
+https://www.w3schools.com/howto/howto_css_style_hr.asp
+Figuring out how to adjust line weight by playing around with the opacity in inspect elements and suggesting to switch from hex values to rgb values in order to support the opacity change is from my wife, Bri */
+hr {
+	border-top:1px solid rgba(255, 255, 255, 0);
+	margin-top:0;
+	margin-bottom:1rem;
+}
+
+h2 {
+	font-size:3rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+
+h3 {
+	font-size:2rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+
+h4 {
+	font-size:1.5rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+
+h5 {
+	font-size:1.2rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+}
+
+p {
+	font-family:'Mulish', Arial, sans-serif;
+	font-size:1rem;
+	font-weight:lighter;
+	width:clamp(45ch, 70%, 75ch);
+	width:clamp(16rem, 100vw, 75rem);
+}
+
+a {
+	color:#908272;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#BEA384;
+	text-decoration:underline;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+main section {
+	margin-bottom:2rem;
+	padding:1rem;
+}
+
+header {
+	color:#131313;
+}
+
+ul {
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+}
+
+ol {
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+}
+
+
+
+/*Button styling: maintained by Kai-Lee*/
+
+.black_button {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:black;
+	color:#FFFFFF;
+	padding:1rem 2rem;
+	outline: 1px solid rgb(0,0,0);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.grey_button {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:#131313;
+	color:white;
+	padding:1rem 2rem;
+	outline: 1px solid rgba(255,255,255,0.5);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.white_button {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:white;
+	color:black;
+	padding:1rem 2rem;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.black_button:hover {
+	background-color:white;
+	color:black;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.grey_button:hover {
+	background-color:white;
+	color:black;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.white_button:hover {
+	background-color:#C7C6C4;
+	color:white;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-decoration:none;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+
+/*Main navigation bar styling*/ 
+
+/* Help understanding why centering the text and removing the underline for my mainNav class wasn't working the way I expected and advice to target mainNav and mainNav anchor elements separately from my wife, Bri */
+.main_nav {
+	text-align:center;
+}
+
+.main_nav a {
+	padding:0.5em 2em;
+	display:inline-block;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:0.65rem;
+}
+
+.main_nav a:hover {
+	text-decoration:underline;
+}
+
+ul.site_main_nav {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+	font-size:0.75rem;
+	text-align:right;
+	display: flex;
+	align-items: flex-end;
+}
+
+.site_main_nav li {
+	display:inline;
+	margin-left: 2rem;
+}
+
+a.sign_in {
+	color:white;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:0.65rem;
+}
+
+a.sign_in:hover {
+	color:#908272;
+}
+
+form.searchBar {
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+	font-size:0.75rem;
+	display:flex;
+	align-items: flex-end;
+}
+
+label.searchBar {
+	
+}
+
+input.searchBar {
+	background-color:#131313;
+	text-align: right;
+	border:0;
+}
+
+#site_main_nav_toolbar {
+	/*Suggestion to use the position property to align the title toolbar elements from my wife, Bri MacBain. Tutorial for how to use this property from: https://css-tricks.com/almanac/properties/p/position/ 
+	(parent elment below in the main_nav_title_items class*/
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	display:flex;
+	justify-content: flex-end;
+}
+
+#site_title {
+	display: flex;
+	justify-content: center;
+}
+
+.main_nav_title_items {
+	position: relative;
+}
+
+
+
+/*Curated Collections styling: maintained by Kai-Lee*/
+
+.three_column_items h5 {
+	width:auto;
+	margin:0;
+}
+
+.three_column_items p {
+	width:clamp(10rem, 30vw, 20rem);
+}
+
+.three_column_items img {
+	padding-right: 2rem;
+}
+
+
+
+
+/*New Arrivals styling: maintained by Kai-Lee*/
+
+.banner_image {
+	/*Positioning text over banner image taken from: https://www.youtube.com/watch?v=Os9kYg6PF-8*/
+	position: relative;
+	/*background-image: url("img/home/newCollection.png");
+	height:100%;
+	widows: 100%;
+	border: 1px solid red;*/
+	/*background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;*/
+
+}
+
+.text_overlay {
+	position: absolute;
+	top: 5em;
+	padding:5rem;
+
+}
+
+.text_overlay h2 {
+	color:#FFFFFF;
+	
+}
+
+
+
+/*Footer Menu styling: maintained by Kai-Lee*/
+
+.footer {
+	margin: 5rem 0;
+}
+
+.footer_menu a {
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:0.65rem;
+}
+
+.footer_menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-family:'Mulish', Arial, sans-serif;
+	font-weight:normal;
+}
+
+#footer_menu_links {
+	display:flex;
+	flex-direction: row;
+}
+
+#footer_menu_links a {
+	margin-right: 2rem;
+}
+
+#footer_menu_socials {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#footer_menu_socials a {
+	margin:0 0.5rem;
+}
+
+form.contactUs {
+	font-family:'Mulish', Arial, sans-serif;
+	margin:2rem 0rem;
+	/*Code for flex box from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+	display:inline-flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+form.contactUs .greyButton{
+	margin:2rem;
+}
+
+label.contactUs {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:0.75rem;
+	margin:1rem 0 0 0;
+}
+
+input.contactUs {
+	width:clamp(15rem, 30vw, 75rem);
+	height:2.5rem;
+	margin-top:2rem;
+	padding:0 1rem;
+	border-color:#C7C6C4;
+	border-width: 1px;
+	border-radius: 2px;
+}
