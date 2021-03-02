@@ -39,22 +39,27 @@
 			<section>
 				<h3>MAIN NAVIGATION MODULE</h3>
 			
-					<h1>THE LOFT</h1>
-					<!-- I tried to adapt my main navigation bar from these two tutorials:
-					https://www.w3schools.com/css/css_navbar.asp
-					https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-						<ul class="siteMainNav">
-							<li><form action="#" class="searchBar">
-								<input type="text" id="search" name="search" placeholder="Search" class="searchBar" title="Site search bar">
-								<label for="search" class="searchBar"><a href="#"><img src="img/icons/Search-Icon.png" alt="Search icon"></a></label>
-								</form></li>
-							<li><a href="#" class="signIn">Sign In</a></li>
-							<li><a href="#"><img src="img/icons/Cart-Icon.png" alt="Cart icon"></a></li>
-						</ul>
+					<div class="main_nav_grid">
+						<div class="main_nav_title_items">
+							<div id="site_title"><h1>THE LOFT</h1></div>
+							<!-- Navigation bar tutorials:
+							https://www.w3schools.com/css/css_navbar.asp
+							https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+							<div id="site_main_nav_toolbar">
+								<ul class="site_main_nav">
+								<li><form action="#" class="searchBar">
+									<input type="text" id="search" name="search" placeholder="Search" class="searchBar" title="Site search bar">
+									<label for="search" class="searchBar"><a href="#"><img src="img/icons/Search-Icon.png" alt="Search icon"></a></label>
+									</form></li>
+								<li><a href="#" class="sign_in">Sign In</a></li>
+								<li><a href="#"><img src="img/icons/Cart-Icon.png" alt="Cart icon"></a></li>
+								</ul>
+							</div>
+						</div>
 
-						<hr>
-
-						<nav class="mainNav">
+						<div><hr></div>
+						
+						<nav class="main_nav">
 							<a href="Office.html">Office</a>
 							<a href="Living.html">Living</a>
 							<a href="Bedroom.html">Bedroom</a>
@@ -62,6 +67,8 @@
 							<a href="NewArrivals.html">New Arrivals</a>
 							<a href="Lookbook.html">Lookbook</a>
 						</nav>
+						
+					</div>
 
 						<h5>HTML Sample Code</h5>
 <pre><code>
@@ -238,9 +245,22 @@ input.searchBar {
 			<section>
 				<section>
 					<h3>HERO NEW ARRIVALS MODULE</h3>
-					<img src="img/home/newCollection.png" alt="Hero image of new Industrial furniture in a large loft apartment">
-					<h2>The latest leather sofa sets</h2>
-					<a href="NewArrivals.html" class="blackButton">Explore New Collection</a>
+					
+					
+					<div class="banner_image">
+						<div>
+							<img src="img/home/newCollection.png" alt="Hero image of new Industrial furniture in a large loft apartment">
+						</div>
+
+						<div class="text_overlay">
+							<h2>The latest <br> leather sofa sets</h2>
+							<a href="NewArrivals.html" class="blackButton">Explore New Collection</a>
+						</div>
+					</div>
+					
+					
+					
+					
 				</section>
 				<section>
 					<h5>HTML Sample Code</h5>
@@ -262,6 +282,41 @@ input.searchBar {
 					</pre>
 				</section>
 			</section>
+
+
+			<section>
+				<div class="three_column_grid">
+					<div> 
+						<h4>Get Inspired by these Curated Collections</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+					</div>
+					
+					<div class="three_column_grid_items"> 
+						<div class="three_column_items">
+							<img src="img/curated_collection/classic_collection.png" alt="Room decorated with classic industrial interior design">
+							<h5>Classic</h5>
+							<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+						</div>
+						<div class="three_column_items">
+							<img src="img/curated_collection/vintage_collection.png" alt="Room decorated with classic industrial interior design">
+							<h5>Vintage</h5>
+							<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+						</div>
+						<div class="three_column_items">
+							<img src="img/curated_collection/modern_collection.png" alt="Room decorated with classic industrial interior design">
+							<h5>Modern</h5>
+							<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+						</div>
+
+					</div>
+					
+				</div>
+
+
+			</section>
+
+
+
 
 
 		</main>
