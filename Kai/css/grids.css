@@ -19,7 +19,8 @@ header {
 }
 
 
-/*Grid for footer navigation and newsletter*/
+/*Footer navigation and newsletter*/
+
 .footer {
 	display: grid;
 	grid-column: span 6;
@@ -33,30 +34,97 @@ header {
 @media screen and (max-width: 32em) {
 	.footer_menu {
 		grid-template-columns: 1fr;
-		
 	}
+		
+}
 
-	#footer_menu_links {
+#footer_menu_links {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+#footer_menu_links li {
+	display:flex;
+	justify-content: center;
+}
+
+#footer_menu_links a {
+	margin-bottom: 1rem;
+	margin-right: 0;
+}
+
+#footer_menu_socials {
+	justify-content: center;
+}
+
+
+
+/*Main navigation bar*/
+
+.main_nav_grid {
+	display: grid;
+	grid-column: span 6;
+}
+
+@media screen and (max-width: 57em) {
+	.main_nav {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 	}
 
-
-	#footer_menu_links li{
-		display:flex;
+	#site_main_nav_toolbar {
+		/*Advice for using the inherit value for the position property so that flex tags can be used on the toolbar elemnts which I had previously set to an absolute value from my wife, Bri*/
+		position: inherit;
 		justify-content: center;
 	}
 
-	#footer_menu_links a{
-		margin-bottom: 1rem;
-		margin-right: 0;
+	.site_main_nav {
+		justify-content: center;
+		flex-direction: column;
 	}
 
-	#footer_menu_socials {
+	ul.site_main_nav {
+		align-items: center;
+	}
+
+	input.searchBar {
+		border:1px solid white;
+	}
+
+	.site_main_nav li {
+		margin-left: 0;
+		margin-top: 0.5rem;
+	}
+
+	.main_nav_title_items {
+		display: flex;
 		justify-content: center;
+		flex-direction: column;
+	}
+		
+}
+
+
+/*New Arrivals*/
+
+#new_arrivals {
+	display: grid;
+	grid-column: span 6;
+}
+
+@media screen and (max-width: 43em) {
+	.text_overlay h2 {
+		font-size:1.5rem;
+	}
+
+	.text_overlay a {
+		font-size:0.75rem;
 	}
 }
+
 
 
 
@@ -92,3 +160,53 @@ main {
 	}
 }
 
+
+
+/*Curated Collections*/
+
+
+.three_column_grid {
+	display: grid;
+	grid-template-rows: auto auto;
+
+}
+
+.three_column_grid_items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 90%;
+}
+
+@media screen and (max-width: 47em) {
+	.three_column_grid_items {
+		grid-template-columns: 1fr;
+	}
+
+	.three_column_items {
+		padding: 3rem 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.three_column_items img {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin-right: 0;
+		margin: 0;
+	}
+
+	.three_column_items h5 {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+
+	.three_column_items p {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+	
