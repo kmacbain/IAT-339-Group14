@@ -5,54 +5,56 @@
 
 <html lang="en">
 
-	<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<title>Style Library</title>
+    <title>Style Library</title>
 
-			<!-- help linking Google fonts from my wife, Bri -->
-			<link rel="preconnect" href="https://fonts.gstatic.com">
-			<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <!-- help linking Google fonts from my wife, Bri -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
-			<link rel="stylesheet" href="css/main.css">
-			<link rel="stylesheet" href="css/grids.css">
-	</head>
-
-
-	<body>
-        <div class="grid_container">
-		    <header>
-
-			    <nav class="main_nav">
-				    <a href="citations.html">Citations</a>
-				    <a href="wireframes.html">Wireframes</a>
-				    <a href="main.html">Main</a>
-			    </nav>
-
-		    </header>
-<!-- <main> was giving "unclosed element"--> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grids.css">
+</head>
 
 
-                <h1 id="title">Consolidated Style Guide</h1>
+<body>
+    <div class="grid_container">
+        <header>
 
-                <section class="interactive_elements"> 
-                    <h2>Basic Interactive Elements</h2>
+            <nav class="main_nav">
+                <a href="citations.html">Citations</a>
+                <a href="wireframes.html">Wireframes</a>
+                <a href="main.html">Main</a>
+            </nav>
+
+        </header>
+        <!-- <main> was giving "unclosed element"-->
 
 
-<!-- In-text links: maintained by Kai-Lee -->
-                        <div class="in_line-link_grid">
-                            <h3>An In-line Link</h3>
-                                <p>This is an example of an in-line <a href="" id="in_line_link">Link</a> (doesn't do anthing).</p>
+        <h1 id="title">Consolidated Style Guide</h1>
 
-                                <h5>HTML Sample Code</h5>
-                                
-<pre><code>
+        <section class="interactive_elements">
+            <h2>Basic Interactive Elements</h2>
+
+
+            <!-- In-text links: maintained by Kai-Lee -->
+            <div class="in_line-link_grid">
+                <h3>An In-line Link</h3>
+                <p>This is an example of an in-line <a href="" id="in_line_link">Link</a> (doesn't do anthing).</p>
+
+                <h5>HTML Sample Code</h5>
+
+                <pre><code>
 &lt;p&gt;This is how you could add a link in a line of text. &lt;a href=&quot;add URL here&quot;&gt;Word you want to be the link holder&lt;/a&gt;&lt;/p&gt;
 </code></pre>
 
-                                <h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 a {
     color:#908272;
     text-decoration:none;
@@ -64,22 +66,22 @@ a:hover {
 }
 </code></pre>
 
-                        </div>
+            </div>
 
 
-<!-- Call to action button: maintained by Kai-Lee -->
+            <!-- Call to action button: maintained by Kai-Lee -->
 
-                        <div class="call_to_action_grid">
-                            <h3>A Call To Action Button</h3>
-                            <!-- button code taken from IAT 339 HTML Basics assignment page on Canvas -->
-							<a href="#" class="black_button">Explore New Collection</a>
-							<h5>HTML Sample Code</h5>
-<pre><code>
+            <div class="call_to_action_grid">
+                <h3>A Call To Action Button</h3>
+                <!-- button code taken from IAT 339 HTML Basics assignment page on Canvas -->
+                <a href="#" class="black_button">Explore New Collection</a>
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;a href="#" class="blackButton"&gt;Explore New Collection&lt;/a&gt;
 </code></pre>
 
-<h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 .blackButton {
     font-family:'Mulish', Arial, sans-serif; 
     background-color:black;
@@ -101,26 +103,26 @@ a:hover {
     margin-bottom:2.5rem;
 }
 </code></pre>
-                        </div>
+            </div>
 
 
-<!-- Submit and Reset button: maintained by Kai-Lee -->
-                        <div class="submit_and_reset_grid">
-                            <h3>A Submit & Reset Button</h3>
-                                <section class="white_background">
-                                    <!-- button code taken from IAT 339 HTML Basics assignment page on Canvas -->
-                                        <a href="#" class="grey_button">Submit</a>
-                                        <a href="#" class="white_button">Reset</a>
+            <!-- Submit and Reset button: maintained by Kai-Lee -->
+            <div class="submit_and_reset_grid">
+                <h3>A Submit & Reset Button</h3>
+                <section class="white_background">
+                    <!-- button code taken from IAT 339 HTML Basics assignment page on Canvas -->
+                    <a href="#" class="grey_button">Submit</a>
+                    <a href="#" class="white_button">Reset</a>
 
-                                        <h5>HTML Sample Code</h5>
+                    <h5>HTML Sample Code</h5>
 
-<pre><code>
+                    <pre><code>
 &lt;a href="#" class="greyButton"&gt;Submit&lt;/a&gt;
 &lt;a href="#" class="whiteButton"&gt;Reset&lt;/a&gt;
 </code></pre>
 
-                                        <h5>CSS Sample Code</h5>
-<pre><code>
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
 .greyButton {
     font-family:'Mulish', Arial, sans-serif; 
     background-color:#131313;
@@ -163,19 +165,19 @@ a:hover {
 }
 
 </code></pre>
-                                </section>
-                        </div>
+                </section>
+            </div>
 
-                        <div class="text_Input_field_grid">
-                            <h3>A Text Input Field and Label</h3>
-                                <form>
-                                    <label for="first_name">First Name: </label>
-                                    <input class="half_labels" type="text" id="first_name" name="first_name">
-                                    <label for="last_name">Last Name: </label>
-                                    <input class="half_labels" type="text" id="last_name" name="last_name">
-                                </form>
+            <div class="text_Input_field_grid">
+                <h3>A Text Input Field and Label</h3>
+                <form>
+                    <label for="first_name">First Name: </label>
+                    <input class="half_labels" type="text" id="first_name" name="first_name">
+                    <label for="last_name">Last Name: </label>
+                    <input class="half_labels" type="text" id="last_name" name="last_name">
+                </form>
 
-<pre><code>
+                <pre><code>
 &lt;form&gt;
     &lt;label for="firstName"&gt;First Name: &lt;/label&gt;
     &lt;input class="halfLabels" type="text" id="firstName" name="firstName"&gt;
@@ -183,19 +185,19 @@ a:hover {
     &lt;input class="halfLabels" type="text" id="lastName" name="lastName"&gt;
 &lt;/form&gt;</code></pre>
 
-<!-- kai Code -->
-                            <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
-							<div class="contact_us_parent">
-								<form action="#" class="contact_us">
-									<label for="email" class="contact_us">Subscribe to our newsletter</label>
-									<!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
-									<input type="text" id="email" name="email" placeholder="EMAIL" class="contact_us">
-									<a href="#" class="grey_button">Subscribe</a>
-								</form>
-							</div>
-							
-							<h5>HTML Sample Code</h5>
-<pre><code>
+                <!-- kai Code -->
+                <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
+                <div class="contact_us_parent">
+                    <form action="#" class="contact_us">
+                        <label for="email" class="contact_us">Subscribe to our newsletter</label>
+                        <!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
+                        <input type="text" id="email" name="email" placeholder="EMAIL" class="contact_us">
+                        <a href="#" class="grey_button">Subscribe</a>
+                    </form>
+                </div>
+
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;div class="contactUsParent"&gt;
 	&lt;form action="#" class="contactUs"&gt;
 		&lt;label for="email" class="contactUs"&gt;Subscribe to our newsletter&lt;/label&gt;
@@ -205,45 +207,45 @@ a:hover {
 	&lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
-                        </div>
+            </div>
 
-                        <h3>Website color swatches</h3> 
-                            <div class="palette">
-                                <div class="palette_item">
-                                    <div class="palette_color1">
-                                        <div class="palette_desc">Charcoal</div>
-                                    </div>
-                                    <input type="text" class="palette_input" value="#131313: rgb(19,19,19)">
-                                </div>
-                                <div class="palette_item">
-                                    <div class="palette_color2">
-                                        <div class="palette_desc">Beige</div>
-                                    </div>
-                                    <input type="text" class="palette_input" value="#908272: rgb(144,130,114)">
-                                </div>
-                                <div class="palette_item">
-                                    <div class="palette_color3">
-                                        <div class="palette_desc">Light Beige</div>
-                                    </div>
-                                    <input type="text" class="palette_input" value="#BEA384: rgb(190,163,132)">
-                                </div>
-                                <div class="palette_item">
-                                    <div class="palette_color4">
-                                        <div class="palette_desc">White</div>
-                                    </div>
-                                    <input type="text" class="palette_input" value="#FFFFFF: rgb(255,255,255)">
-                                </div>
-                                <div class="palette_item">
-                                    <div class="palette_color5">
-                                        <div class="palette_desc">Light Grey</div>
-                                    </div>
-                                    <input type="text" class="palette_input" value="#C7C6C4: rgb(199,198,196)">
-                                </div>
-                            </div>
+            <h3>Website color swatches</h3>
+            <div class="palette">
+                <div class="palette_item">
+                    <div class="palette_color1">
+                        <div class="palette_desc">Charcoal</div>
+                    </div>
+                    <input type="text" class="palette_input" value="#131313: rgb(19,19,19)">
+                </div>
+                <div class="palette_item">
+                    <div class="palette_color2">
+                        <div class="palette_desc">Beige</div>
+                    </div>
+                    <input type="text" class="palette_input" value="#908272: rgb(144,130,114)">
+                </div>
+                <div class="palette_item">
+                    <div class="palette_color3">
+                        <div class="palette_desc">Light Beige</div>
+                    </div>
+                    <input type="text" class="palette_input" value="#BEA384: rgb(190,163,132)">
+                </div>
+                <div class="palette_item">
+                    <div class="palette_color4">
+                        <div class="palette_desc">White</div>
+                    </div>
+                    <input type="text" class="palette_input" value="#FFFFFF: rgb(255,255,255)">
+                </div>
+                <div class="palette_item">
+                    <div class="palette_color5">
+                        <div class="palette_desc">Light Grey</div>
+                    </div>
+                    <input type="text" class="palette_input" value="#C7C6C4: rgb(199,198,196)">
+                </div>
+            </div>
 
 
-<!-- update to new edited html -->
-<pre><code>
+            <!-- update to new edited html -->
+            <pre><code>
 &lt;div class="palette"&gt;
     &lt;div class="paletteItem"&gt;
         &lt;div class="paletteColor1"&gt;
@@ -277,27 +279,27 @@ a:hover {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                </section>
+        </section>
 
-                <section
-                    <h3>TEXT STYLING</h3>
-                        <p>Italiana is used for the text logo, while Cinzel is used for headings and Mulish used for all other text, links, and buttons.</p>
+        <section <h3>TEXT STYLING</h3>
+            <p>Italiana is used for the text logo, while Cinzel is used for headings and Mulish used for all other text,
+                links, and buttons.</p>
 
-                    <section>
+            <section>
 
-                        <h4>TITLE/LOGO</h4>
-                        <div class="black_background"> 
+                <h4>TITLE/LOGO</h4>
+                <div class="black_background">
 
-                            <h1>ITALIANA Regular 64</h1>
-                        </div>
-                        
+                    <h1>ITALIANA Regular 64</h1>
+                </div>
 
-                            <h5>HTML Sample Code</h5>
-<pre><code>
+
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;h1&gt;&lt;/h1&gt;
 </code></pre>
-                            <h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 h1 {
     font-size:4rem;
     font-family:'Italiana', Times New Roman, serif;
@@ -309,16 +311,16 @@ h1 {
     font-weight:400;
 }
 </code></pre>
-                    
-                        <h4>HEADINGS</h4>
-                            <h5>HEADING 2</h5>
-                                <h2>CINZEL Light 36</h2>
-                                <h5>HTML Sample Code</h5>
-<pre><code>
+
+                <h4>HEADINGS</h4>
+                <h5>HEADING 2</h5>
+                <h2>CINZEL Light 36</h2>
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;h2&gt;&lt;/h2&gt;
 </code></pre>
-                                <h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 h2 {
     font-size:3rem;
     font-family:'Cinzel', Times New Roman, serif;
@@ -327,14 +329,14 @@ h2 {
 }
 </code></pre>
 
-                            <h5>HEADING 3</h5>
-                                <h3>CINZEL Regular 24</h3>
-                                <h5>HTML Sample Code</h5>
-<pre><code>
+                <h5>HEADING 3</h5>
+                <h3>CINZEL Regular 24</h3>
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;h3&gt;&lt;/h3&gt;
 </code></pre>
-                                <h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 h3 {
     font-size:2rem;
     font-family:'Cinzel', Times New Roman, serif;
@@ -343,14 +345,14 @@ h3 {
 }
 </code></pre>
 
-                            <h5>HEADING 4</h5>
-                                <h4>CINZEL Regular 18</h4>
-                                <h5>HTML Sample Code</h5>
-<pre><code>
+                <h5>HEADING 4</h5>
+                <h4>CINZEL Regular 18</h4>
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;h4&gt;&lt;/h4&gt;
 </code></pre>
-                                <h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 h4 {
     font-size:1.5rem;
     font-family:'Cinzel', Times New Roman, serif;
@@ -358,19 +360,22 @@ h4 {
     font-weight:400;
 }
 </code></pre>
-                    </section>
+            </section>
 
-                    <section>
-                        <h4>BODY</h4>
-                            <p>Mulish Regular 12</p>
-                            <h4>SAMPLE PARAGRAPH</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo cursus lectus ut malesuada. Integer ultrices et ex at gravida. Duis fringilla fermentum mauris. Proin neque odio, rutrum et rhoncus sit amet, euismod at tortor. Vivamus diam magna, malesuada ut sagittis et, mollis in erat.</p>
-                                <h5>HTML Sample Code</h5>
-<pre><code>
+            <section>
+                <h4>BODY</h4>
+                <p>Mulish Regular 12</p>
+                <h4>SAMPLE PARAGRAPH</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo cursus lectus ut malesuada.
+                    Integer ultrices et ex at gravida. Duis fringilla fermentum mauris. Proin neque odio, rutrum et
+                    rhoncus sit amet, euismod at tortor. Vivamus diam magna, malesuada ut sagittis et, mollis in erat.
+                </p>
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;p&gt;&lt;/p&gt;
 </code></pre>
-                                <h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 p {
     font-family:'Mulish', Arial, sans-serif;
     font-size:1rem;
@@ -378,21 +383,21 @@ p {
     width:clamp(45ch, 70%, 75ch);
 }
 </code></pre>
-                    </section>
+            </section>
 
-                    <section>
-                        <h4>BULLETED LIST</h4>
-                        <!-- How to make bulleted lists taken from:
+            <section>
+                <h4>BULLETED LIST</h4>
+                <!-- How to make bulleted lists taken from:
                             https://www.w3schools.com/html/html_lists.asp -->
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Consectetur adipiscing elit</li>
-                                <li>Maecenas commodo cursus lectus ut malesuada</li>
-                                <li>Integer ultrices et ex at gravida</li>
-                                <li>Duis fringilla fermentum mauris</li>
-                            </ul>
-                                <h5>HTML Sample Code</h5>
-<pre><code>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Maecenas commodo cursus lectus ut malesuada</li>
+                    <li>Integer ultrices et ex at gravida</li>
+                    <li>Duis fringilla fermentum mauris</li>
+                </ul>
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;ul&gt;
     &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
     &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
@@ -401,8 +406,8 @@ p {
     &lt;li&gt;Duis fringilla fermentum mauris&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-                                <h5>CSS Sample Code</h5>
-<pre>
+                <h5>CSS Sample Code</h5>
+                <pre>
 <code>
 ul {
     font-family:'Mulish', Arial, sans-serif;
@@ -410,21 +415,21 @@ ul {
 }
 </code>
 </pre>
-                    </section>
+            </section>
 
-                    <section>
-                        <h4>NUMBERED LIST</h4>
-                        <!-- How to make bulleted lists taken from:
+            <section>
+                <h4>NUMBERED LIST</h4>
+                <!-- How to make bulleted lists taken from:
                             https://www.w3schools.com/html/html_lists.asp -->
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Consectetur adipiscing elit</li>
-                                <li>Maecenas commodo cursus lectus ut malesuada</li>
-                                <li>Integer ultrices et ex at gravida</li>
-                                <li>Duis fringilla fermentum mauris</li>
-                            </ol>
-                                <h5>HTML Sample Code</h5>
-<pre><code>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Maecenas commodo cursus lectus ut malesuada</li>
+                    <li>Integer ultrices et ex at gravida</li>
+                    <li>Duis fringilla fermentum mauris</li>
+                </ol>
+                <h5>HTML Sample Code</h5>
+                <pre><code>
 &lt;ol&gt;
     &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
     &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
@@ -433,60 +438,68 @@ ul {
     &lt;li&gt;Duis fringilla fermentum mauris&lt;/li&gt;
 &lt;/ol&gt;
 </code></pre>
-                                <h5>CSS Sample Code</h5>
-<pre><code>
+                <h5>CSS Sample Code</h5>
+                <pre><code>
 ol {
     font-family:'Mulish', Arial, sans-serif;
     font-weight:normal;
 }
 </code></pre>
-                    </section>
+            </section>
 
 
 
 
-<!-- Modular Elements -->
-                <section class="pattern_elements"> 
-                    <h2>Modular Pattern Elements</h2>
+            <!-- Modular Elements -->
+            <section class="pattern_elements">
+                <h2>Modular Pattern Elements</h2>
 
 
-<!-- Navigation Bar: maintained by Kai-Lee -->
-                    <section>
-                        <h3>Navigation Bar</h3>
-                        <div class="main_nav_grid black_background">
+                <!-- Navigation Bar: maintained by Kai-Lee -->
+                <section>
+                    <h3>Navigation Bar</h3>
+                    <div class="main_nav_grid black_background">
 
-                            <div class="main_nav_title_items">
-                                <div id="site_title"><h1>THE LOFT</h1></div>
-                                <!-- Navigation bar tutorials:
+                        <div class="main_nav_title_items">
+                            <div id="site_title">
+                                <h1>THE LOFT</h1>
+                            </div>
+                            <!-- Navigation bar tutorials:
                                 https://www.w3schools.com/css/css_navbar.asp
                                 https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-                                <div id="site_main_nav_toolbar">
-                                    <ul class="site_main_nav">
-                                    <li><form action="#" class="searchBar">
-                                        <input type="text" id="search" name="search" placeholder="Search" class="searchBar" title="Site search bar">
-                                        <label for="search" class="searchBar"><a href="#"><img src="img/icons/Search-Icon.png" alt="Search icon"></a></label>
-                                        </form></li>
+                            <div id="site_main_nav_toolbar">
+                                <ul class="site_main_nav">
+                                    <li>
+                                        <form action="#" class="searchBar">
+                                            <input type="text" id="search" name="search" placeholder="Search"
+                                                class="searchBar" title="Site search bar">
+                                            <label for="search" class="searchBar"><a href="#"><img
+                                                        src="img/icons/Search-Icon.png" alt="Search icon"></a></label>
+                                        </form>
+                                    </li>
                                     <li><a href="#" class="sign_in">Sign In</a></li>
                                     <li><a href="#"><img src="img/icons/Cart-Icon.png" alt="Cart icon"></a></li>
-                                    </ul>
-                                </div>
+                                </ul>
                             </div>
+                        </div>
 
-                            <div><hr></div>
-                            
-                            <nav class="main_nav">
-                                <a href="Office.html">Office</a>
-                                <a href="Living.html">Living</a>
-                                <a href="Bedroom.html">Bedroom</a>
-                                <a href="Dining.html">Dining</a>
-                                <a href="NewArrivals.html">New Arrivals</a>
-                                <a href="Lookbook.html">Lookbook</a>
-                            </nav>
-                        
+                        <div>
+                            <hr>
+                        </div>
+
+                        <nav class="main_nav">
+                            <a href="Office.html">Office</a>
+                            <a href="Living.html">Living</a>
+                            <a href="Bedroom.html">Bedroom</a>
+                            <a href="Dining.html">Dining</a>
+                            <a href="NewArrivals.html">New Arrivals</a>
+                            <a href="Lookbook.html">Lookbook</a>
+                        </nav>
+
                     </div>
 
-                        <h5>HTML Sample Code</h5>
-<pre><code>
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
 &lt;h1&gt;THE LOFT&lt;/h1&gt;
     &lt;ul class="siteMainNav"&gt;
         &lt;li&gt;&lt;form action="#" class="searchBar"&gt;
@@ -508,8 +521,8 @@ ol {
         &lt;a href="Lookbook.html"&gt;Lookbook&lt;/a&gt;
     &lt;/nav&gt;
 </code></pre>
-                        <h5>CSS Sample Code</h5>
-<pre>
+                    <h5>CSS Sample Code</h5>
+                    <pre>
 <code>
 ul.siteMainNav {
     list-style-type:none;
@@ -551,85 +564,92 @@ input.searchBar {
 }
 </code></pre>
 
-</section>
-                        
+                </section>
 
 
-<!-- Curated Collection Module: maintained by Kai-Lee -->
 
-            <section>
-                <h3>Curated Collection</h3>
+                <!-- Curated Collection Module: maintained by Kai-Lee -->
 
-                <div class="three_column_grid black_background">
-                    <div> 
-                        <h4>Get Inspired by these Curated Collections</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <section>
+                    <h3>Curated Collection</h3>
+
+                    <div class="three_column_grid black_background">
+                        <div>
+                            <h4>Get Inspired by these Curated Collections</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore</p>
+                        </div>
+
+                        <div class="three_column_grid_items">
+                            <div class="three_column_items">
+                                <img src="img/curated_collection/classic_collection.png"
+                                    alt="Room decorated with classic industrial interior design">
+                                <h5>Classic</h5>
+                                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            </div>
+                            <div class="three_column_items">
+                                <img src="img/curated_collection/vintage_collection.png"
+                                    alt="Room decorated with classic industrial interior design">
+                                <h5>Vintage</h5>
+                                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            </div>
+                            <div class="three_column_items">
+                                <img src="img/curated_collection/modern_collection.png"
+                                    alt="Room decorated with classic industrial interior design">
+                                <h5>Modern</h5>
+                                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            </div>
+
+                        </div>
+
                     </div>
-                    
-                    <div class="three_column_grid_items"> 
-                        <div class="three_column_items">
-                            <img src="img/curated_collection/classic_collection.png" alt="Room decorated with classic industrial interior design">
-                            <h5>Classic</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
-                        </div>
-                        <div class="three_column_items">
-                            <img src="img/curated_collection/vintage_collection.png" alt="Room decorated with classic industrial interior design">
-                            <h5>Vintage</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
-                        </div>
-                        <div class="three_column_items">
-                            <img src="img/curated_collection/modern_collection.png" alt="Room decorated with classic industrial interior design">
-                            <h5>Modern</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                </section>
+
+
+
+                <h3>UI Organism For A Detalied View Of Single Product</h3>
+
+                <div class="ui_organism">
+
+                    <div class="left_side">
+                        <div class="bread_crum">
+                            <a>Home/ </a>
+                            <a>Office/ </a>
+                            <a>Desk</a>
                         </div>
 
+                        <h4 class="description_title">Description</h4>
+
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non
+                            mattis mi, nec pharetra enim. Curabitur euismod est et magna venenatis suscipit. Curabitur
+                            sagittis nec felis sit amet luctus. Suspendisse nec eleifend enim, ut elementum risus. Duis
+                            risus tortor, congue vel quam vitae, pharetra euismod justo.</p>
+
+                        <ul class="product_list">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
                     </div>
-                    
+
+
+                    <div class="right_side">
+
+                        <h5 class="category">Office Desk</h5>
+
+                        <h3 class="item_title">Copper And Walnut Desk</h3>
+
+                        <p class="price">$8000</p>
+
+                        <div class="buttons_for_shop">
+                            <a href="" class="call_to_action_button">Shop Now</a>
+                            <a href="" class="call_to_action_button">Share</a>
+                            <a href="" class="call_to_action_button">Add To Wish List Button</a>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-
-
-                        <h3>UI Organism For A Detalied View Of Single Product</h3>
-
-                        <div class="ui_organism">
-
-                            <div class="left_side">
-                                <div class="bread_crum">
-                                    <a >Home/ </a>
-                                    <a >Office/ </a>
-                                    <a >Desk</a>
-                                </div>
-
-                                <h4 class="description_title">Description</h4>
-
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non mattis mi, nec pharetra enim. Curabitur euismod est et magna venenatis suscipit. Curabitur sagittis nec felis sit amet luctus. Suspendisse nec eleifend enim, ut elementum risus. Duis risus tortor, congue vel quam vitae, pharetra euismod justo.</p>
-
-                                <ul class="product_list">
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                </ul>
-                            </div>
-
-
-                            <div class="right_side">
-                                
-                                <h5 class="category">Office Desk</h5>
-
-                                <h3 class="item_title">Copper And Walnut Desk</h3>
-
-                                <p class="price">$8000</p>
-                                
-                                <div class="buttons_for_shop">
-                                    <a href="" class="call_to_action_button">Shop Now</a>
-                                    <a href="" class="call_to_action_button">Share</a>
-                                    <a href="" class="call_to_action_button">Add To Wish List Button</a>
-                                </div>
-                            </div>
-                        </div>
-
-<pre><code>
+                <pre><code>
 &lt;div class="uiOrganism"&gt;
 
     &lt;div class="leftSide"&gt;
@@ -668,52 +688,58 @@ input.searchBar {
 &lt;/div&gt;
 </code></pre>
 
-<!-- Derek Code -->
-			<div class="product_container">
-				<header>
-					<div class="img_left_container">
-						<img src="img/sideproduct.png" alt="side_picture">
-						<img src="img/sideproduct.png" alt="side_picture">
-						<img src="img/sideproduct.png" alt="side_picture">
-						<img src="img/sideproduct.png" alt="side_picture">
-					</div>
-					<div class="img_right_container">
-						<img src="img/mainproduct.png" alt="main_picture">
-					</div>
-				</header>
-				<div class="product_left">
-					<div class="tab_nav">
-						<p><a class="sub_tab" href="product_detail">Home</a> / <a class="sub_tab" href="product_detail">Office</a> / <a class="active_tab" href="product_detail">Desks</a></p>
-					</div>
-					
-					<h4>Description</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis mauris ligula vel augue.</p>
-					<p>65” W x 9” L x 60” H</p>
-					<ul>
-		                <li>List Element</li>
-		                <li>List Element</li>
-		                <li>List Element</li>
-		                <li>List Element</li>
-		                <li>List Element</li>
-		            </ul>
-				</div>
-				<div class="product_right">
-					<p>Office Desk</p>
-					<h4>COPPER AND WALNUT DESK</h4>
-					<h4>$8,000</h4>
-					<br>
-					<label>Quantity</label>
-					<br>
-					<a href="">-</a><input class="quantity_number" type="number" name="product_quantity" value="1"><a href="">+</a>
-					<br>
-					<input class="add_to_bag" type="submit" value="ADD TO BAG">
-            		<input class="share" type="button" value="SHARE"> 
-            		<input class="add_to_wishlist" type="submit" value="ADD TO WISHLIST"> 
-				</div>
-			</div>
-			<div class="reference_code">
-				<h5>Sample Code:</h5>
-				<code>
+                <!-- Derek Code -->
+                <div class="product_container">
+                    <header>
+                        <div class="img_left_container">
+                            <img src="img/sideproduct.png" alt="side_picture">
+                            <img src="img/sideproduct.png" alt="side_picture">
+                            <img src="img/sideproduct.png" alt="side_picture">
+                            <img src="img/sideproduct.png" alt="side_picture">
+                        </div>
+                        <div class="img_right_container">
+                            <img src="img/mainproduct.png" alt="main_picture">
+                        </div>
+                    </header>
+                    <div class="product_left">
+                        <div class="tab_nav">
+                            <p><a class="sub_tab" href="product_detail">Home</a> / <a class="sub_tab"
+                                    href="product_detail">Office</a> / <a class="active_tab"
+                                    href="product_detail">Desks</a></p>
+                        </div>
+
+                        <h4>Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh
+                            eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et
+                            tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis
+                            mauris ligula vel augue.</p>
+                        <p>65” W x 9” L x 60” H</p>
+                        <ul>
+                            <li>List Element</li>
+                            <li>List Element</li>
+                            <li>List Element</li>
+                            <li>List Element</li>
+                            <li>List Element</li>
+                        </ul>
+                    </div>
+                    <div class="product_right">
+                        <p>Office Desk</p>
+                        <h4>COPPER AND WALNUT DESK</h4>
+                        <h4>$8,000</h4>
+                        <br>
+                        <label>Quantity</label>
+                        <br>
+                        <a href="">-</a><input class="quantity_number" type="number" name="product_quantity"
+                            value="1"><a href="">+</a>
+                        <br>
+                        <input class="add_to_bag" type="submit" value="ADD TO BAG">
+                        <input class="share" type="button" value="SHARE">
+                        <input class="add_to_wishlist" type="submit" value="ADD TO WISHLIST">
+                    </div>
+                </div>
+                <div class="reference_code">
+                    <h5>Sample Code:</h5>
+                    <code>
 					&lt;div class="productcontainer"&gt;<br>
 						&lt;header&gt;<br>
 							&lt;div class="imgleftcontainer"&gt;<br>
@@ -756,46 +782,60 @@ input.searchBar {
 						&lt;/div&gt;<br>
 					&lt;/div&gt;<br>
 				</code>
-			</div>
+                </div>
 
-                        <h3>Grid Structure</h3>
+                <h3>Grid Structure</h3>
 
-                        <div class="grid_example">
-                            <div>1</div>
-                            <div>2</div>
-                            <div>3</div>
-                            <div>4</div>
-                            <div>5</div>
-                            <div>6</div>
-                            <div>7</div>
-                            <div>8</div>
+                <div class="grid_example">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+
+                <!-- derek code -->
+                <section id="grid_layout">
+                    <h3>Grid Structure</h3>
+                    <div class="grid_container">
+                        <header>
+                            <h4>Header Area</h4>
+                        </header>
+                        <div class="main">
+                            <h4>Image Area</h4>
                         </div>
-
-<!-- derek code -->
-                        <section id="grid_layout">
-                            <h3>Grid Structure</h3>
-                            <div class="grid_container">
-                                <header>
-                                    <h4>Header Area</h4>
-                                </header>
-                                <div class="main">
-                                    <h4>Image Area</h4>
-                                </div>
-                                <aside class="sidebar"><h4>Details Area</h4></aside>
-                                <div class="card_row_container">
-                                    <section class="product_card"><h4>Product Card Item</h4></section>
-                                    <section class="product_card"><h4>Product Card Item</h4></section>
-                                    <section class="product_card"><h4>Product Card Item</h4></section>
-                                </div>
-                                <div class="card_row-_ontainer2">
-                                    <section class="product_card2"><h4>Item Description</h4></section>
-                                    <section class="product_card2"><h4>Item price and activity</h4></section>
-                                </div>
-                                <footer><h4>Footer Content Area</h4></footer>
-                            </div>
-                            <div class="reference_code">
-                                <h5>Sample Code:</h5>
-                                <code>
+                        <aside class="sidebar">
+                            <h4>Details Area</h4>
+                        </aside>
+                        <div class="card_row_container">
+                            <section class="product_card">
+                                <h4>Product Card Item</h4>
+                            </section>
+                            <section class="product_card">
+                                <h4>Product Card Item</h4>
+                            </section>
+                            <section class="product_card">
+                                <h4>Product Card Item</h4>
+                            </section>
+                        </div>
+                        <div class="card_row-_ontainer2">
+                            <section class="product_card2">
+                                <h4>Item Description</h4>
+                            </section>
+                            <section class="product_card2">
+                                <h4>Item price and activity</h4>
+                            </section>
+                        </div>
+                        <footer>
+                            <h4>Footer Content Area</h4>
+                        </footer>
+                    </div>
+                    <div class="reference_code">
+                        <h5>Sample Code:</h5>
+                        <code>
                                     &lt;div class="grid-container"&gt;<br>
                                     &lt;header&gt;<br>
                                     &lt;h4&gt;Header Area&lt;/h4&gt;<br>
@@ -816,38 +856,38 @@ input.searchBar {
                                     &lt;footer&gt;&lt;h4&gt;Footer Content Area&lt;/h4&gt;&lt;/footer&gt;<br>
                                     &lt;/div&gt;<br>
                                 </code>
-                            </div>
-                        </section>
-                
+                    </div>
+                </section>
 
-                        <h3>The Customer Service Input </h3>
-                        <form>
-                            <label for="first_name2">First Name: </label>
-                            <input class="half_labels" type="text" id="first_name2" name="first_name2">
 
-                            <label for="last_name2">Last Name: </label>
-                            <input class="half_labels" type="text" id="last_name2" name="last_name2">
-<!-- had to change the email ID fix in css or wherever needed -->
-                            <label for="email">E-Mail Adress: </label>
-                            <input class="full_labels" type="text" id="email_customer_service" name="email">
+                <h3>The Customer Service Input </h3>
+                <form>
+                    <label for="first_name2">First Name: </label>
+                    <input class="half_labels" type="text" id="first_name2" name="first_name2">
 
-                            <label for="phone_number">Phone Number: </label>
-                            <input class="full_labels" type="text" id="phone_number" name="phone_number">
+                    <label for="last_name2">Last Name: </label>
+                    <input class="half_labels" type="text" id="last_name2" name="last_name2">
+                    <!-- had to change the email ID fix in css or wherever needed -->
+                    <label for="email">E-Mail Adress: </label>
+                    <input class="full_labels" type="text" id="email_customer_service" name="email">
 
-                            <label for="address">Address: </label>
-                            <input class="full_labels" type="text" id="address" name="address">
+                    <label for="phone_number">Phone Number: </label>
+                    <input class="full_labels" type="text" id="phone_number" name="phone_number">
 
-                            <label for="city">City: </label>
-                            <input class="full_labels" type="text" id="city" name="city">
+                    <label for="address">Address: </label>
+                    <input class="full_labels" type="text" id="address" name="address">
 
-                            <label for="country">Country: </label>
-                            <input class="full_labels" type="text" id="country" name="country">
+                    <label for="city">City: </label>
+                    <input class="full_labels" type="text" id="city" name="city">
 
-                            <label for="postal_or_zip">Postal or Zip Code: </label>
-                            <input class="full_labels" type="text" id="postal_or_zip" name="postal_or_zip">
-                        </form>
+                    <label for="country">Country: </label>
+                    <input class="full_labels" type="text" id="country" name="country">
 
-<pre><code>
+                    <label for="postal_or_zip">Postal or Zip Code: </label>
+                    <input class="full_labels" type="text" id="postal_or_zip" name="postal_or_zip">
+                </form>
+
+                <pre><code>
 &lt;form&gt;
     &lt;label for="firstName"&gt;First Name: &lt;/label&gt;
     &lt;input class="halfLabels" type="text" id="firstName" name="firstName"&gt;
@@ -876,33 +916,46 @@ input.searchBar {
 </code></pre>
 
 
-<!-- derek code -->
-                    <section id="shopping_cart">
-                        <h3>Shopping Cart Module</h3>
-                        <p>This is the shopping cart module. It displays what the product is, the product information, the price, and how many do you intend to buy. There is a convient remove item button on the bottom right. It would display in a list with all the items that you have in your cart.</p>
-                        <p>This shopping cart module is designed and maintained by Derek Liu</p>
-                        <h4>Rendered Element</h4>
-                        <div class="shopping_container">
-                            <div class="image_cart">
-                                <img src="img/product1.png" alt="product_picture">
-                            </div>
-                            <div class="shopping_cart">
-                                <ul>
-                                    <li class="li1"><h3>COPPER AND WALNUT DESK</h3></li>
-                                    <li class="li2"><h3><label>Quantity</label><a href="">-</a><input class="quantity_number2" type="number" name="product_quantity" value="1"><a href="">+</a></h3></li>
-                                    <li class="li3"><h3>$8,000</h3></li>
-                                </ul>
-                                <h4>DESCRIPTION</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis mauris ligula vel augue.</p>
-                                <ul>
-                                    <li class="li4">65” W x 9” L x 60” H</li>
-                                    <li class="li5"><input class="remove_item" type="button" name="remove_item" value="REMOVE"></li>
-                                </ul>
-                            </div>
+                <!-- derek code -->
+                <section id="shopping_cart">
+                    <h3>Shopping Cart Module</h3>
+                    <p>This is the shopping cart module. It displays what the product is, the product information, the
+                        price, and how many do you intend to buy. There is a convient remove item button on the bottom
+                        right. It would display in a list with all the items that you have in your cart.</p>
+                    <p>This shopping cart module is designed and maintained by Derek Liu</p>
+                    <h4>Rendered Element</h4>
+                    <div class="shopping_container">
+                        <div class="image_cart">
+                            <img src="img/product1.png" alt="product_picture">
                         </div>
-                        <div class="reference_code">
-                            <h5>Sample Code:</h5>
-                            <code>
+                        <div class="shopping_cart">
+                            <ul>
+                                <li class="li1">
+                                    <h3>COPPER AND WALNUT DESK</h3>
+                                </li>
+                                <li class="li2">
+                                    <h3><label>Quantity</label><a href="">-</a><input class="quantity_number2"
+                                            type="number" name="product_quantity" value="1"><a href="">+</a></h3>
+                                </li>
+                                <li class="li3">
+                                    <h3>$8,000</h3>
+                                </li>
+                            </ul>
+                            <h4>DESCRIPTION</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel
+                                nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis
+                                accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet
+                                quam, ac lobortis mauris ligula vel augue.</p>
+                            <ul>
+                                <li class="li4">65” W x 9” L x 60” H</li>
+                                <li class="li5"><input class="remove_item" type="button" name="remove_item"
+                                        value="REMOVE"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reference_code">
+                        <h5>Sample Code:</h5>
+                        <code>
                                 &lt;div class="shoppingcontainer"&gt;<br>
                                 &lt;div class="imagecart"&gt;<br>
                                 &lt;img src="img/product1.png" alt="productpicture"&gt;<br>
@@ -922,31 +975,32 @@ input.searchBar {
                                 &lt;/ul&gt;<br>
                                 &lt;/div&gt;<br>
                             </code>
+                    </div>
+                </section>
+
+
+
+                <!-- New Arrivals Module: maintained by Kai-Lee -->
+                <section>
+                    <div>
+                        <h3>HERO NEW ARRIVALS MODULE</h3>
+
+                        <div class="banner_image">
+                            <div>
+                                <img src="img/home/newCollection.png"
+                                    alt="Hero image of new Industrial furniture in a large loft apartment">
+                            </div>
+
+                            <div class="text_overlay">
+                                <h2>The latest <br> leather sofa sets</h2>
+                                <a href="NewArrivals.html" class="black_button">Explore New Collection</a>
+                            </div>
                         </div>
-                    </section>
+                    </div>
 
 
-
-<!-- New Arrivals Module: maintained by Kai-Lee -->
-                    <section>
-                        <div>
-                            <h3>HERO NEW ARRIVALS MODULE</h3>
-
-                                <div class="banner_image">
-                                    <div>
-                                        <img src="img/home/newCollection.png" alt="Hero image of new Industrial furniture in a large loft apartment">
-                                    </div>
-
-                                    <div class="text_overlay">
-                                        <h2>The latest <br> leather sofa sets</h2>
-                                        <a href="NewArrivals.html" class="black_button">Explore New Collection</a>
-                                    </div>
-                                </div>
-                        </div>
-                        
-
-                            <h5>HTML Sample Code</h5>
-<pre><code>
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
 &lt;section&gt;
     &lt;h3&gt;HERO NEW ARRIVALS MODULE&lt;/h3&gt;
     &lt;img src="img/home/newCollection.png"&gt;
@@ -955,56 +1009,61 @@ input.searchBar {
 &lt;/section&gt;
     </code></pre>
 
-                                    <h5>CSS Sample Code</h5>
-<pre><code>
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
         
 </code></pre>
-                        
-                    </section>
+
+                </section>
 
 
 
 
-<!-- Footer Menu Module: maintained by Kai-Lee -->
-                    <section>
-                        <h4>Footer Menu and Newsletter</h4>
+                <!-- Footer Menu Module: maintained by Kai-Lee -->
+                <section>
+                    <h4>Footer Menu and Newsletter</h4>
 
-                        <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
-                        <div class="black_background">
+                    <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
+                    <div class="black_background">
+                        <div>
                             <div>
-                                <div><hr></div>
-                                <div class="footer_menu">
-                                    <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
-                                    <div >
-                                        <ul id="footer_menu_links">
-                                            <li><a href="#" class="about">About</a></li>
-                                            <li><a href="#" class="customer_service">Customer Service</a></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <ul id="footer_menu_socials">
-                                            <li><a href="#"><img src="img/icons/instagram_icon.png" alt="Instagram icon"></a></li>
-                                            <li><a href="#"><img src="img/icons/facebook_icon.png" alt="Cart icon"></a></li>
-                                            <li><a href="#"><img src="img/icons/twitter_icon.png" alt="Twitter icon"></a></li>
-                                            <li><a href="#"><img src="img/icons/pinterest_icon.png" alt="Pinterest icon"></a></li>
-                                        </ul>
-                                    </div>
+                                <hr>
+                            </div>
+                            <div class="footer_menu">
+                                <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
+                                <div>
+                                    <ul id="footer_menu_links">
+                                        <li><a href="#" class="about">About</a></li>
+                                        <li><a href="#" class="customer_service">Customer Service</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul id="footer_menu_socials">
+                                        <li><a href="#"><img src="img/icons/instagram_icon.png"
+                                                    alt="Instagram icon"></a></li>
+                                        <li><a href="#"><img src="img/icons/facebook_icon.png" alt="Cart icon"></a></li>
+                                        <li><a href="#"><img src="img/icons/twitter_icon.png" alt="Twitter icon"></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icons/pinterest_icon.png"
+                                                    alt="Pinterest icon"></a></li>
+                                    </ul>
                                 </div>
                             </div>
-                                
-
-                            <div class="contactUsParent">
-                                <form action="#" class="contactUs">
-                                    <label for="email" class="contactUs">Subscribe to our newsletter</label>
-                                    <!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
-                                    <input type="text" id="email" name="email" placeholder="EMAIL" class="contactUs">
-                                    <a href="#" class="grey_button">Subscribe</a>
-                                </form>
-                            </div>
                         </div>
-                            
-                            <h5>HTML Sample Code</h5>
-<pre><code>
+
+
+                        <div class="contactUsParent">
+                            <form action="#" class="contactUs">
+                                <label for="email" class="contactUs">Subscribe to our newsletter</label>
+                                <!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
+                                <input type="text" id="email" name="email" placeholder="EMAIL" class="contactUs">
+                                <a href="#" class="grey_button">Subscribe</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
 &lt;div class="contactUsParent"&gt;
     &lt;form action="#" class="contactUs"&gt;
         &lt;label for="email" class="contactUs"&gt;Subscribe to our newsletter&lt;/label&gt;
@@ -1014,8 +1073,8 @@ input.searchBar {
     &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
-                            <h5>CSS Sample Code</h5>
-<pre><code>
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
 form.contactUs {
     font-family:'Mulish', Arial, sans-serif;
     margin:2rem 0rem;
@@ -1046,14 +1105,44 @@ input.contactUs {
     border-radius: 2px;
 }
 </code></pre>
-                    </section>
+                </section>
+
+                <!-- bryan's section -->
+                <section>
+                    <div class="para_left_and_picture_right">
+                        <div class="para_left_and_picture_right_left_side">
+                            <h4 class="clear">Most Popular Look</h4>
+                            <p class="clear"> is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsum
+                                passages, and more recently with desktop publishing software like Aldus PageMaker
+                                including
+                                versions of Lorem Ipsum</p>
+                        </div>
+                        <div class="image_section_right">
+                            <picture>
+                                <source media="(min-width:1200px)" srcset="img/lookbook_image.jpg"
+                                    alt="placeholder for the para_left_and_picture_right class">
+                                <img src="img/lookbook_image.jpg"
+                                    alt="image of the template for the para_left_and_picture_right">
+                            </picture>
+                        </div>
+                    </div>
+                </section>
 
 
 
-                </section> <!--pattern_elements section-->
-        </div>
-<!-- </main> "stray end tag" -->
+            </section>
+            <!--pattern_elements section-->
+    </div>
+    <!-- </main> "stray end tag" -->
 
-    </body>
+</body>
 
 </html>

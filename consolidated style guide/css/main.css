@@ -380,3 +380,8 @@ input.contactUs {
 	border-width: 1px;
 	border-radius: 2px;
 }
+
+.clear{
+	padding: 0;
+	margin: 0;
+}
