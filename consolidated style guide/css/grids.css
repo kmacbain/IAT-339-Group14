@@ -2,33 +2,66 @@
 
 * {
 	box-sizing: border-box;
-
-}
-
-.grid-container {
-	display: grid;
-	min-height: 100vh;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: auto auto;
-
 }
 
 header {
 	display: grid;
-	grid-column: span 6;
+	grid-column: span 12;
 }
+
+main {
+	grid-column: span 12;
+}
+
+
+
+
+/*Site Wide Grid Classes*/
+.grid-container { /*12 column Site grid*/
+ 	display: grid;
+	min-height: 100vh;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto auto;
+}
+
+.grid-section { /*Grid applied to each section*/
+	display: grid;
+	/*How to force columns to stay the same width:
+	https://css-tricks.com/equal-width-columns-in-css-grid-are-kinda-weird/*/
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-col-2-12 { /*Column spacing for columns spanning from column 2 to 12*/
+	grid-column: 2 / 12;
+}
+
+
 
 
 /*Footer navigation and newsletter*/
 
-.footer {
+.footer-grid {
 	display: grid;
-	grid-column: span 6;
+	grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
+
+.footer-grid .footer-grid-col{
+    grid-column: 2/ 12;
 }
 
 .footer_menu {
-	display: grid;
+	display:grid;
+	grid-column-start: 1;
+	grid-column-end: 11;
 	grid-template-columns: 1fr 1fr;
+}
+
+.contactUsParent{
+	grid-column: span 12;
+	display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 32em) {
@@ -36,70 +69,77 @@ header {
 		grid-template-columns: 1fr;
 	}
 
-}
-
-#footer_menu_links {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
+	#footer_menu_links {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
 
 
-#footer_menu_links li {
-	display: flex;
-	justify-content: center;
+	#footer_menu_links li {
+		display:flex;
+		justify-content: center;
+	}
+
+	#footer_menu_links a {
+		margin-bottom: 1rem;
+		margin-right: 0;
+	}
+
+	#footer_menu_socials {
+		justify-content: right;
+	}
+		
 }
 
-#footer_menu_links a {
-	margin-bottom: 1rem;
-	margin-right: 0;
-}
-
-#footer_menu_socials {
-	justify-content: center;
-}
 
 
 
 /*Main navigation bar*/
 
-.main_nav_grid {
+.main-nav-grid {
 	display: grid;
-	grid-column: span 6;
+	grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+	grid-column: span 12;
+}
+
+.main-nav-grid .main-nav-title-items {
+	grid-column: 2 / 12;
 }
 
 @media screen and (max-width: 57em) {
-	.main_nav {
+	.main-nav {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 	}
 
-	#site_main_nav_toolbar {
+	#site-main-nav-toolbar {
 		/*Advice for using the inherit value for the position property so that flex tags can be used on the toolbar elemnts which I had previously set to an absolute value from my wife, Bri*/
 		position: inherit;
 		justify-content: center;
 	}
 
-	.site_main_nav {
+	.site-main_nav {
 		justify-content: center;
 		flex-direction: column;
 	}
 
-	ul.site_main_nav {
+	ul.site-main_nav {
 		align-items: center;
 	}
 
-	input.searchBar {
-		border: 1px solid white;
+	input.search-bar {
+		border:1px solid white;
 	}
 
-	.site_main_nav li {
+	.site-main-nav li {
 		margin-left: 0;
 		margin-top: 0.5rem;
 	}
 
-	.main_nav_title_items {
+	.main-nav-title-items {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -108,11 +148,24 @@ header {
 }
 
 
-/*New Arrivals*/
 
-#new_arrivals {
+
+/*Hero Image: maintained by Kai-Lee*/
+
+.hero-grid {
+	position: relative;
 	display: grid;
-	grid-column: span 6;
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: span 12;
+}
+
+.hero-image {
+	grid-column: span 12;
+}
+
+.hero-text {
+	grid-column: 2 / 12;
 }
 
 @media screen and (max-width: 43em) {
@@ -128,14 +181,6 @@ header {
 
 
 
-main {
-	grid-column: span 6;
-}
-
-.contactUsParent {
-	display: grid;
-}
-
 .nav-row-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -145,10 +190,6 @@ main {
 }
 
 .main-nav-item {}
-
-.product-thumbnail {
-	display: grid;
-	grid-template-columns: 1fr 4fr;
 
 }
 
@@ -160,19 +201,55 @@ main {
 
 
 
-/*Curated Collections*/
+/*Product detail*/
 
+
+.product-grid {
+	display: grid;
+	grid-template-rows: auto auto;
+    grid-template-columns: repeat(12, 1fr);
+	grid-column: span 12;
+}
+
+.product-grid .product-grid-col-thumb {
+    grid-column: 2/ 4;
+}
+
+.product-grid .product-grid-col-feature {
+    grid-column: 4/ 12;
+    grid-row: span 1;
+}
+
+.product-grid .product-grid-col{
+    grid-column: 2/ 12;
+}
+
+/*.product-thumbnail {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+
+}*/
+
+
+
+
+/*Curated Collections*/
 
 .three_column_grid {
 	display: grid;
 	grid-template-rows: auto auto;
+	grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
 
+.three_column_grid .three-column-grid-heading {
+	grid-column: 2 / 12;
 }
 
 .three_column_grid_items {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	width: 90%;
+	grid-column: 2 / 12;
 }
 
 @media screen and (max-width: 47em) {

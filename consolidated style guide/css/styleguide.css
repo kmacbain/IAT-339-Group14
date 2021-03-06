@@ -1,0 +1,24 @@
+
+
+
+/*Styleguide Styling*/
+
+#title h1 {
+	color:black;
+	margin-bottom: 2rem;
+}
+
+#title a {
+	color:black;
+}
+
+
+/*Styleguide Grids*/
+
+/*Black background*/
+
+#title-example {
+	display: grid;
+    grid-column: span 12;
+}
+
