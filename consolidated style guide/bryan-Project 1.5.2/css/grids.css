@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 6.5rem ;
+    min-height: 100vh;
+}
+
+header{
+    grid-column: 1 / 9;
+}
+
+#title{
+    grid-column: 1 / 9;
+}
+
+.interactiveElements{
+    grid-column: 1 / 9;
+}
+
+.textStyling{
+    grid-column: 1 / 9;
+}
+
+.patternElements{
+    grid-column: 1 / 9;
+}
+
+.navModule{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 3.2em;
+    /* justify-items: center;
+    align-items: center; */
+}
+
+.navModule .logo{
+    display: grid;
+    grid-column: 3 / 7;
+    justify-items: center;
+    align-items: end;
+}
+
+.navModule .rightSideNav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 7 / 9;
+    justify-items: center;
+    align-items: end;
+    margin-bottom: 1.2em;
+}
+
+.navModule .pages{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 2 / 8;
+    justify-items: center;
+}
+
+.uiOrganism{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.leftSide{
+    display: grid;
+    grid-column: 1 / 6;
+    grid-template-rows: 2em 3em 1fr 1fr;
+}
+
+.rightSide{
+    display: grid;
+    grid-column: 6 / 9;
+    grid-template-rows: 2em 3em 1fr 1fr;
+}
+
+
+/* .uiOrganism .breadCrum{
+    grid-column: 1 / 6;
+}
+
+.uiOrganism .category {
+    grid-column: 6 / 9;
+}
+
+.uiOrganism .descriptionTitle{
+    grid-column: 1 / 6;
+}
+
+.uiOrganism .itemTitle{
+    grid-column: 6 / 9;
+}
+
+.uiOrganism .description{
+    grid-column: 1 / 6;
+}
+
+.uiOrganism .price{
+    grid-column: 6 / 9;
+}
+
+.uiOrganism .productList{
+    grid-column: 1 / 6;
+}
+
+.uiOrganism .buttonsForShop{
+    grid-column: 6 / 9;
+} */
+
+.gridExample{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    justify-items: stretch;
+
+}
+
+.gridExample div{
+    border: 1px solid;
+}
+
+@media screen and (max-width: 80em){
+    pre{
+        white-space: pre-wrap;
+    }
+}
+
+@media screen and (max-width: 56em){
+
+    h1{
+        width: 24ch;
+    }
+
+    pre{
+        width: 85ch;  
+    }
+
+    .halfLabels{
+        width: 100%;
+    }
+/* 
+    .uiOrganism .breadCrum{
+        grid-column: 1 / 9;
+    }
+    
+    .uiOrganism .category {
+        grid-column: 1 / 9;
+    }
+    
+    .uiOrganism .descriptionTitle{
+        grid-column: 1 / 9;
+    }
+    
+    .uiOrganism .itemTitle{
+        grid-column: 1 / 9;
+    }
+    
+    .uiOrganism .description{
+        grid-column: 1 / 9;
+    }
+    
+    .uiOrganism .price{
+        grid-column: 1 / 9;
+    }
+    
+    .uiOrganism .productList{
+        grid-column: 1 / 9;
+    }
+    
+    .uiOrganism .buttonsForShop{
+        grid-column: 1 / 9;
+    } */
+
+    .leftSide{
+        grid-column: 1 / 9;
+    }
+    
+    .rightSide{
+        grid-column: 1 / 9;
+    }
+
+}

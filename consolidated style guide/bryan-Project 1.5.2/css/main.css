@@ -1,0 +1,181 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 15px;
+    background: #ececec;
+}
+
+h1{
+    font-family: 'Cinzel', serif;
+}
+
+h2{
+    font-family: 'Cinzel', serif;
+}
+
+h3{
+    font-family: 'Cinzel', serif;
+}
+
+h4{
+    font-family: 'Cinzel', serif;
+}
+
+h5{
+    font-family: 'Mulish', sans-serif;
+    background: #ececec;
+}
+
+p{
+    width: clamp(50ch, 70%, 100ch);
+}
+
+.citations{
+    width: clamp(50ch, 70%, 115ch);
+}
+
+#inLineLink{
+    color: #BEA384;
+    text-decoration: none;
+}
+
+#inLineLink:hover{
+    text-decoration:underline;
+}
+
+.callToActionButton{
+    /* margin: .25em; */
+    display: block;
+    width: 250px;
+    padding: .8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 1em; 
+    text-align: center;
+    background: #131313;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+}
+
+/* .callToActionButton:hover{
+    margin: .5em .6em .8em;
+} */
+
+input[type=submit]{
+    /* margin: 0.25em; */
+    display: block;
+    width: 250px;
+    padding: .8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1em;
+    text-align: center;
+    background: #131313;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+}
+
+form{
+    width:32em;
+} 
+
+.halfLabels{
+    width:50%;
+    margin-right:50%;
+}
+
+.fullLabels{
+    width:100%;
+}
+
+label{
+    color: #BEA384;
+}
+
+.palette{
+    font-family: sans-serif;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.paletteColor1{
+    height: 150px;
+    background: #131313;
+    position: relative;
+}
+.paletteColor2{
+    height: 150px;
+    background:#908272;
+    position: relative;
+}
+.paletteColor3{
+    height: 150px;
+    background: #908272;
+    position: relative;
+}
+.paletteColor4{
+    height: 150px;
+    background: #FFFFFF;
+    position: relative;
+    border: 1px solid #dddddd;    /* extra */
+}
+.paletteColor5{
+    height: 150px;
+    background: #C7C6C4;
+    position: relative;
+}
+
+.paletteDesc{
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    color: #ffffff;
+}
+
+.paletteInput{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-top: none;
+}
+
+.required{
+    margin: 1em;
+    padding: 1em;
+}
+
+.logo{
+    font-family: 'Italiana', serif;
+    font-size: 72px;
+}
+
+.navModule{
+    font-Size: 12px;
+}
+
+ .pages{
+    border-top: .17em solid #FFFFFF;
+}
+
+.pages .page{
+    margin-top: 1em;
+}
+
+/*
+.rightStuff{
+    padding-left: 1em;
+    padding-right: 1em;
+} */
+
+.navModule{
+    background: #131313;
+    color: #ffffff;
+}
+
+
