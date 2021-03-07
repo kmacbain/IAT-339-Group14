@@ -29,6 +29,7 @@ main {
 	/*How to force columns to stay the same width:
 	https://css-tricks.com/equal-width-columns-in-css-grid-are-kinda-weird/*/
     grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin:0;
 }
 
 .grid-col-2-12 { /*Column spacing for columns spanning from column 2 to 12*/
@@ -38,64 +39,7 @@ main {
 
 
 
-/*Footer navigation and newsletter*/
-
-.footer-grid {
-	display: grid;
-	grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: span 12;
-}
-
-.footer-grid .footer-grid-col{
-    grid-column: 2/ 12;
-}
-
-.footer_menu {
-	display:grid;
-	grid-column-start: 1;
-	grid-column-end: 11;
-	grid-template-columns: 1fr 1fr;
-}
-
-.contactUsParent{
-	grid-column: span 12;
-	display: flex;
-    justify-content: center;
-}
-
-@media screen and (max-width: 32em) {
-	.footer_menu {
-		grid-template-columns: 1fr;
-	}
-
-	#footer_menu_links {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-	}
-
-
-	#footer_menu_links li {
-		display:flex;
-		justify-content: center;
-	}
-
-	#footer_menu_links a {
-		margin-bottom: 1rem;
-		margin-right: 0;
-	}
-
-	#footer_menu_socials {
-		justify-content: right;
-	}
-		
-}
-
-
-
-
-/*Main navigation bar*/
+/*Main navigation bar: maintained by Kai-Lee*/
 
 .main-nav-grid {
 	display: grid;
@@ -121,12 +65,12 @@ main {
 		justify-content: center;
 	}
 
-	.site-main_nav {
+	.site-main-nav {
 		justify-content: center;
 		flex-direction: column;
 	}
 
-	ul.site-main_nav {
+	ul.site-main-nav {
 		align-items: center;
 	}
 
@@ -138,13 +82,6 @@ main {
 		margin-left: 0;
 		margin-top: 0.5rem;
 	}
-
-	.main-nav-title-items {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-	}
-
 }
 
 
@@ -169,11 +106,11 @@ main {
 }
 
 @media screen and (max-width: 43em) {
-	.text_overlay h2 {
+	.text-overlay h2 {
 		font-size: 1.5rem;
 	}
 
-	.text_overlay a {
+	.text-overlay a {
 		font-size: 0.75rem;
 	}
 }
@@ -181,28 +118,61 @@ main {
 
 
 
-.nav-row-container {
+/*Curated Collections: maintained by Kai-Lee*/
+
+.three-column-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	/*grid-column-start: 2;
-	grid-column-end:span 6;*/
-	/*grid-column: 2 / 6;*/
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
 }
 
-.main-nav-item {}
-
+.three-column-grid .three-column-grid-heading {
+	grid-column: 2 / 12;
 }
 
-@media screen and (max-width: 41em) {
-	.nav-row-container {
+.three-column-grid-items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 2 / 12;
+}
+
+@media screen and (max-width: 47em) {
+	.three-column-grid-items {
 		grid-template-columns: 1fr;
+	}
+
+	.three-column-items {
+		padding: 3rem 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.three-column-items img {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin-right: 0;
+		margin: 0;
+	}
+
+	.three-column-items h5 {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+
+	.three-column-items p {
+		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 }
 
 
 
-/*Product detail*/
 
+/*Product detail*/
 
 .product-grid {
 	display: grid;
@@ -224,65 +194,62 @@ main {
     grid-column: 2/ 12;
 }
 
-/*.product-thumbnail {
+
+
+
+/*Footer navigation and newsletter*/
+
+.footer-grid {
 	display: grid;
-	grid-template-columns: 1fr 4fr;
-
-}*/
-
-
-
-
-/*Curated Collections*/
-
-.three_column_grid {
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
     grid-column: span 12;
 }
 
-.three_column_grid .three-column-grid-heading {
-	grid-column: 2 / 12;
+.footer-grid .footer-grid-col{
+    grid-column: 2/ 12;
 }
 
-.three_column_grid_items {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column: 2 / 12;
+.footer-menu {
+	display:grid;
+	grid-column-start: 1;
+	grid-column-end: 11;
+	grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 47em) {
-	.three_column_grid_items {
+.newsletter {
+	grid-column: span 12;
+	display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 32em) {
+	.footer-menu {
 		grid-template-columns: 1fr;
 	}
 
-	.three_column_items {
-		padding: 3rem 0;
+	#footer-menu-links {
 		display: flex;
+		justify-content: center;
 		flex-direction: column;
 	}
 
-	.three_column_items img {
-		display: flex;
+	#footer-menu-links li {
+		display:flex;
 		justify-content: center;
-		padding: 0;
+	}
+
+	#footer-menu-links a {
+		margin-bottom: 1rem;
 		margin-right: 0;
-		margin: 0;
 	}
 
-	.three_column_items h5 {
-		display: flex;
-		justify-content: center;
-		margin-top: 1rem;
-	}
-
-	.three_column_items p {
-		display: flex;
-		justify-content: center;
-		width: 100%;
+	#footer-menu-socials {
+		justify-content: right;
 	}
 }
+
+
 
 
 /* para_left_and_picture_right module (most popular look) */
@@ -305,6 +272,8 @@ main {
 }
 
 
+
+
 /* para_right_and_picture_left module (new look) */
 
 .para_right_and_picture_left {
@@ -322,6 +291,9 @@ main {
 	grid-column: 7 / 12;
 	grid-template-rows: 1fr 1fr;
 }
+
+
+
 
 
 /* tripple image and description module (complete look book) */
