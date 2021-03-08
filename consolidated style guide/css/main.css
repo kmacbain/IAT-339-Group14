@@ -380,6 +380,7 @@ form.contact-us .grey-button {
 	margin:2rem;
 	border-width: 1px;
 	border-style: none;
+	outline: 1px solid rgba(255,255,255,0.5);
 }
 
 label.contact-us {
