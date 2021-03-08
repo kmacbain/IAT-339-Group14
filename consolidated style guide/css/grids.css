@@ -131,6 +131,7 @@ main {
 	grid-column: 2 / 12;
 }
 
+<<<<<<< HEAD
 .three-column-grid-items {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -139,6 +140,10 @@ main {
 
 @media screen and (max-width: 47em) {
 	.three-column-grid-items {
+=======
+@media screen and (max-width: 41em) {
+	.nav-row-container {
+>>>>>>> main
 		grid-template-columns: 1fr;
 	}
 
