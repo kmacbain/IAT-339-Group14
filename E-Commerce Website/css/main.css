@@ -99,6 +99,84 @@ ol {
 
 
 
+/*Styling for sections with white background: maintained by Kai-Lee*/
+
+.white-background {
+	background-color:white;
+	color:black;
+}
+
+
+
+
+/*Button styling: maintained by Kai-Lee*/
+
+.black-button {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:black;
+	color:#FFFFFF;
+	padding:1rem 2rem;
+	outline: 1px solid rgb(255,255,255);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.grey-button {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:#131313;
+	color:white;
+	padding:1rem 2rem;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.white-button {
+	font-family:'Mulish', Arial, sans-serif; 
+	background-color:white;
+	color:black;
+	padding:1rem 2rem;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-transform:uppercase;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.black-button:hover {
+	background-color:white;
+	color:black;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.grey-button:hover {
+	background-color:white;
+	color:black;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-decoration:none;
+	color:black;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+.white-button:hover {
+	background-color:#C7C6C4;
+	color:white;
+	outline: 1px solid rgba(0,0,0,0.5);
+	text-decoration:none;
+	display:inline-block;
+	margin-bottom:2.5rem;
+}
+
+
+
+
+
 /*Main navigation bar styling: maintained by Kai-Lee*/ 
 
 /* Help understanding why centering the text and removing the underline for my mainNav class wasn't working the way I expected and advice to target mainNav and mainNav anchor elements separately from my wife, Bri */
