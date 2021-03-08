@@ -312,13 +312,12 @@ main {
 
 .para_right_and_picture_left_left_side {
 	display: grid;
-	grid-column: 2 / 7;
+	grid-column: 1 / 7;
 }
 
 .para_right_and_picture_left_right_side {
 	display: grid;
-	grid-column: 7 / 12;
-	grid-template-rows: 1fr 1fr;
+	grid-column: 8 / 12;
 }
 
 
