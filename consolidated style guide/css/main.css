@@ -400,13 +400,59 @@ input.contact-us {
 	border-radius: 2px;
 }
 
-
-
-
-
-
-
 .clear{
 	padding: 0;
 	margin: 0;
+}
+
+.palette{
+    font-family: sans-serif;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.paletteColor1{
+    height: 150px;
+    background: #131313;
+    position: relative;
+}
+.paletteColor2{
+    height: 150px;
+    background:#908272;
+    position: relative;
+}
+.paletteColor3{
+    height: 150px;
+    background: #908272;
+    position: relative;
+}
+.paletteColor4{
+    height: 150px;
+    background: #FFFFFF;
+    position: relative;
+    border: 1px solid #dddddd;    /* extra */
+}
+.paletteColor5{
+    height: 150px;
+    background: #C7C6C4;
+    position: relative;
+}
+
+.paletteDesc{
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    color: #ffffff;
+}
+
+.paletteInput{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-top: none;
 }
