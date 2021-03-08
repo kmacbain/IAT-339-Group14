@@ -1,0 +1,33 @@
+
+
+
+/*Styleguide Styling*/
+
+h5 {
+	font-size:1.2rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+	margin-bottom: 0.5rem;
+	margin-top: 4rem;
+}
+
+#title h1 {
+	color:black;
+	margin-bottom: 2rem;
+}
+
+#title a {
+	color:black;
+}
+
+
+/*Styleguide Grids*/
+
+/*Black background*/
+
+#title-example {
+	display: grid;
+    grid-column: span 12;
+}
+

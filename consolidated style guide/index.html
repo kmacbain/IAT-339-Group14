@@ -1,0 +1,1638 @@
+<!doctype html>
+<!-- All code except those portions with comments indicating otherwise are from the SFU class IAT 339, taught by Paul Brokenshire, in the winter semester of 2021-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Style Library</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grids.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+</head>
+
+
+<body>
+    <!-- Styleguide Navigation section -->
+    <div class="grid-container">
+        <!-- Site Grid -->
+        <header id="title">
+            <h1>The Loft Style Guide</h1>
+            <nav class="main-nav">
+                <a href="index.html">Main</a>
+                <a href="wireframes.html">Wireframes</a>
+                <a href="citations.html">Citations</a>
+                <a href="conventions.html">Conventions</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Beginning of Interactive Elements section -->
+            <section class="grid-section">
+                <h2 class="grid-col-2-12">Basic Interactive Elements</h2>
+            </section>
+
+
+            <!-- In-text links: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <div class="grid-col-2-12">
+
+                    <h3>In Text Links</h3>
+                    <p>This is an example of an in text <a href="#" id="in-text-link">link</a>.</p>
+
+                    <h5>HTML Sample Code</h5>
+
+                    <pre><code>
+&#x3C;p&#x3E;This is an example of an in text &#x3C;a href=&#x22;#&#x22; id=&#x22;in-text-link&#x22;&#x3E;link&#x3C;/a&#x3E;.&#x3C;/p&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+a {
+    color:#908272;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#BEA384;
+    text-decoration:underline;
+}
+</code></pre>
+
+                </div> <!-- End of 2/12 grid column section -->
+            </section><!--  End of In-text links section -->
+
+
+
+
+
+            <!-- Call to action button: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <div class="grid-col-2-12">
+
+                    <h3>A Call To Action Button</h3>
+                    <!-- button code taken from IAT 339 HTML Basics assignment page on Canvas -->
+                    <a href="#" class="black-button">Explore New Collection</a>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;a href=&#x22;#&#x22; class=&#x22;black-button&#x22;&#x3E;Explore New Collection&#x3C;/a&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+.black-button {
+    font-family:'Mulish', Arial, sans-serif; 
+    background-color:black;
+    color:#FFFFFF;
+    padding:1rem 2rem;
+    outline: 1px solid rgb(255,255,255);
+    text-transform:uppercase;
+    display:inline-block;
+    margin-bottom:2.5rem;
+}
+
+.black-button:hover {
+    background-color:white;
+    color:black;
+    outline: 1px solid rgba(0,0,0,0.5);
+    text-decoration:none;
+    color:black;
+    display:inline-block;
+    margin-bottom:2.5rem;
+}
+</code></pre>
+                </div> <!-- End of 2/12 grid column section -->
+            </section> <!--  End of Call to action section -->
+
+
+
+
+            <!-- Submit and Reset button: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <div class="grid-col-2-12">
+
+                    <h3>A Submit & Reset Button</h3>
+                    <a href="#" class="grey-button">Submit</a>
+                    <a href="#" class="white-button">Reset</a>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;a href=&#x22;#&#x22; class=&#x22;grey-button&#x22;&#x3E;Submit&#x3C;/a&#x3E;
+&#x3C;a href=&#x22;#&#x22; class=&#x22;white-button&#x22;&#x3E;Reset&#x3C;/a&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+.grey-button {
+    font-family:'Mulish', Arial, sans-serif; 
+    background-color:#131313;
+    color:white;
+    padding:1rem 2rem;
+    outline: 1px solid rgba(0,0,0,0.5);
+    text-transform:uppercase;
+    display:inline-block;
+    margin-bottom:2.5rem;
+}
+
+.white-button {
+    font-family:'Mulish', Arial, sans-serif; 
+    background-color:white;
+    color:black;
+    padding:1rem 2rem;
+    outline: 1px solid rgba(0,0,0,0.5);
+    text-transform:uppercase;
+    display:inline-block;
+    margin-bottom:2.5rem;
+}
+
+.grey-button:hover {
+    background-color:white;
+    color:black;
+    outline: 1px solid rgba(0,0,0,0.5);
+    text-decoration:none;
+    color:black;
+    display:inline-block;
+    margin-bottom:2.5rem;
+}
+
+.white-button:hover {
+    background-color:#C7C6C4;
+    color:white;
+    outline: 1px solid rgba(0,0,0,0.5);
+    text-decoration:none;
+    display:inline-block;
+    margin-bottom:2.5rem;
+}
+
+</code></pre>
+
+                </div> <!-- End of 2/12 grid column section -->
+            </section> <!-- End of Submit and Reset buttons section -->
+
+
+
+
+            <!-- Text Input Field: maintained by xx -->
+            <section class="grid-section">
+                <div class="grid-col-2-12">
+
+                    <h3>A Text Input Field and Label</h3>
+                    <form>
+                        <label for="first_name">First Name: </label>
+                        <input class="half_labels" type="text" id="first_name" name="first_name">
+                        <label for="last_name">Last Name: </label>
+                        <input class="half_labels" type="text" id="last_name" name="last_name">
+                    </form>
+
+                    <pre><code>
+&lt;form&gt;
+    &lt;label for="firstName"&gt;First Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="firstName" name="firstName"&gt;
+    &lt;label for="lastName"&gt;Last Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="lastName" name="lastName"&gt;
+&lt;/form&gt;</code></pre>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&lt;div class="contactUsParent"&gt;
+    &lt;form action="#" class="contactUs"&gt;
+        &lt;label for="email" class="contactUs"&gt;Subscribe to our newsletter&lt;/label&gt;
+        &lt;!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once
+        the user types comes from my wife, Bri--&gt;
+        &lt;input type="text" id="email" name="email" placeholder="EMAIL" class="contactUs"&gt;
+        &lt;a href="#" class="greyButton"&gt;Subscribe&lt;/a&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+                </div> <!-- End of 2/12 grid column section -->
+            </section> <!-- End of Text Input Field section -->
+
+
+
+
+            <!-- Website Color Swatches: maintained by xx -->
+            <section class="grid-section">
+                <div class="grid-col-2-12">
+
+                    <h3>Website color swatches</h3>
+                    <div class="palette">
+                        <div class="palette_item">
+                            <div class="palette_color1">
+                                <div class="palette_desc">Charcoal</div>
+                            </div>
+                            <input type="text" class="palette_input" value="#131313: rgb(19,19,19)">
+                        </div>
+                        <div class="palette_item">
+                            <div class="palette_color2">
+                                <div class="palette_desc">Beige</div>
+                            </div>
+                            <input type="text" class="palette_input" value="#908272: rgb(144,130,114)">
+                        </div>
+                        <div class="palette_item">
+                            <div class="palette_color3">
+                                <div class="palette_desc">Light Beige</div>
+                            </div>
+                            <input type="text" class="palette_input" value="#BEA384: rgb(190,163,132)">
+                        </div>
+                        <div class="palette_item">
+                            <div class="palette_color4">
+                                <div class="palette_desc">White</div>
+                            </div>
+                            <input type="text" class="palette_input" value="#FFFFFF: rgb(255,255,255)">
+                        </div>
+                        <div class="palette_item">
+                            <div class="palette_color5">
+                                <div class="palette_desc">Light Grey</div>
+                            </div>
+                            <input type="text" class="palette_input" value="#C7C6C4: rgb(199,198,196)">
+                        </div>
+                    </div>
+
+
+                    <!-- update to new edited html -->
+                    <pre><code>
+&lt;div class="palette"&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor1"&gt;
+            &lt;div class="paletteDesc"&gt;Charcoal&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#131313: rgb(19,19,19)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor2"&gt;
+            &lt;div class="paletteDesc"&gt;Beige&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#908272: rgb(144,130,114)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+         &lt;div class="paletteColor3"&gt;
+            &lt;div class="paletteDesc"&gt;Light Beige&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#BEA384: rgb(190,163,132)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor4"&gt;
+            &lt;div class="paletteDesc"&gt;White&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#FFFFFF: rgb(255,255,255)"&gt;
+    &lt;/div&gt;
+    &lt;div class="paletteItem"&gt;
+        &lt;div class="paletteColor5"&gt;
+            &lt;div class="paletteDesc"&gt;Light Grey&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="paletteInput" value="#C7C6C4: rgb(199,198,196)"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                </div> <!-- End of 2/12 grid column section -->
+            </section> <!-- End of Website Color Swatches section -->
+
+
+
+
+            <!-- Text Styling: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <div class="grid-col-2-12">
+                    <h3>TEXT STYLING</h3>
+
+                    <p>Italiana is used for the text logo, while Cinzel is used for headings and Mulish used for all
+                        other text, links, and buttons.</p>
+
+                    <h4>TITLE/LOGO</h4>
+                </div>
+
+
+                <div class="black-background" id="title-example">
+                    <h1>ITALIANA Regular 64</h1>
+                </div>
+
+                <div class="grid-col-2-12">
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;h1&#x3E;ITALIANA Regular 64&#x3C;/h1&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+h1 {
+    font-size:4rem;
+    font-family:'Italiana', Times New Roman, serif;
+    color:#FFFFFF;
+    margin-bottom:0;
+    /*How to center align text taken from:
+    https://www.w3schools.com/css/css_align.asp*/
+    text-align:center;
+    font-weight:400;
+    line-height: 0.8;
+}
+</code></pre>
+
+                    <h4>HEADINGS</h4>
+
+                    <h5>HEADING 2</h5>
+                    <h2>CINZEL Light 36</h2>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;h2&#x3E;CINZEL Light 36&#x3C;/h2&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+h2 {
+    font-size:3rem;
+    font-family:'Cinzel', Times New Roman, serif;
+    color:#908272;
+    font-weight:400;
+    margin-bottom: 0.5rem;
+    margin-top:4rem;
+}
+</code></pre>
+
+                    <h5>HEADING 3</h5>
+                    <h3>CINZEL Regular 24</h3>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;h3&#x3E;CINZEL Regular 24&#x3C;/h3&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+h3 {
+    font-size:2rem;
+    font-family:'Cinzel', Times New Roman, serif;
+    color:#908272;
+    font-weight:400;
+}
+</code></pre>
+
+                    <h5>HEADING 4</h5>
+                    <h4>CINZEL Regular 18</h4>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;h4&#x3E;CINZEL Regular 18&#x3C;/h4&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+h4 {
+    font-size:1.5rem;
+    font-family:'Cinzel', Times New Roman, serif;
+    color:#908272;
+    font-weight:400;
+}
+</code></pre>
+
+
+                    <h4>BODY</h4>
+                    <p>Mulish Regular 12</p>
+                    <h4>SAMPLE PARAGRAPH</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo cursus lectus ut
+                        malesuada. Integer ultrices et ex at gravida. Duis fringilla fermentum mauris. Proin neque odio,
+                        rutrum et rhoncus sit amet, euismod at tortor. Vivamus diam magna, malesuada ut sagittis et,
+                        mollis in erat.</p>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo cursus lectus ut
+malesuada. Integer ultrices et ex at gravida. Duis fringilla fermentum mauris. Proin neque odio, rutrum et
+rhoncus sit amet, euismod at tortor. Vivamus diam magna, malesuada ut sagittis et, mollis in erat.&#x3C;/p&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+p {
+    font-family:'Mulish', Arial, sans-serif;
+    font-size:1rem;
+    font-weight:lighter;
+}
+</code></pre>
+
+
+                    <h4>BULLETED LIST</h4>
+                    <!-- How to make bulleted lists taken from:
+                        https://www.w3schools.com/html/html_lists.asp -->
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Maecenas commodo cursus lectus ut malesuada</li>
+                        <li>Integer ultrices et ex at gravida</li>
+                        <li>Duis fringilla fermentum mauris</li>
+                    </ul>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+    &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+    &lt;li&gt;Maecenas commodo cursus lectus ut malesuada&lt;/li&gt;
+    &lt;li&gt;Integer ultrices et ex at gravida&lt;/li&gt;
+    &lt;li&gt;Duis fringilla fermentum mauris&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+ul {
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:normal;
+}
+</code></pre>
+
+                    <h4>NUMBERED LIST</h4>
+                    <!-- How to make bulleted lists taken from:
+                        https://www.w3schools.com/html/html_lists.asp -->
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Maecenas commodo cursus lectus ut malesuada</li>
+                        <li>Integer ultrices et ex at gravida</li>
+                        <li>Duis fringilla fermentum mauris</li>
+                    </ol>
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+    &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+    &lt;li&gt;Maecenas commodo cursus lectus ut malesuada&lt;/li&gt;
+    &lt;li&gt;Integer ultrices et ex at gravida&lt;/li&gt;
+    &lt;li&gt;Duis fringilla fermentum mauris&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+ol {
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:normal;
+}
+</code></pre>
+
+                </div> <!-- End of 2/12 grid column section -->
+            </section> <!-- End of Text Styling section -->
+
+
+
+
+            <!-- Beginning of Modular Elements section -->
+            <section class="grid-section">
+                <h2 class="grid-col-2-12">Modular Pattern Elements</h2>
+            </section>
+
+
+            <!-- Navigation Bar: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <h3 class="grid-col-2-12">Navigation Bar</h3>
+
+                <div class="main-nav-grid black-background">
+                    <div class="main-nav-title-items">
+                        <div id="site-title">
+                            <h1>THE LOFT</h1>
+                        </div>
+                        <!-- Navigation bar tutorials:
+                            https://www.w3schools.com/css/css_navbar.asp
+                            https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+                        <div id="site-main-nav-toolbar">
+                            <ul class="site-main-nav">
+
+                                <li>
+                                    <!-- Tutorial for search bar:
+                                        https://youtu.be/FVH-tXVRErg -->
+                                    <div class="search-bar">
+                                        <input type="text" class="search-bar" placeholder="Search">
+
+                                        <div class="search-button">
+                                            <!-- How to make the submit button an image taken from:
+                                                https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
+                                            <input type="image" class="search-button" src="img/icons/Search-Icon.png"
+                                                alt="Search icon">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><a href="#" class="sign-in">Sign In</a></li>
+                                <li><a href="#"><img src="img/icons/Cart-Icon.png" alt="Cart icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main-nav-title-items">
+                        <hr>
+                    </div>
+
+                    <div class="main-nav-title-items">
+                        <nav class="main-nav">
+                            <a href="Office.html">Office</a>
+                            <a href="Living.html">Living</a>
+                            <a href="Bedroom.html">Bedroom</a>
+                            <a href="Dining.html">Dining</a>
+                            <a href="NewArrivals.html">New Arrivals</a>
+                            <a href="Lookbook.html">Lookbook</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="grid-col-2-12">
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;!-- Navigation Bar: maintained by Kai-Lee --&#x3E;
+&#x3C;section class=&#x22;grid-section&#x22;&#x3E;
+    &#x3C;h3 class=&#x22;grid-col-2-12&#x22;&#x3E;Navigation Bar&#x3C;/h3&#x3E;
+
+    &#x3C;div class=&#x22;main-nav-grid black-background&#x22;&#x3E;
+        &#x3C;div class=&#x22;main-nav-title-items&#x22;&#x3E;
+            &#x3C;div id=&#x22;site-title&#x22;&#x3E;&#x3C;h1&#x3E;THE LOFT&#x3C;/h1&#x3E;&#x3C;/div&#x3E;
+            &#x3C;!-- Navigation bar tutorials:
+            https://www.w3schools.com/css/css_navbar.asp
+            https://www.w3schools.com/css/css_navbar_horizontal.asp--&#x3E;
+            &#x3C;div id=&#x22;site-main-nav-toolbar&#x22;&#x3E;
+                &#x3C;ul class=&#x22;site-main-nav&#x22;&#x3E;
+
+                    &#x3C;li&#x3E;
+                        &#x3C;!-- Tutorial for search bar:
+                        https://youtu.be/FVH-tXVRErg --&#x3E;
+                        &#x3C;div class=&#x22;search-bar&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;search-bar&#x22; placeholder=&#x22;Search&#x22;&#x3E;
+
+                            &#x3C;div class=&#x22;search-button&#x22;&#x3E;
+                                &#x3C;!-- How to make the submit button an image taken from:
+                                https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button --&#x3E;
+                                &#x3C;input type=&#x22;image&#x22; class=&#x22;search-button&#x22; src=&#x22;img/icons/Search-Icon.png&#x22; alt=&#x22;Search icon&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+
+                        &#x3C;/div&#x3E;
+                    &#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;sign-in&#x22;&#x3E;Sign In&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;img src=&#x22;img/icons/Cart-Icon.png&#x22; alt=&#x22;Cart icon&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;main-nav-title-items&#x22;&#x3E;&#x3C;hr&#x3E;&#x3C;/div&#x3E;
+        
+        &#x3C;div class=&#x22;main-nav-title-items&#x22;&#x3E;
+            &#x3C;nav class=&#x22;main-nav&#x22;&#x3E;
+                &#x3C;a href=&#x22;Office.html&#x22;&#x3E;Office&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;Living.html&#x22;&#x3E;Living&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;Bedroom.html&#x22;&#x3E;Bedroom&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;Dining.html&#x22;&#x3E;Dining&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;NewArrivals.html&#x22;&#x3E;New Arrivals&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;Lookbook.html&#x22;&#x3E;Lookbook&#x3C;/a&#x3E;
+            &#x3C;/nav&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+/*Main navigation bar styling: maintained by Kai-Lee*/ 
+
+/* Help understanding why centering the text and removing the underline for my mainNav class wasn't working the
+way I expected and advice to target mainNav and mainNav anchor elements separately from my wife, Bri */
+.main-nav {
+    text-align:center;
+}
+
+.main-nav a {
+    padding:0.5em 2em;
+    display:inline-block;
+    text-decoration:none;
+    color:#FFFFFF;
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:400;
+    text-transform:uppercase;
+    font-size:0.65rem;
+}
+
+.main-nav a:hover {
+    text-decoration:underline;
+}
+
+ul.site-main-nav {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:normal;
+    font-size:0.75rem;
+    text-align:right;
+    display: flex;
+    align-items: flex-end;
+}
+
+.site-main-nav li {
+    display:inline;
+    margin-left: 1rem;
+}
+
+a.sign-in {
+    color:white;
+    text-decoration:none;
+    color:#FFFFFF;
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:400;
+    text-transform:uppercase;
+    font-size:0.65rem;
+}
+
+a.sign-in:hover {
+    color:#908272;
+}
+
+
+.search-bar {
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:normal;
+    font-size:0.75rem;
+    display:flex;
+    align-items: flex-end;
+    margin-right: 0.5rem;
+}
+
+input.search-bar {
+    background-color:#131313;
+    text-align: right;
+    border:0;
+}
+
+input.search-bar:focus {
+    /*Advice to use outline tag instead of border for input box from my wife, Bri MacBain*/
+    outline: none;
+    border:1px solid white;
+}
+
+input.search-button:focus {
+    outline: none;
+    border:1px solid white;
+}
+
+#site-main-nav-toolbar {
+    /*Suggestion to use the position property to align the title toolbar elements from my wife, Bri MacBain.
+    Tutorial for how to use this property from: https://css-tricks.com/almanac/properties/p/position/
+    (parent elment below in the main_nav_title_items class*/
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#site-title {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav-title-items {
+    position: relative;
+}
+</code></pre>
+
+                    <h5>CSS Sample Grid Code</h5>
+                    <pre><code>
+/*Main navigation bar: maintained by Kai-Lee*/
+
+.main-nav-grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
+
+.main-nav-grid .main-nav-title-items {
+    grid-column: 2 / 12;
+}
+
+@media screen and (max-width: 57em) {
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #site-main-nav-toolbar {
+        /*Advice for using the inherit value for the position property so that flex tags can be used on the
+        toolbar elemnts which I had previously set to an absolute value from my wife, Bri*/
+        position: inherit;
+        justify-content: center;
+    }
+
+    .site-main-nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    ul.site-main-nav {
+        align-items: center;
+    }
+
+    input.search-bar {
+        border:1px solid white;
+    }
+
+    .site-main-nav li {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+}
+</code></pre>
+
+                </div><!-- End of 2/12 grid column section -->
+            </section> <!-- End of Main Nav section -->
+
+
+
+            <!-- Curated Collection Module: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <!-- Style library grid container -->
+                <h3 class="grid-col-2-12">Curated Collection</h3>
+
+                <!-- Three column collection module -->
+                <div class="three-column-grid black-background">
+                    <!-- 12 column, 2 row grid -->
+
+                    <div class="three-column-grid-heading">
+                        <!-- First row heading -->
+                        <h4>Get Inspired by these Curated Collections</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</p>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="three-column-grid-items">
+                        <div class="three-column-items">
+                            <img src="img/curated-collection/classic-collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Classic</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+                        <div class="three-column-items">
+                            <img src="img/curated-collection/vintage-collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Vintage</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+                        <div class="three-column-items">
+                            <img src="img/curated-collection/modern-collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Modern</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid-col-2-12">
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;section class=&#x22;grid-section&#x22;&#x3E; &#x3C;!-- Style library grid container --&#x3E;
+&#x3C;h3 class=&#x22;grid-col-2-12&#x22;&#x3E;Curated Collection&#x3C;/h3&#x3E;
+
+&#x3C;!-- Three column collection module --&#x3E;
+&#x3C;div class=&#x22;three-column-grid black-background&#x22;&#x3E; &#x3C;!-- 12 column, 2 row grid --&#x3E;
+
+    &#x3C;div class=&#x22;three-column-grid-heading&#x22;&#x3E; &#x3C;!-- First row heading --&#x3E;
+        &#x3C;h4&#x3E;Get Inspired by these Curated Collections&#x3C;/h4&#x3E;
+        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    
+    &#x3C;!-- Three column item collection, spans column 2 to 12 --&#x3E;
+    &#x3C;div class=&#x22;three-column-grid-items&#x22;&#x3E; 
+        &#x3C;div class=&#x22;three-column-items&#x22;&#x3E;
+            &#x3C;img src=&#x22;img/curated-collection/classic-collection.png&#x22; alt=&#x22;Room decorated with classic industrial interior design&#x22;&#x3E;
+            &#x3C;h5&#x3E;Classic&#x3C;/h5&#x3E;
+            &#x3C;p&#x3E;Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;three-column-items&#x22;&#x3E;
+            &#x3C;img src=&#x22;img/curated-collection/vintage-collection.png&#x22; alt=&#x22;Room decorated with classic industrial interior design&#x22;&#x3E;
+            &#x3C;h5&#x3E;Vintage&#x3C;/h5&#x3E;
+            &#x3C;p&#x3E;Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;three-column-items&#x22;&#x3E;
+            &#x3C;img src=&#x22;img/curated-collection/modern-collection.png&#x22; alt=&#x22;Room decorated with classic industrial interior design&#x22;&#x3E;
+            &#x3C;h5&#x3E;Modern&#x3C;/h5&#x3E;
+            &#x3C;p&#x3E;Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+/*Curated Collections styling: maintained by Kai-Lee*/
+
+.three-column-grid-items {
+    grid-column-gap: 1rem
+}
+
+.three-column-items h5 {
+    width:auto;
+    margin:0;
+}
+</code></pre>
+
+                    <h5>CSS Sample Grid Code</h5>
+                    <pre><code>
+/*Curated Collections: maintained by Kai-Lee*/
+
+.three-column-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
+
+.three-column-grid .three-column-grid-heading {
+    grid-column: 2 / 12;
+}
+
+.three-column-grid-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2 / 12;
+}
+
+@media screen and (max-width: 54em) {
+    .three-column-grid-items {
+        grid-template-columns: 1fr;
+    }
+
+    .three-column-items {
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three-column-items img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 0;
+        margin: 0;
+    }
+
+    .three-column-items h5 {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .three-column-items p {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+</code></pre>
+
+                </div><!-- End of 2/12 grid column section -->
+            </section> <!-- End of Curated Collection section -->
+
+
+
+
+            <!-- Product Detail: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <h3 class="grid-col-2-12">Detalied View Of Single Product</h3>
+
+                <div class="product-grid">
+                    <div class="product-grid-col-thumb">
+                        <img class="product-grid-col-thumb" src="img/productDetail/tableThumb1.png"
+                            alt="Front view of copper and walnut table">
+                        <img class="product-grid-col-thumb" src="img/productDetail/tableThumb2.png"
+                            alt="Angle view of copper and walnut table">
+                        <img class="product-grid-col-thumb" src="img/productDetail/tableThumb3.png"
+                            alt="Close-up detail of table leg joint from above">
+                        <img class="product-grid-col-thumb" src="img/productDetail/tableThumb4.png"
+                            alt="Close-up detail of table leg joint from the front">
+                    </div>
+
+
+                    <img class="product-grid-col-feature" src="img/productDetail/tableMain.png"
+                        alt="Main image of copper and walnut table against a white background">
+
+
+
+
+                    <div class="product-grid-col">
+                        <h3>Description</h3>
+                    </div>
+                </div>
+
+
+            </section> <!-- End of Product Detail section -->
+
+
+
+            <!-- Grid Structure Module: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <!-- Style library grid container -->
+                <h3 class="grid-col-2-12">Grid Structure</h3>
+
+
+
+                <div class="grid-col-2-12">1</div>
+
+                <div class="grid-col-2-12">2</div>
+
+                <div class="grid-col-2-12">3</div>
+
+                <div class="grid-col-2-12">4</div>
+
+                <div class="grid-col-2-12">5</div>
+
+                <div class="grid-col-2-12">6</div>
+
+                <div class="grid-col-2-12">7</div>
+
+                <div class="grid-col-2-12">8</div>
+
+
+
+            </section> <!-- End of Grid Structure section -->
+
+            <!-- derek code -->
+            <section id="grid_layout">
+                <h3>Grid Structure</h3>
+                <div class="grid_container">
+                    <header>
+                        <h4>Header Area</h4>
+                    </header>
+                    <div class="main">
+                        <h4>Image Area</h4>
+                    </div>
+                    <aside class="sidebar">
+                        <h4>Details Area</h4>
+                    </aside>
+                    <div class="card_row_container">
+                        <section class="product_card">
+                            <h4>Product Card Item</h4>
+                        </section>
+                        <section class="product_card">
+                            <h4>Product Card Item</h4>
+                        </section>
+                        <section class="product_card">
+                            <h4>Product Card Item</h4>
+                        </section>
+                    </div>
+                    <div class="card_row-_ontainer2">
+                        <section class="product_card2">
+                            <h4>Item Description</h4>
+                        </section>
+                        <section class="product_card2">
+                            <h4>Item price and activity</h4>
+                        </section>
+                    </div>
+                    <footer>
+                        <h4>Footer Content Area</h4>
+                    </footer>
+                </div>
+                <div class="reference_code">
+                    <h5>Sample Code:</h5>
+                    <code>
+                                    &lt;div class="grid-container"&gt;<br>
+                                    &lt;header&gt;<br>
+                                    &lt;h4&gt;Header Area&lt;/h4&gt;<br>
+                                    &lt;/header&gt;<br>
+                                    &lt;div class="main"&gt;<br>
+                                    &lt;h4&gt;Image Area&lt;/h4&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;aside class="sidebar"&gt;&lt;h4&gt;Details Area&lt;/h4&gt;&lt;/aside&gt;<br>
+                                    &lt;div class="card-row-container"&gt;<br>
+                                    &lt;section class="product-card"&gt;&lt;h4&gt;Product Card Item&lt;/h4&gt;&lt;/section&gt;<br>
+                                    &lt;section class="product-card"&gt;&lt;h4&gt;Product Card Item&lt;/h4&gt;&lt;/section&gt;<br>
+                                    &lt;section class="product-card"&gt;&lt;h4&gt;Product Card Item&lt;/h4&gt;&lt;/section&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;div class="card-row-container2"&gt;<br>
+                                    &lt;section class="product-card2"&gt;&lt;h4&gt;Item Description&lt;/h4&gt;&lt;/section&gt;<br>
+                                    &lt;section class="product-card2"&gt;&lt;h4&gt;Item price and activity&lt;/h4&gt;&lt;/section&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;footer&gt;&lt;h4&gt;Footer Content Area&lt;/h4&gt;&lt;/footer&gt;<br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                </div>
+            </section>
+
+
+
+
+
+            <h3>The Customer Service Input </h3>
+            <form>
+                <label for="first_name2">First Name: </label>
+                <input class="half_labels" type="text" id="first_name2" name="first_name2">
+
+                <label for="last_name2">Last Name: </label>
+                <input class="half_labels" type="text" id="last_name2" name="last_name2">
+                <!-- had to change the email ID fix in css or wherever needed -->
+                <label for="email">E-Mail Adress: </label>
+                <input class="full_labels" type="text" id="email_customer_service" name="email">
+
+                <label for="phone_number">Phone Number: </label>
+                <input class="full_labels" type="text" id="phone_number" name="phone_number">
+
+                <label for="address">Address: </label>
+                <input class="full_labels" type="text" id="address" name="address">
+
+                <label for="city">City: </label>
+                <input class="full_labels" type="text" id="city" name="city">
+
+                <label for="country">Country: </label>
+                <input class="full_labels" type="text" id="country" name="country">
+
+                <label for="postal_or_zip">Postal or Zip Code: </label>
+                <input class="full_labels" type="text" id="postal_or_zip" name="postal_or_zip">
+            </form>
+
+            <pre><code>
+&lt;form&gt;
+    &lt;label for="firstName"&gt;First Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="firstName" name="firstName"&gt;
+                
+    &lt;label for="lastName"&gt;Last Name: &lt;/label&gt;
+    &lt;input class="halfLabels" type="text" id="lastName" name="lastName"&gt;
+                
+    &lt;label for="email"&gt;E-Mail Adress: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="email" name="email"&gt;
+                
+    &lt;label for="phoneNumber"&gt;Phone Number: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="phoneNumber" name="phoneNumber"&gt;
+                
+    &lt;label for="address"&gt;Address: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="address" name="address"&gt;
+                
+    &lt;label for="city"&gt;City: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="city" name="city"&gt;
+                
+    &lt;label for="country"&gt;Country: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="country" name="country"&gt;
+
+    &lt;label for="postalOrZip"&gt;Postal or Zip Code: &lt;/label&gt;
+    &lt;input class="fullLabels" type="text" id="postalOrZip" name="postalOrZip"&gt;
+&lt;/form&gt;
+</code></pre>
+
+
+            <!-- derek code -->
+            <section id="shopping_cart">
+                <h3>Shopping Cart Module</h3>
+                <p>This is the shopping cart module. It displays what the product is, the product information, the
+                    price, and how many do you intend to buy. There is a convient remove item button on the bottom
+                    right. It would display in a list with all the items that you have in your cart.</p>
+                <p>This shopping cart module is designed and maintained by Derek Liu</p>
+                <h4>Rendered Element</h4>
+                <div class="shopping_container">
+                    <div class="image_cart">
+                        <img src="img/product1.png" alt="product_picture">
+                    </div>
+                    <div class="shopping_cart">
+                        <ul>
+                            <li class="li1">
+                                <h3>COPPER AND WALNUT DESK</h3>
+                            </li>
+                            <li class="li2">
+                                <h3><label>Quantity</label><a href="">-</a><input class="quantity_number2" type="number"
+                                        name="product_quantity" value="1"><a href="">+</a></h3>
+                            </li>
+                            <li class="li3">
+                                <h3>$8,000</h3>
+                            </li>
+                        </ul>
+                        <h4>DESCRIPTION</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh
+                            eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et
+                            tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis
+                            mauris ligula vel augue.</p>
+                        <ul>
+                            <li class="li4">65” W x 9” L x 60” H</li>
+                            <li class="li5"><input class="remove_item" type="button" name="remove_item" value="REMOVE">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reference_code">
+                    <h5>Sample Code:</h5>
+                    <code>
+                                &lt;div class="shoppingcontainer"&gt;<br>
+                                &lt;div class="imagecart"&gt;<br>
+                                &lt;img src="img/product1.png" alt="productpicture"&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div class="shoppingcart"&gt;<br>
+                                &lt;ul&gt;<br>
+                                &lt;li class="li1"&gt;&lt;h3&gt;COPPER AND WALNUT DESK&lt;/h3&gt;&lt;/li&gt;<br>
+                                &lt;li class="li2"&gt;&lt;h3&gt;&lt;label&gt;Quantity&lt;/label&gt;&lt;a href=""&gt;-&lt;/a&gt;&lt;input type="number" name="productquantity" value="1"&gt;&lt;a href=""&gt;+&lt;/a&gt;&lt;/h3&gt;&lt;/li&gt;<br>
+                                &lt;li class="li3"&gt;&lt;h3&gt;$8000&lt;/h3&gt;&lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                                <br>
+                                &lt;h4&gt;Description&lt;/h4&gt;<br>
+                                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis mauris ligula vel augue.&lt;/p&gt;<br>
+                                &lt;ul&gt;<br>
+                                &lt;li class="li4"&gt;&lt;h3&gt;65” W x 9” L x 60” H&lt;/h3&gt;&lt;/li&gt;<br>
+                                &lt;li class="li5"&gt;&lt;h3&gt;&lt;input class="removeitem" type="button" name="removeitem" value="REMOVE"&gt;&lt;/h3&gt;&lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                                &lt;/div&gt;<br>
+                            </code>
+                </div>
+            </section>
+
+
+
+            <!-- Hero Image Module: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <!-- Styleguide section grid -->
+                <h3 class="grid-col-2-12">HERO NEW ARRIVALS MODULE</h3>
+
+                <div class="hero-grid">
+                    <!-- Hero image grid -->
+                    <div class="hero-image">
+                        <picture>
+                            <!-- Hero image -->
+                            <img src="img/home/newCollection.png"
+                                alt="Hero image of new Industrial furniture in a large loft apartment">
+                        </picture>
+                    </div>
+                    <div class="hero-text">
+                        <!-- Text and button overlay -->
+                        <h2>The latest leather sofa sets</h2>
+                        <a href="NewArrivals.html" class="black-button">Explore New Collection</a>
+                    </div>
+                </div>
+
+
+
+                <div class="grid-col-2-12">
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;div class=&#x22;hero-grid&#x22;&#x3E; &#x3C;!-- Hero image grid --&#x3E;
+&#x3C;div class=&#x22;hero-image&#x22;&#x3E;
+    &#x3C;picture&#x3E; &#x3C;!-- Hero image --&#x3E;
+        &#x3C;img src=&#x22;img/home/newCollection.png&#x22; alt=&#x22;Hero image of new Industrial furniture in a large loft apartment&#x22;&#x3E;
+    &#x3C;/picture&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;hero-text&#x22;&#x3E; &#x3C;!-- Text and button overlay --&#x3E;
+        &#x3C;h2&#x3E;The latest leather sofa sets&#x3C;/h2&#x3E;
+        &#x3C;a href=&#x22;NewArrivals.html&#x22; class=&#x22;black-button&#x22;&#x3E;Explore New Collection&#x3C;/a&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+    </code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+/*Hero image styling: maintained by Kai-Lee*/
+
+.hero-image {
+    margin-bottom:1rem;
+}
+
+.hero-text {
+    position: absolute;
+    width:50%;
+    max-width:100rem;
+    bottom: 5rem;
+}
+
+.hero-text h2 {
+    color:#FFFFFF;
+}
+</code></pre>
+
+                    <h5>CSS Sample Grid Code</h5>
+                    <pre><code>
+/*Hero Image: maintained by Kai-Lee*/
+
+.hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
+
+.hero-image {
+    grid-column: span 12;
+}
+
+.hero-text {
+    grid-column: 2 / 12;
+}
+
+@media screen and (max-width: 43em) {
+    .text-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-overlay a {
+        font-size: 0.75rem;
+    }
+}
+</code></pre>
+
+                </div><!-- End of 2/12 grid column section -->
+            </section> <!-- End of Hero Image section -->
+
+
+
+
+            <!-- Footer Menu Module: maintained by Kai-Lee -->
+            <section class="grid-section">
+                <h4 class="grid-col-2-12">Footer Menu and Newsletter</h4>
+
+                <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
+                <div class="black-background footer-grid">
+
+                    <div class="footer-grid-col">
+                        <hr>
+                    </div>
+
+                    <div class="footer-grid-col">
+                        <div class="footer-menu">
+                            <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
+                            <div>
+                                <ul id="footer-menu-links">
+                                    <li><a href="#" class="about">About</a></li>
+                                    <li><a href="#" class="customer-service">Customer Service</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul id="footer-menu-socials">
+                                    <li><a href="#"><img src="img/icons/instagram-icon.png" alt="Instagram icon"></a>
+                                    </li>
+                                    <li><a href="#"><img src="img/icons/facebook-icon.png" alt="Cart icon"></a></li>
+                                    <li><a href="#"><img src="img/icons/twitter-icon.png" alt="Twitter icon"></a></li>
+                                    <li><a href="#"><img src="img/icons/pinterest-icon.png" alt="Pinterest icon"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="newsletter">
+                        <form action="#" class="contact-us">
+                            <label for="email" class="contact-us">Subscribe to our newsletter</label>
+                            <!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
+                            <input type="text" id="email" name="email" placeholder="EMAIL" class="contact-us">
+                            <!-- HTML to fix submit button error given by validator taken from:
+                                    https://www.w3schools.com/html/html_forms.asp -->
+                            <input type="submit" value="Subscribe" class="grey-button">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="grid-col-2-12">
+
+                    <h5>HTML Sample Code</h5>
+                    <pre><code>
+&#x3C;!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp --&#x3E;
+&#x3C;div class=&#x22;black-background footer-grid&#x22;&#x3E;
+
+    &#x3C;div class=&#x22;footer-grid-col&#x22;&#x3E;&#x3C;hr&#x3E;&#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;footer-grid-col&#x22;&#x3E;
+        &#x3C;div class=&#x22;footer-menu&#x22;&#x3E;
+            &#x3C;!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&#x26;ab_channel=TheNetNinja --&#x3E;
+            &#x3C;div &#x3E;
+                &#x3C;ul id=&#x22;footer-menu-links&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;about&#x22;&#x3E;About&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;customer-service&#x22;&#x3E;Customer Service&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div&#x3E;
+                &#x3C;ul id=&#x22;footer-menu-socials&#x22;&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;img src=&#x22;img/icons/instagram-icon.png&#x22; alt=&#x22;Instagram icon&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;img src=&#x22;img/icons/facebook-icon.png&#x22; alt=&#x22;Cart icon&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;img src=&#x22;img/icons/twitter-icon.png&#x22; alt=&#x22;Twitter icon&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;img src=&#x22;img/icons/pinterest-icon.png&#x22; alt=&#x22;Pinterest icon&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+        
+
+    &#x3C;div class=&#x22;newsletter&#x22;&#x3E;
+        &#x3C;form action=&#x22;#&#x22; class=&#x22;contact-us&#x22;&#x3E;
+            &#x3C;label for=&#x22;email&#x22; class=&#x22;contact-us&#x22;&#x3E;Subscribe to our newsletter&#x3C;/label&#x3E;
+            &#x3C;!-- Suggestion to use placeholder instead of value attribute so that text in field disappears
+            once the user types comes from my wife, Bri--&#x3E;
+            &#x3C;input type=&#x22;text&#x22; id=&#x22;email&#x22; name=&#x22;email&#x22; placeholder=&#x22;EMAIL&#x22; class=&#x22;contact-us&#x22;&#x3E;
+            &#x3C;!-- HTML to fix submit button error given by validator taken from:
+            https://www.w3schools.com/html/html_forms.asp --&#x3E;
+            &#x3C;input type=&#x22;submit&#x22; value=&#x22;Subscribe&#x22; class=&#x22;grey-button&#x22;&#x3E;
+        &#x3C;/form&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</code></pre>
+
+                    <h5>CSS Sample Code</h5>
+                    <pre><code>
+/*Footer Menu styling: maintained by Kai-Lee*/
+
+.footer {
+    margin: 5rem 0;
+}
+
+.footer-menu a {
+    text-decoration:none;
+    color:#FFFFFF;
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:400;
+    text-transform:uppercase;
+    font-size:0.65rem;
+}
+
+.footer-menu ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    font-family:'Mulish', Arial, sans-serif;
+    font-weight:normal;
+}
+
+#footer-menu-links {
+    display:flex;
+    flex-direction: row;
+}
+
+#footer-menu-links a {
+    margin-right: 2rem;
+}
+
+#footer-menu-socials {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#footer-menu-socials img {
+    width:auto;
+}
+
+#footer-menu-socials a {
+    margin:0 0.5rem;
+}
+
+form.contact-us {
+    font-family:'Mulish', Arial, sans-serif;
+    margin:2rem 0rem;
+    /*Code for flex box from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    display:inline-flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+form.contact-us .grey-button {
+    margin:2rem;
+    border-width: 1px;
+    border-style: none;
+    outline: 1px solid rgba(255,255,255,0.5);
+}
+
+label.contact-us {
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:0.75rem;
+    margin:1rem 0 0 0;
+}
+
+input.contact-us {
+    width:clamp(15rem, 30vw, 75rem);
+    height:2.5rem;
+    margin-top:2rem;
+    padding:0 1rem;
+    border-color:#C7C6C4;
+    border-width: 1px;
+    border-radius: 2px;
+}
+</code></pre>
+
+                    <h5>CSS Sample Grid Code</h5>
+                    <pre><code>
+/*Footer navigation and newsletter*/
+
+.footer-grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+}
+
+.footer-grid .footer-grid-col{
+    grid-column: 2/ 12;
+}
+
+.footer-menu {
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-template-columns: 1fr 1fr;
+}
+
+.newsletter {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 32em) {
+    .footer-menu {
+        grid-template-columns: 1fr;
+    }
+
+    #footer-menu-links {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #footer-menu-links li {
+        display:flex;
+        justify-content: center;
+    }
+
+    #footer-menu-links a {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    #footer-menu-socials {
+        justify-content: center;
+    }
+}
+</code></pre>
+
+                </div>
+            </section> <!-- End of footer module section -->
+
+
+            <!-- bryan's section -->
+            <section class="grid-section">
+                <div class="grid-col-2-12">
+                    <div class="para_right_and_picture_left">
+
+                        <div class="para_right_and_picture_left_left_side">
+                            <picture>
+                                <source media="(min-width:1200px)" srcset="img/lookbook_image.jpg"
+                                    alt="placeholder for the para_left_and_picture_right class">
+                                <img src="img/lookbook_image.jpg"
+                                    alt="image of the template for the para_left_and_picture_right">
+                            </picture>
+                        </div>
+                        <div class="para_right_and_picture_left_right_side">
+
+                            <h4 class="clear">Newest Look</h4>
+                            <p class="clear"> is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsum
+                                passages, and more recently with desktop publishing software like Aldus PageMaker
+                                including
+                                versions of Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid-section">
+                <div class="grid-col-2-12"></div>
+                <!-- <div class="twelve_grid">  -->
+
+                <div class="span_all_width">
+                    <h4>Complete Lookbook</h4>
+                </div>
+
+                <div class="span_all_width">
+                    <p>is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+                <div class="three_picture_row">
+                    <div class="picture_module">
+                        <picture>
+                            <img>
+                        </picture>
+                        <h5>City Living</h5>
+                        <p>random little snippet for the first place holder</p>
+                    </div>
+
+                    <div class="picture_module">
+                        <picture>
+                            <img>
+                        </picture>
+                        <h5>Penthose</h5>
+                        <p>random little snippet for the second place holder</p>
+                    </div>
+
+                    <div class="picture_module">
+                        <picture>
+                            <img>
+                        </picture>
+                        <h5>Modern</h5>
+                        <p>random little snippet for the third place holder</p>
+                    </div>
+
+                </div>
+    </div>
+    </section>
+
+    <section class="grid-section">
+        <!-- <div class="twelve_grid shipping_contact_page"> -->
+        <div class="grid-col-2-12">
+            <div calss="contact_page_title_module">
+                <h3>Shipping Information</h3>
+            </div>
+            <div class="shipping_info_question_grid">
+                <div class="shipping_info_question_grid_left">
+                    <h4>What are my shipping options</h4>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                        quisquam est.</p>
+                    <h4>When will I recieve my order</h4>
+                    <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                        quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed
+                        quia non numquam.</p>
+                </div>
+                <div class="shipping_info_question_grid_right">
+                    <h4>Ground shipping transit times</h4>
+                    <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi.
+                    </p>
+                    <h4>Shipping cost</h4>
+                    <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                        ipsum
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-section">
+        <div class="grid-col-2-12">
+            <div class="about_the_company">
+                <h4>About The Company</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
+                    tempor incididunt ut.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-section">
+        <div class="grid-col-2-12">
+            <div class="the_team">
+                <picture>
+                    <img>
+                </picture>
+                <h5>Juan Carlos</h5>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur
+                    magni dolores eos qui ratione voluptatem.</p>
+
+                <picture>
+                    <img>
+                </picture>
+                <h5>Janelle Evans</h5>
+                <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis.</p>
+
+                <picture>
+                    <img>
+                </picture>
+                <h5>Anna Jennings</h5>
+                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                    est,
+                    qui dolorem ipsum quia dolor.</p>
+            </div>
+        </div>
+
+        </main>
+        </div> <!-- Grid container div -->
+</body>
+
+</html>
