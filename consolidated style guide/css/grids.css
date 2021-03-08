@@ -250,8 +250,6 @@ main {
 }
 
 
-
-
 /* para_left_and_picture_right module (most popular look) */
 
 .para_left_and_picture_right {
@@ -261,16 +259,13 @@ main {
 
 .para_left_and_picture_right_left_side {
 	display: grid;
-	grid-column: 2 / 5;
-	grid-template-rows: 1fr 1fr;
+	grid-column: 1 / 6;
 }
 
-.image_section_right {
+.para_left_and_picture_right_right_side {
 	display: grid;
-	grid-column: 7 / 12;
-	/* grid-template-rows: 2em 3em 1fr 1fr; */
+	grid-column: 8 / 13;
 }
-
 
 
 
@@ -283,49 +278,96 @@ main {
 
 .para_right_and_picture_left_left_side {
 	display: grid;
-	grid-column: 1 / 7;
+	grid-column: 1 / 6;
 }
 
 .para_right_and_picture_left_right_side {
 	display: grid;
-	grid-column: 8 / 12;
+	grid-column: 8 / 13;
 }
 
-
-
-
-
-/* tripple image and description module (complete look book) */
-
-.twelve_grid {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 3em 2em 1fr; 
-}
-
-.span_all_width{
-	grid-column: 2 / 12;
-}
-
-.three_picture_row{
-	display: grid;
-	grid-column: 3 / 11;
-	/* grid-template-columns: repeat(3, 1fr); */
-	grid-template-rows: 1fr 1fr 1fr; 
-
-}
 
 /*bryan's contact / shipping info page */
-/* .twelve_grid .shipping_contact_page{
+.contact_outer_grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 1fr 1fr; 
+	/* grid-template-rows: 1fr 1fr;  */
 }
 
 .contact_page_title_module{
-	grid-column: 2 / 12;
+	display: grid;
+	grid-column: 1 / 13;
 }
 
 .shipping_info_question_grid{
+	display: grid;
+	grid-column: 1 / 13;
+}
+
+.shipping_info_question_grid_left{
+	display: grid;
+	grid-column: 1 / 6;
+}
+
+.shipping_info_question_grid_right{
+	display: grid;
+	grid-column: 8 / 13;
+}
+
+/* bryan's about the company module */
+.about_the_company{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	justify-items: center;
+}
+
+.about_company_title{
+	grid-column: 1 / 13;
+}
+
+.about_company_para{
+	grid-column: 1 / 13;
+}
+
+.round_profile_picture{
+	border-radius: 100%;
+}
+
+.three_column_grid_items_profile_picture{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 2 / 12;
-} */
+	grid-column-gap: 11rem;
+}
+
+@media screen and (max-width: 54em) {
+	.three_column_grid_items_profile_picture {
+		grid-template-columns: 1fr;
+	}
+
+	.three-column-items {
+		padding: 3rem 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.three-column-items img {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin-right: 0;
+		margin: 0;
+	}
+
+	.three-column-items h5 {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+
+	.three-column-items p {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
