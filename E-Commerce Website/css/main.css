@@ -1,14 +1,12 @@
-
-
 /*Text Styling: maintained by Kai-Lee*/
 
 body {
+	background-color:#131313;
+	color:#FFFFFF;
 	font-weight:normal;
-	margin-top:0;
+	margin:0;
+	padding:0;
 	font-size:1rem;
-	margin-left: 0;
-	margin-right: 0;
-
 }
 
 h1 {
@@ -97,81 +95,6 @@ ul {
 ol {
 	font-family:'Mulish', Arial, sans-serif;
 	font-weight:normal;
-}
-
-
-
-/*Styling for sections with black background: maintained by Kai-Lee*/
-
-.black-background {
-	background-color:#131313;
-	color:#FFFFFF;
-}
-
-
-
-/*Button styling: maintained by Kai-Lee*/
-
-.black-button {
-	font-family:'Mulish', Arial, sans-serif; 
-	background-color:black;
-	color:#FFFFFF;
-	padding:1rem 2rem;
-	outline: 1px solid rgb(255,255,255);
-	text-transform:uppercase;
-	display:inline-block;
-	margin-bottom:2.5rem;
-}
-
-.grey-button {
-	font-family:'Mulish', Arial, sans-serif; 
-	background-color:#131313;
-	color:white;
-	padding:1rem 2rem;
-	outline: 1px solid rgba(0,0,0,0.5);
-	text-transform:uppercase;
-	display:inline-block;
-	margin-bottom:2.5rem;
-}
-
-.white-button {
-	font-family:'Mulish', Arial, sans-serif; 
-	background-color:white;
-	color:black;
-	padding:1rem 2rem;
-	outline: 1px solid rgba(0,0,0,0.5);
-	text-transform:uppercase;
-	display:inline-block;
-	margin-bottom:2.5rem;
-}
-
-.black-button:hover {
-	background-color:white;
-	color:black;
-	outline: 1px solid rgba(0,0,0,0.5);
-	text-decoration:none;
-	color:black;
-	display:inline-block;
-	margin-bottom:2.5rem;
-}
-
-.grey-button:hover {
-	background-color:white;
-	color:black;
-	outline: 1px solid rgba(0,0,0,0.5);
-	text-decoration:none;
-	color:black;
-	display:inline-block;
-	margin-bottom:2.5rem;
-}
-
-.white-button:hover {
-	background-color:#C7C6C4;
-	color:white;
-	outline: 1px solid rgba(0,0,0,0.5);
-	text-decoration:none;
-	display:inline-block;
-	margin-bottom:2.5rem;
 }
 
 
@@ -277,49 +200,6 @@ input.search-button:focus {
 
 
 
-/*Hero image styling: maintained by Kai-Lee*/
-
-.hero-image {
-	margin-bottom:1rem;
-}
-
-.hero-text {
-	position: absolute;
-	width:50%;
-	max-width:100rem;
-	bottom: 5rem;
-}
-
-.hero-text h2 {
-	color:#FFFFFF;
-}
-
-
-
-
-/*Curated Collections styling: maintained by Kai-Lee*/
-
-.three-column-grid-items {
-	grid-column-gap: 1rem
-}
-
-.three-column-items h5 {
-	width:auto;
-	margin:0;
-}
-
-
-
-
-
-/*Product Detail: maintained by Kai-Lee*/
-.product-thumbnail img {
-	width: 4rem;
-}
-
-
-
-
 /*Footer Menu styling: maintained by Kai-Lee*/
 
 .footer {
@@ -380,6 +260,7 @@ form.contact-us .grey-button {
 	margin:2rem;
 	border-width: 1px;
 	border-style: none;
+	outline: 1px solid rgba(255,255,255,0.5);
 }
 
 label.contact-us {
@@ -397,15 +278,4 @@ input.contact-us {
 	border-color:#C7C6C4;
 	border-width: 1px;
 	border-radius: 2px;
-}
-
-
-
-
-
-
-
-.clear{
-	padding: 0;
-	margin: 0;
 }
