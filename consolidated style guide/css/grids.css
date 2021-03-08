@@ -191,8 +191,6 @@ main {
 
 .main-nav-item {}
 
-}
-
 @media screen and (max-width: 41em) {
 	.nav-row-container {
 		grid-template-columns: 1fr;
