@@ -479,22 +479,6 @@ input.contact_us {
 	border-width: thin;
 }
 
-.grid_container{
-	min-height: 100%;
- 	display: grid;
- 	grid-template-columns: repeat(9, 1fr);
- 	grid-template-rows: 5rem 1fr 1fr 1fr 5rem;
- 	background-color: #131313;
- 	text-align: center;
-}
-
-.grid_container header{
-	grid-column-start: 1;
-	grid-column-end: 10;
-	text-align: center;
-	background-color: #9FB3C8;
-}
-
 .main{
 	grid-column-start: 1;
 	grid-column-end: span 2;
