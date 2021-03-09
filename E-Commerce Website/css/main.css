@@ -357,3 +357,392 @@ input.contact_us {
 	border-width: 1px;
 	border-radius: 2px;
 }
+
+/*--------- Derek's Code thingies for modules ----------*/
+.derek_section p {
+	color: white;
+}
+
+.add_to_bag {
+	width: 70%;
+	height: 1.5rem;
+	color: #DDDDDD;
+	background-color: black;
+	margin-bottom: 1rem;
+	border-width: thin;
+}
+
+.shopping_container {
+	min-height: 100%;
+ 	display: grid;
+ 	background-color: #131313;
+}
+
+.image_cart {
+	border-top: 1px solid white;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	padding-top: 1rem;
+}
+
+.shopping_cart {
+	border-top: 1px solid white;
+	grid-column: 3/10;
+	padding: 1rem;
+}
+
+.shopping_cart ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.shopping_cart li {
+	float: left; 
+}
+
+.shopping_cart h3 {
+	color: white;
+}
+
+.li1 {
+	width: 50%;
+	font-family: "cinzel";
+}
+
+.li1 h3 {
+	color: #908272;
+}
+
+.li2 {
+	width: 25%;
+	text-align: right;
+}
+
+.li3 {
+	width: 25%;
+	text-align: right;
+}
+
+.li4 {
+	width: 70%;
+}
+
+.li5 {
+	width: 30%;
+	text-align: right;
+}
+
+
+.shopping_cart label {
+	font-size: 1rem;
+}
+
+.shopping_cart a {
+	text-decoration: none;
+	padding: 1rem;
+}
+
+.shopping_cart h3 {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.shopping_cart .li3 h3 {
+	font-size: 2.5rem;
+}
+
+.shopping_cart h4 {
+	font-size: 1.3rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.quantity_number2 {
+	width: 1.5rem;
+	text-align: center;
+}
+
+.shopping_cart p {
+	width: 80%;
+}
+
+.remove_item {
+	width: 70%;
+	height: 1.5rem;
+	color: #DDDDDD;
+	background-color: black;
+	margin-bottom: 1rem;
+	border-width: thin;
+}
+
+.grid_container{
+	min-height: 100%;
+ 	display: grid;
+ 	grid-template-columns: repeat(9, 1fr);
+ 	grid-template-rows: 5rem 1fr 1fr 1fr 5rem;
+ 	background-color: #131313;
+ 	text-align: center;
+}
+
+.grid_container header{
+	grid-column-start: 1;
+	grid-column-end: 10;
+	text-align: center;
+	background-color: #9FB3C8;
+}
+
+.main{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	background-color: #829AB1;
+}
+
+.side_bar{
+	grid-column: 3/10;
+	background-color: #627D98;
+}
+
+.card_row_container{
+	grid-column: 2/9;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 0.5rem;
+	background-color: #486581;
+}
+
+.card_row_container2{
+	grid-column: 2/10;
+	display: grid;
+	grid-template-columns: 5fr 3fr;
+	grid-column-gap: 0.5rem;
+	text-align: left;
+	background-color: #334E6B;
+}
+
+.product_card:first-of-type {
+	margin-left: 0.5rem;
+}
+
+.product_card:last-of-type {
+	margin-right: 0.5rem;
+}
+
+/* checkout module and profile module */
+.checkout_module, .profile_module {
+	background-color: #131313;
+}
+
+.checkout_module header {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid white;
+}
+
+.checkout_module header h4, .shopping_container header h4 {
+	font-family: "cinzel";
+	font-weight: 300;
+	font-size: 2rem;
+	padding-left: 5rem;
+	margin: 0;
+}
+
+.checkout_module header h4 span{
+	float: right;
+}
+
+.checkout_module header input {
+	color: #DDDDDD;
+	background-color: black;
+	border-style: solid;
+	border-width: thin;
+	vertical-align: top;
+	height: 1.5rem;
+	width: 10rem;
+	font-family: "mulish";
+	font-size: 1rem;
+}
+
+.checkout_module h4, .profile_module h4 {
+	color: #908272;
+}
+
+.checkout_main, .profile_module {
+	display: grid;
+ 	grid-template-columns: repeat(12, 1fr);
+}
+
+.checkout_main label {
+	font-size: 0.8rem;
+}
+
+.checkout_main input {
+	font-size: 1.2rem;
+	color: #DDDDDD;
+	background-color: #131313;
+	border-style: solid;
+	border-width: thin;
+	height: 2.5rem;
+	width: 100%;
+}
+
+.checkout_form, .checkout_form2 {
+	grid-column-start: 1;
+	grid-column-end: span 9;
+	margin-top: 1rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+	border-style: solid;
+	border-width: thin;
+	border-color: #DDDDDD;
+}
+
+.checkout_form2 {
+	order: 3;
+}
+
+.checkout_main h5 {
+	padding-left: 0.5rem;
+	font-size: 1.5rem;
+	margin: 0.5rem;
+	color: #908272;
+	font-family: "Mulish";
+	font-weight: 100;
+}
+
+.text_column1 {
+	float: left;
+	width: 50%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+
+.text_column2 {
+	float: left;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+
+.checkout_sidebar {
+	grid-column: 10/13;
+	margin-top: 1rem;
+	order: 2;
+	border-style: solid;
+	border-width: thin;
+	border-color: #DDDDDD;
+	height: auto;
+}
+
+.checkout_sidebar p {
+	width: 100%;
+	margin: 0;
+}
+
+.checkout_sidebar span {
+	float: right;
+}
+
+.checkout_sidebar br {
+	height: 0.5rem;
+}
+
+.checkout_sidebar section {
+	margin: 0 1rem 0 1rem;
+	padding: 1rem 0 1rem 0;
+	border-top: solid;
+	border-width: thin;
+	border-color: white;
+}
+
+.checkout_sidebar input {
+	margin-top: 1rem;
+}
+
+.profile_module header {
+	grid-column-start: 1;
+	grid-column-end: 13;
+	border-bottom: solid;
+	border-width: thin;
+	border-color: white;
+}
+
+.profile_module header ul {
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.profile_module header li {
+	float: left;
+}
+
+.profile_module header h4, .profile_module header a {
+	font-family: "cinzel";
+	font-weight: 300;
+}
+
+.profile_module header h4 {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 1rem 1rem 0rem 1rem;
+}
+
+.profile_module header li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+	padding: 1.2rem 1rem 0rem 1rem;
+}
+
+.profile_module .float_right {
+	float: right;
+	padding: 1.2rem 1rem 0rem 1rem;
+}
+
+.profile_module .float_right h5 {
+	margin: 0;
+}
+
+.profile_module header li a:hover, li a:focus {
+	color: #908272;
+	background-color: white;
+	background-image: linear-gradient(to top, rgb(50,50,50), rgb(19,19,19));
+}
+
+.wishlist_grid {
+	grid-column: 2/12;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5rem;
+}
+
+.wishlist_product {
+	padding: 2rem 0 2rem 0;
+	margin: 0;
+}
+
+.wishlist_product p {
+	width: 100%;
+	margin: 0;
+	padding-bottom: 1rem;
+}
+
+.wishlist_product h4 {
+	font-family: "cinzel";
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin: 0;
+	padding: 0.5em 0 0.5em 0;
+}
+
+.wishlist_product .add_to_bag, .wishlist_product .remove_item {
+	width: 100%;
+}

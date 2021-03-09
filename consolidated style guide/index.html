@@ -1656,6 +1656,327 @@ input.contact-us {
                     </div>
                 </div>
             </section>
+
+<!--                  Derek's modules and codes                    -->
+        <section id="shoppingcart" class="derek_section">
+            <h3>Shopping Cart Module</h3>
+            <p>This is the shopping cart module. It displays what the product is, the product information, the price, and how many do you intend to buy. There is a convient remove item button on the bottom right. It would display in a list with all the items that you have in your cart.</p>
+            <p>This shopping cart module is designed and maintained by Derek Liu</p>
+            <h4>Rendered Element</h4>
+            <div class="shopping_container">
+                <div class="image_cart">
+                    <img src="img/product1.png" alt="productpicture">
+                </div>
+                <div class="shopping_cart">
+                    <ul>
+                        <li class="li1"><h3>COPPER AND WALNUT DESK</h3></li>
+                        <li class="li2"><h3><label>Quantity</label><a href="">-</a><input class="quantity_number2" type="number" name="productquantity" value="1"><a href="">+</a></h3></li>
+                        <li class="li3"><h3>$8,000</h3></li>
+                    </ul>
+                    <h4>DESCRIPTION</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis mauris ligula vel augue.</p>
+                    <ul>
+                        <li class="li4">65” W x 9” L x 60” H</li>
+                        <li class="li5"><input class="remove_item" type="button" name="removeitem" value="REMOVE"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reference_code">
+                <h5>Sample Code:</h5>
+                <code>
+                    &lt;div class="shoppingcontainer"&gt;<br>
+                    &lt;div class="imagecart"&gt;<br>
+                    &lt;img src="img/product1.png" alt="productpicture"&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="shoppingcart"&gt;<br>
+                    &lt;ul&gt;<br>
+                    &lt;li class="li1"&gt;&lt;h3&gt;COPPER AND WALNUT DESK&lt;/h3&gt;&lt;/li&gt;<br>
+                    &lt;li class="li2"&gt;&lt;h3&gt;&lt;label&gt;Quantity&lt;/label&gt;&lt;a href=""&gt;-&lt;/a&gt;&lt;input type="number" name="productquantity" value="1"&gt;&lt;a href=""&gt;+&lt;/a&gt;&lt;/h3&gt;&lt;/li&gt;<br>
+                    &lt;li class="li3"&gt;&lt;h3&gt;$8000&lt;/h3&gt;&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                    <br>
+                    &lt;h4&gt;Description&lt;/h4&gt;<br>
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis mauris ligula vel augue.&lt;/p&gt;<br>
+                    &lt;ul&gt;<br>
+                    &lt;li class="li4"&gt;&lt;h3&gt;65” W x 9” L x 60” H&lt;/h3&gt;&lt;/li&gt;<br>
+                    &lt;li class="li5"&gt;&lt;h3&gt;&lt;input class="removeitem" type="button" name="removeitem" value="REMOVE"&gt;&lt;/h3&gt;&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
+            </div>
+        </section>
+
+        <section class="derek_section">
+            <h3>Checkout Module</h3>
+            <p>Checkout module used when users need to enter their information to process the order.</p>
+            <div class="checkout_module">
+                <header>
+                    <h4>Checkout <span><input type="button" name="returntocart" value="RETURN TO CART"></span></h4>
+                </header>
+                <div class="checkout_main">
+                    <div class="checkout_form">
+                        <h5>Shipping Details</h5>
+                        <div class="text_column1">
+                            <label for="fname">*First Name</label><br>
+                            <input type="text" name="fname" id="fname" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="lname">*Last Name</label><br>
+                            <input type="text" name="lname" id="lname" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="email">*Enail Address</label><br>
+                            <input type="text" name="email" id="email" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="pnum">*Phone Number</label><br>
+                            <input type="text" name="pnum" id="pnum" value="Text Field"><br>
+                        </div>
+                        <div class="text_column2">
+                            <label for="address">*Address</label><br>
+                            <input type="text" name="address" id="address" value="Text Field"><br>
+                        </div>
+                        <div class="text_column2">
+                            <label for="city">*City</label><br>
+                            <input type="text" name="city" id="city" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="country">*Country</label><br>
+                            <input type="text" name="country" id="country" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="zcode">*Postal or Zip Code</label><br>
+                            <input type="text" name="zcode" id="zcode" value="Text Field"><br>
+                        </div>
+                        
+                    </div>
+                    <div class="checkout_form2">
+                        <h5>Payment Details</h5>
+                        <div class="text_column2">
+                            <label for="cnum">*Card Number</label><br>
+                            <input type="text" name="cnum" id="cnum" value="Text Field"><br>
+                        </div>
+                        <div class="text_column2">
+                            <label for="cname">*Name on Card</label><br>
+                            <input type="text" name="cname" id="cname" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="email">*Expiration Date (MM/YY)</label><br>
+                            <input type="text" name="expdate" id="expdate" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="pnum">*Security code</label><br>
+                            <input type="text" name="scode" id="scode" value="Text Field"><br>
+                        </div>
+                    </div>
+                
+                    <aside class="checkout_sidebar">
+                        <h5>Order Summary</h5>
+                        <section>
+                            <p>Item 1 
+                                <span>$8000</span>
+                            </p>
+                            <p>item 2
+                                <span>$8000</span>
+                            </p>
+                            <p>item 3
+                                <span>$8000</span>
+                            </p>
+                        </section>
+                        <section>
+                            <p>Bag Subtotal
+                                <span>$24000</span>
+                            </p>
+                            <p>Shipping
+                                <span>FREE</span>
+                            </p>
+                            <p>Estimated Tax
+                                <span>$300</span>
+                            </p>
+                        </section>
+                        <section>
+                            <p>Total
+                                <span>$24300</span>
+                            </p>
+                            <a href=""><input type="button" name="purchasenow" value="PURCHASE NOW"></a>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+            <div class="reference_code">
+                <h5>Sample Code:</h5>
+                <code>
+                    &lt;div class="checkout_module"&gt;<br>
+                    &lt;header&gt;<br>
+                    &lt;h4&gt;Checkout &lt;span&gt;&lt;input type="button" name="returntocart" value="RETURN TO CART"&gt;&lt;/span&gt;&lt;/h4&gt;<br>
+                    &lt;/header&gt;<br>
+                    &lt;div class="checkout_main"&gt;<br>
+                    &lt;div class="checkout_form"&gt;<br>
+                    &lt;h5&gt;Shipping Details&lt;/h5&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="fname"&gt;*First Name&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="fname" id="fname" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="lname"&gt;*Last Name&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="lname" id="lname" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="email"&gt;*Enail Address&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="email" id="email" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="pnum"&gt;*Phone Number&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="pnum" id="pnum" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column2"&gt;<br>
+                    &lt;label for="address"&gt;*Address&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="address" id="address" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column2"&gt;<br>
+                    &lt;label for="city"&gt;*City&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="city" id="city" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="country"&gt;*Country&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="country" id="country" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="zcode"&gt;*Postal or Zip Code&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="zcode" id="zcode" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="checkout_form2"&gt;<br>
+                    &lt;h5&gt;Payment Details&lt;/h5&gt;<br>
+                    &lt;div class="text_column2"&gt;<br>
+                    &lt;label for="cnum"&gt;*Card Number&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="cnum" id="cnum" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column2"&gt;<br>
+                    &lt;label for="cname"&gt;*Name on Card&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="cname" id="cname" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="email"&gt;*Expiration Date (MM/YY)&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="expdate" id="expdate" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="text_column1"&gt;<br>
+                    &lt;label for="pnum"&gt;*Security code&lt;/label&gt;&lt;br&gt;<br>
+                    &lt;input type="text" name="scode" id="scode" value="Text Field"&gt;&lt;br&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;aside class="checkout_sidebar"&gt;<br>
+                    &lt;h5&gt;Order Summary&lt;/h5&gt;<br>
+                    &lt;section&gt;<br>
+                    &lt;p&gt;Item 1 <br>
+                    &lt;span&gt;$8000&lt;/span&gt;<br>
+                    &lt;/p&gt;<br>
+                    &lt;p&gt;item 2<br>
+                    &lt;span&gt;$8000&lt;/span&gt;<br>
+                    &lt;/p&gt;<br>
+                    &lt;p&gt;item 3<br>
+                    &lt;span&gt;$8000&lt;/span&gt;<br>
+                    &lt;/p&gt;<br>
+                    &lt;/section&gt;<br>
+                    &lt;section&gt;<br>
+                    &lt;p&gt;Bag Subtotal<br>
+                    &lt;span&gt;$24000&lt;/span&gt;<br>
+                    &lt;/p&gt;<br>
+                    &lt;p&gt;Shipping<br>
+                    &lt;span&gt;FREE&lt;/span&gt;<br>
+                    &lt;/p&gt;<br>
+                    &lt;p&gt;Estimated Tax<br>
+                    &lt;span&gt;$300&lt;/span&gt;<br>
+                    &lt;/p&gt;<br>
+                    &lt;/section&gt;<br>
+                    &lt;section&gt;<br>
+                    &lt;p&gt;Total<br>
+                    &lt;span&gt;$24300&lt;/span&gt;<br>
+                    &lt;/p&gt;<br>
+                    &lt;a href=""&gt;&lt;input type="button" name="purchasenow" value="PURCHASE NOW"&gt;&lt;/a&gt;<br>
+                    &lt;/section&gt;<br>
+                    &lt;/aside&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
+            </div>
+        </section>
+
+        <section class="derek_section">
+            <h3>Profile Module</h3>
+            <p>Profile module so users can check their settings, order history and wishlist.</p>
+            <div class="profile_module">
+                <header>
+                    <ul>
+                        <li><h4>Profile</h4></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Order History</a></li>
+                        <li><a href="">Settings</a></li>
+                        <li class="float_right"><h5>User: <label>Loft@gmail.com</label></h5></li>
+                    </ul>
+                </header>
+                <div class="wishlist_grid">
+                    <section class="wishlist_product">
+                        <img src="img/wishlist1.png" alt="wishlist1">
+                        <h4>item 1</h4>
+                        <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <a href=""><input type="button" name="addtobag" value="ADD TO BAG" class="add_to_bag"></a>
+                        <a href=""><input type="button" name="removeitem" value="REMOVE" class="remove_item"></a>
+                    </section>
+                    <section class="wishlist_product">
+                        <img src="img/wishlist2.png" alt="wishlist2">
+                        <h4>item 2</h4>
+                        <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <a href=""><input type="button" name="addtobag" value="ADD TO BAG" class="add_to_bag"></a>
+                        <a href=""><input type="button" name="removeitem" value="REMOVE" class="remove_item"></a>
+                    </section>
+                    <section class="wishlist_product">
+                        <img src="img/wishlist3.png" alt="wishlist3">
+                        <h4>item 3</h4>
+                        <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <a href=""><input type="button" name="addtobag" value="ADD TO BAG" class="add_to_bag"></a>
+                        <a href=""><input type="button" name="removeitem" value="REMOVE" class="remove_item"></a>
+                    </section>
+                </div>
+            </div>
+            <div class="reference_code">
+                <h5>Sample Code:</h5>
+                <code>
+                    &lt;div class="profile_module"&gt;<br>
+                    &lt;header&gt;<br>
+                    &lt;ul&gt;<br>
+                    &lt;li&gt;&lt;h4&gt;Profile&lt;/h4&gt;&lt;/li&gt;<br>
+                    &lt;li&gt;&lt;a href=""&gt;Wishlist&lt;/a&gt;&lt;/li&gt;<br>
+                    &lt;li&gt;&lt;a href=""&gt;Order History&lt;/a&gt;&lt;/li&gt;<br>
+                    &lt;li&gt;&lt;a href=""&gt;Settings&lt;/a&gt;&lt;/li&gt;<br>
+                    &lt;li class="float_right"&gt;&lt;h5&gt;User: &lt;label&gt;Loft@gmail.com&lt;/label&gt;&lt;/h5&gt;&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                    &lt;/header&gt;<br>
+                    &lt;div class="wishlist_grid"&gt;<br>
+                    &lt;section class="wishlist_product"&gt;<br>
+                    &lt;img src="img/wishlist1.png" alt="wishlist1"&gt;<br>
+                    &lt;h4&gt;item 1&lt;/h4&gt;<br>
+                    &lt;p&gt;Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&lt;/p&gt;<br>
+                    &lt;a href=""&gt;&lt;input type="button" name="addtobag" value="ADD TO BAG" class="add_to_bag"&gt;&lt;/a&gt;<br>
+                    &lt;a href=""&gt;&lt;input type="button" name="removeitem" value="REMOVE" class="remove_item"&gt;&lt;/a&gt;<br>
+                    &lt;/section&gt;<br>
+                    &lt;section class="wishlist_product"&gt;<br>
+                    &lt;img src="img/wishlist2.png" alt="wishlist2"&gt;<br>
+                    &lt;h4&gt;item 2&lt;/h4&gt;<br>
+                    &lt;p&gt;Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&lt;/p&gt;<br>
+                    &lt;a href=""&gt;&lt;input type="button" name="addtobag" value="ADD TO BAG" class="add_to_bag"&gt;&lt;/a&gt;<br>
+                    &lt;a href=""&gt;&lt;input type="button" name="removeitem" value="REMOVE" class="remove_item"&gt;&lt;/a&gt;<br>
+                    &lt;/section&gt;<br>
+                    &lt;section class="wishlist_product"&gt;<br>
+                    &lt;img src="img/wishlist3.png" alt="wishlist3"&gt;<br>
+                    &lt;h4&gt;item 3&lt;/h4&gt;<br>
+                    &lt;p&gt;Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&lt;/p&gt;<br>
+                    &lt;a href=""&gt;&lt;input type="button" name="addtobag" value="ADD TO BAG" class="add_to_bag"&gt;&lt;/a&gt;<br>
+                    &lt;a href=""&gt;&lt;input type="button" name="removeitem" value="REMOVE" class="remove_item"&gt;&lt;/a&gt;<br>
+                    &lt;/section&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
+            </div>
+        </section>
     </div>
 
 
