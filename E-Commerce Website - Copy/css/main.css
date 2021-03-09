@@ -101,7 +101,7 @@ ol {
 
 /*Styling for sections with white background: maintained by Kai-Lee*/
 
-.white_background {
+.white-background {
 	background-color:white;
 	color:black;
 }
@@ -111,7 +111,7 @@ ol {
 
 /*Button styling: maintained by Kai-Lee*/
 
-.black_button {
+.black-button {
 	font-family:'Mulish', Arial, sans-serif; 
 	background-color:black;
 	color:#FFFFFF;
@@ -122,7 +122,7 @@ ol {
 	margin-bottom:2.5rem;
 }
 
-.grey_button {
+.grey-button {
 	font-family:'Mulish', Arial, sans-serif; 
 	background-color:#131313;
 	color:white;
@@ -133,7 +133,7 @@ ol {
 	margin-bottom:2.5rem;
 }
 
-.white_button {
+.white-button {
 	font-family:'Mulish', Arial, sans-serif; 
 	background-color:white;
 	color:black;
@@ -144,7 +144,7 @@ ol {
 	margin-bottom:2.5rem;
 }
 
-.black_button:hover {
+.black-button:hover {
 	background-color:white;
 	color:black;
 	outline: 1px solid rgba(0,0,0,0.5);
@@ -154,7 +154,7 @@ ol {
 	margin-bottom:2.5rem;
 }
 
-.grey_button:hover {
+.grey-button:hover {
 	background-color:white;
 	color:black;
 	outline: 1px solid rgba(0,0,0,0.5);
@@ -164,7 +164,7 @@ ol {
 	margin-bottom:2.5rem;
 }
 
-.white_button:hover {
+.white-button:hover {
 	background-color:#C7C6C4;
 	color:white;
 	outline: 1px solid rgba(0,0,0,0.5);
@@ -180,11 +180,11 @@ ol {
 /*Main navigation bar styling: maintained by Kai-Lee*/ 
 
 /* Help understanding why centering the text and removing the underline for my mainNav class wasn't working the way I expected and advice to target mainNav and mainNav anchor elements separately from my wife, Bri */
-.main_nav {
+.main-nav {
 	text-align:center;
 }
 
-.main_nav a {
+.main-nav a {
 	padding:0.5em 2em;
 	display:inline-block;
 	text-decoration:none;
@@ -195,11 +195,11 @@ ol {
 	font-size:0.65rem;
 }
 
-.main_nav a:hover {
+.main-nav a:hover {
 	text-decoration:underline;
 }
 
-ul.site_main_nav {
+ul.site-main-nav {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -211,12 +211,12 @@ ul.site_main_nav {
 	align-items: flex-end;
 }
 
-.site_main_nav li {
+.site-main-nav li {
 	display:inline;
 	margin-left: 1rem;
 }
 
-a.sign_in {
+a.sign-in {
 	color:white;
 	text-decoration:none;
 	color:#FFFFFF;
@@ -226,12 +226,12 @@ a.sign_in {
 	font-size:0.65rem;
 }
 
-a.sign_in:hover {
+a.sign-in:hover {
 	color:#908272;
 }
 
 
-.search_bar {
+.search-bar {
 	font-family:'Mulish', Arial, sans-serif;
 	font-weight:normal;
 	font-size:0.75rem;
@@ -240,24 +240,24 @@ a.sign_in:hover {
 	margin-right: 0.5rem;
 }
 
-input.search_bar {
+input.search-bar {
 	background-color:#131313;
 	text-align: right;
 	border:0;
 }
 
-input.search_bar:focus {
+input.search-bar:focus {
 	/*Advice to use outline tag instead of border for input box from my wife, Bri MacBain*/
 	outline: none;
 	border:1px solid white;
 }
 
-input.search_button:focus {
+input.search-button:focus {
 	outline: none;
 	border:1px solid white;
 }
 
-#site_main_nav_toolbar {
+#site-main-nav-toolbar {
 	/*Suggestion to use the position property to align the title toolbar elements from my wife, Bri MacBain. Tutorial for how to use this property from: https://css-tricks.com/almanac/properties/p/position/ 
 	(parent elment below in the main_nav_title_items class*/
 	position:absolute;
@@ -267,12 +267,12 @@ input.search_button:focus {
 	justify-content: flex-end;
 }
 
-#site_title {
+#site-title {
 	display: flex;
 	justify-content: center;
 }
 
-.main_nav_title_items {
+.main-nav-title-items {
 	position: relative;
 }
 
@@ -284,7 +284,7 @@ input.search_button:focus {
 	margin: 5rem 0;
 }
 
-.footer_menu a {
+.footer-menu a {
 	text-decoration:none;
 	color:#FFFFFF;
 	font-family:'Mulish', Arial, sans-serif;
@@ -293,7 +293,7 @@ input.search_button:focus {
 	font-size:0.65rem;
 }
 
-.footer_menu ul {
+.footer-menu ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -301,31 +301,31 @@ input.search_button:focus {
 	font-weight:normal;
 }
 
-#footer_menu_links {
+#footer-menu-links {
 	display:flex;
 	flex-direction: row;
 }
 
-#footer_menu_links a {
+#footer-menu-links a {
 	margin-right: 2rem;
 }
 
-#footer_menu_socials {
+#footer-menu-socials {
 	display:flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-#footer_menu_socials img {
+#footer-menu-socials img {
 	width:auto;
 }
 
-#footer_menu_socials a {
+#footer-menu-socials a {
 	margin:0 0.5rem;
 }
 
-form.contact_us {
+form.contact-us {
 	font-family:'Mulish', Arial, sans-serif;
 	margin:2rem 0rem;
 	/*Code for flex box from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
@@ -334,21 +334,21 @@ form.contact_us {
 	align-items:center;
 }
 
-form.contact_us .grey_button {
+form.contact-us .grey-button {
 	margin:2rem;
 	border-width: 1px;
 	border-style: none;
 	outline: 1px solid rgba(255,255,255,0.5);
 }
 
-label.contact_us {
+label.contact-us {
 	text-transform:uppercase;
 	font-weight:bold;
 	font-size:0.75rem;
 	margin:1rem 0 0 0;
 }
 
-input.contact_us {
+input.contact-us {
 	width:clamp(15rem, 30vw, 75rem);
 	height:2.5rem;
 	margin-top:2rem;
