@@ -17,14 +17,14 @@ main {
 
 
 /*Site Wide Grid Classes*/
-.grid-container { /*12 column Site grid*/
+.grid_container { /*12 column Site grid*/
  	display: grid;
 	min-height: 100vh;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto auto;
 }
 
-.grid-section { /*Grid applied to each section*/
+.grid_section { /*Grid applied to each section*/
 	display: grid;
 	/*How to force columns to stay the same width:
 	https://css-tricks.com/equal-width-columns-in-css-grid-are-kinda-weird/*/
@@ -32,7 +32,7 @@ main {
     margin:0;
 }
 
-.grid-col-2-12 { /*Column spacing for columns spanning from column 2 to 12*/
+.grid_col_2_12 { /*Column spacing for columns spanning from column 2 to 12*/
 	grid-column: 2 / 12;
 }
 
@@ -41,44 +41,44 @@ main {
 
 /*Main navigation bar: maintained by Kai-Lee*/
 
-.main-nav-grid {
+.main_nav_grid {
 	display: grid;
 	grid-template-rows: auto auto auto;
     grid-template-columns: repeat(12, 1fr);
 	grid-column: span 12;
 }
 
-.main-nav-grid .main-nav-title-items {
+.main_nav_grid .main_nav_title_items {
 	grid-column: 2 / 12;
 }
 
 @media screen and (max-width: 57em) {
-	.main-nav {
+	.main_nav {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 	}
 
-	#site-main-nav-toolbar {
+	#site_main_nav_toolbar {
 		/*Advice for using the inherit value for the position property so that flex tags can be used on the toolbar elemnts which I had previously set to an absolute value from my wife, Bri*/
 		position: inherit;
 		justify-content: center;
 	}
 
-	.site-main-nav {
+	.site_main_nav {
 		justify-content: center;
 		flex-direction: column;
 	}
 
-	ul.site-main-nav {
+	ul.site_main_nav {
 		align-items: center;
 	}
 
-	input.search-bar {
+	input.search_bar {
 		border:1px solid white;
 	}
 
-	.site-main-nav li {
+	.site_main_nav li {
 		margin-left: 0;
 		margin-top: 0.5rem;
 	}
@@ -89,7 +89,7 @@ main {
 
 /*Hero Image: maintained by Kai-Lee*/
 
-.hero-grid {
+.hero_grid {
 	position: relative;
 	display: grid;
 	grid-template-rows: auto auto;
@@ -97,20 +97,20 @@ main {
 	grid-column: span 12;
 }
 
-.hero-image {
+.hero_image {
 	grid-column: span 12;
 }
 
-.hero-text {
+.hero_text {
 	grid-column: 2 / 12;
 }
 
 @media screen and (max-width: 43em) {
-	.text-overlay h2 {
+	.text_overlay h2 {
 		font-size: 1.5rem;
 	}
 
-	.text-overlay a {
+	.text_overlay a {
 		font-size: 0.75rem;
 	}
 }
@@ -120,35 +120,35 @@ main {
 
 /*Curated Collections: maintained by Kai-Lee*/
 
-.three-column-grid {
+.three_column_grid {
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-template-columns: repeat(12, 1fr);
     grid-column: span 12;
 }
 
-.three-column-grid .three-column-grid-heading {
+.three_column_grid .three_column_grid_heading {
 	grid-column: 2 / 12;
 }
 
-.three-column-grid-items {
+.three_column_grid_items {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 2 / 12;
 }
 
 @media screen and (max-width: 54em) {
-	.three-column-grid-items {
+	.three_column_grid_items {
 		grid-template-columns: 1fr;
 	}
 
-	.three-column-items {
+	.three_column_items {
 		padding: 3rem 0;
 		display: flex;
 		flex-direction: column;
 	}
 
-	.three-column-items img {
+	.three_column_items img {
 		display: flex;
 		justify-content: center;
 		padding: 0;
@@ -156,13 +156,13 @@ main {
 		margin: 0;
 	}
 
-	.three-column-items h5 {
+	.three_column_items h5 {
 		display: flex;
 		justify-content: center;
 		margin-top: 1rem;
 	}
 
-	.three-column-items p {
+	.three_column_items p {
 		display: flex;
 		justify-content: center;
 		width: 100%;
@@ -172,45 +172,187 @@ main {
 
 
 
-/*Product detail*/
+/*New Arrivals: maintained by Kai-Lee*/
 
-.product-grid {
+.five_column_grid_items {
 	display: grid;
-	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 2 / 12;
+	grid-gap: 3rem;
+	margin-bottom: 3rem;
+}
+
+.left_arrow {
+	grid-column:1;
+}
+
+.right_arrow {
+	grid-column: 12;
+}
+
+a.page_numbers_arrows {
+	display: flex;
+	justify-content: center;
+	/*How to give unique alignment to item in a grid from:
+	https://webdesign.tutsplus.com/tutorials/the-quirks-of-css-grid-and-absolute-positioning--cms-31437*/
+	position: relative;
+	top: 25%;
+}
+
+.three_column_items {
+	grid-column-gap: 3rem;
+}
+
+@media screen and (max-width: 45em) {
+	.five_column_grid_items {
+		grid-template-columns: 1fr;
+	}
+
+	.left_arrow img {
+	width: 0%;
+	}
+
+	.right_arrow img {
+		width: 0%;
+	}
+
+	.three_column_items p {
+		/*Fix alignment later*/
+	}
+}
+
+
+
+
+
+
+/*Product Page: maintained by Kai-Lee*/
+
+.product_page_grid {
+	display: grid;
+	grid-template-rows: repeat(5, auto);
     grid-template-columns: repeat(12, 1fr);
 	grid-column: span 12;
 }
 
-.product-grid .product-grid-col-thumb {
-    grid-column: 2/ 4;
+.product_page_row {
+	grid-column: 2 / 12;
 }
 
-.product-grid .product-grid-col-feature {
-    grid-column: 4/ 12;
-    grid-row: span 1;
+@media screen and (max-width: 57.5em) {
+	.product_page_grid .three_column_grid_items {
+		grid-template-columns: 1fr;
+	}
 }
 
-.product-grid .product-grid-col{
-    grid-column: 2/ 12;
+
+
+
+
+
+/*Product detail Images: maintained by Kai-Lee*/
+
+.product_grid {
+	display: grid;
+	grid-template-rows: auto auto;
+    grid-template-columns: repeat(12, 1fr);
+	grid-column: span 12;
+	padding:3rem 0;
 }
+
+.product_grid .product_grid_col_thumb {
+    grid-column: 2/ 3;
+    margin-right:0.5rem;
+}
+
+.product_grid .product_grid_col_thumb_img{
+	margin-bottom: 0.5rem;
+}
+
+.product_grid .product_grid_col_feature {
+    grid-column: 3/ 12;
+}
+
+@media screen and (max-width: 62.5em) {
+	.product_grid .product_grid_col_thumb {
+	    grid-column: 2 / 12;
+	    display:grid;
+	    grid-template-columns: repeat(4, 1fr);
+	    margin-right: 0;
+	    column-gap: 0.5rem;
+	    /*Trick to reverse order of the feature image and the thumbnails by using the order tag taught to me by my wife, Bri MacBain*/
+	    order:2;
+	}
+
+	.product_grid .product_grid_col_feature {
+	    grid-column: 2 / 12;
+	    order:1;
+	    margin-bottom: 0.5rem
+	}
+}
+
+/*Product detail Description: maintained by Kai-Lee*/
+
+.product_info {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column: 3 / 12;
+}
+
+@media screen and (max-width: 62.5em) {
+	.product_info {
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+	}
+
+	.product_info_selection1 {
+		justify-content: center;
+	}
+
+	.product_info_selection1 p {
+		width: auto;
+	}
+
+	.product_info_selection2 {
+		margin-top: 3rem;
+		width: fit-content;
+	}
+}
+
+@media screen and (max-width: 37.5em) {
+	.clamp_text {
+		width: auto;
+	}
+}
+
+
+
+
+/*Craftsmanship Video: maintained by Kai-Lee*/
+
+.hero_grid h3 {
+	grid-column: span 12;
+}
+
 
 
 
 
 /*Footer navigation and newsletter*/
 
-.footer-grid {
+.footer_grid {
 	display: grid;
 	grid-template-rows: auto auto auto;
     grid-template-columns: repeat(12, 1fr);
     grid-column: span 12;
+    margin-top: 12rem;
 }
 
-.footer-grid .footer-grid-col{
+.footer_grid .footer_grid_col{
     grid-column: 2/ 12;
 }
 
-.footer-menu {
+.footer_menu {
 	display:grid;
 	grid-column-start: 1;
 	grid-column-end: 11;
@@ -224,27 +366,27 @@ main {
 }
 
 @media screen and (max-width: 32em) {
-	.footer-menu {
+	.footer_menu {
 		grid-template-columns: 1fr;
 	}
 
-	#footer-menu-links {
+	#footer_menu_links {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 	}
 
-	#footer-menu-links li {
+	#footer_menu_links li {
 		display:flex;
 		justify-content: center;
 	}
 
-	#footer-menu-links a {
+	#footer_menu_links a {
 		margin-bottom: 1rem;
 		margin-right: 0;
 	}
 
-	#footer-menu-socials {
+	#footer_menu_socials {
 		justify-content: center;
 	}
 }
@@ -345,13 +487,13 @@ main {
 		grid-template-columns: 1fr;
 	}
 
-	.three-column-items {
+	.three_column_items {
 		padding: 3rem 0;
 		display: flex;
 		flex-direction: column;
 	}
 
-	.three-column-items img {
+	.three_column_items img {
 		display: flex;
 		justify-content: center;
 		padding: 0;
@@ -359,15 +501,16 @@ main {
 		margin: 0;
 	}
 
-	.three-column-items h5 {
+	.three_column_items h5 {
 		display: flex;
 		justify-content: center;
 		margin-top: 1rem;
 	}
 
-	.three-column-items p {
+	.three_column_items p {
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		text-align: center;
 	}
 }

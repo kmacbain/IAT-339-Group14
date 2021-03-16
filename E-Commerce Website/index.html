@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grids.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
 	</head>
 
 
@@ -67,16 +68,47 @@
                         </nav>
                     </div>
                 </nav>
+
+                <nav class="box" id="office">
+                    <div class="box-item-nav">
+                        <a href="office_chairs.html">Chairs</a>
+                    </div>
+
+                    <div class="box-item-nav">
+                        <a href="office_desks.html">Desks</a>
+                    </div>
+
+                    <div class="box-item-nav">
+                        <a href="office_storage.html">Storage</a>
+                    </div>
+                </nav>
+
 		    </header>
+
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
 
             <main>
 
             <!-- New Arrivals: maintained by Kai-Lee -->
             <section class="grid_section">
-                <div class="grid_col_2_12">
-                    <h2>New Arrivals Module Here</h2>
+                <div class="hero_grid">
+                    <!-- Hero image grid -->
+                    <div class="hero_image">
+                        <picture>
+                            <!-- Hero image -->
+                            <img src="img/home/new_collection.png"
+                                alt="Hero image of new Industrial furniture in a large loft apartment">
+                        </picture>
+                    </div>
+                    <div class="hero_text">
+                        <!-- Text and button overlay -->
+                        <h2>The latest <br> leather sofa sets</h2>
+                        <a href="new_arrivals.html" class="black_button">Explore New Collection</a>
+                    </div>
                 </div>
             </section>
+
 
             <!-- Company Intro: maintained by Bryan -->
             <section class="grid_section">
@@ -85,10 +117,41 @@
                 </div>
             </section>
 
-            <!-- Currated Collections: maintained by Kai-Lee -->
+
+            <!-- Curated Collections: maintained by Kai-Lee -->
             <section class="grid_section">
-                <div class="grid_col_2_12">
-                    <h2>Currated Collection Module Here</h2>
+                <div class="three_column_grid">
+                    <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h4>Get Inspired by these Curated Collections</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore</p>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="three_column_grid_items">
+                        <div class="three_column_items">
+                            <img src="img/curated_collection/classic_collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Classic</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+                        <div class="three_column_items">
+                            <img src="img/curated_collection/vintage_collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Vintage</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+                        <div class="three_column_items">
+                            <img src="img/curated_collection/modern_collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Modern</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 

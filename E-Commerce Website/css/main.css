@@ -19,6 +19,7 @@ h1 {
 	text-align:center;
 	font-weight:400;
 	line-height: 0.8;
+	transform: uppercase;
 }
 
 /* How to style horizontal lines taken from:
@@ -37,6 +38,7 @@ h2 {
 	font-weight:400;
 	margin-bottom: 0.5rem;
 	margin-top:4rem;
+	transform: uppercase;
 }
 
 h3 {
@@ -44,6 +46,7 @@ h3 {
 	font-family:'Cinzel', Times New Roman, serif;
 	color:#908272;
 	font-weight:400;
+	transform: uppercase;
 }
 
 h4 {
@@ -51,6 +54,15 @@ h4 {
 	font-family:'Cinzel', Times New Roman, serif;
 	color:#908272;
 	font-weight:400;
+	transform: uppercase;
+}
+
+h5 {
+	font-size:1.25rem;
+	font-family:'Cinzel', Times New Roman, serif;
+	color:#908272;
+	font-weight:400;
+	transform: uppercase;
 }
 
 p {
@@ -79,10 +91,6 @@ main section {
 	margin-right: 0;
 }
 
-section {
-	margin-top: 2rem;
-}
-
 header {
 	color:#131313;
 }
@@ -104,6 +112,34 @@ ol {
 .white_background {
 	background-color:white;
 	color:black;
+}
+
+
+
+
+/*Paragraph styling to clamp text: maintained by Kai-Lee*/
+
+.clamp_text {
+	width:clamp(45ch, 70%, 75ch);
+}
+
+
+
+
+/*Styling for Breadcrums*/
+
+.breadcrumbs {
+	display: flex;
+	align-items: baseline;
+}
+
+.breadcrumbs p {
+	margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.breadcrumbs .breadcrumbs_bold {
+	font-weight: bold;
+	margin: 0 0.5rem 0.5rem 0;
 }
 
 
@@ -278,11 +314,301 @@ input.search_button:focus {
 
 
 
-/*Footer Menu styling: maintained by Kai-Lee*/
 
-.footer {
-	margin: 5rem 0;
+/*Hero image styling: maintained by Kai-Lee*/
+
+.hero_image {
+	margin:2rem 0;
 }
+
+.hero_image img {
+	/*Changing opacity of image from:
+	https://www.w3schools.com/css/css_image_transparency.asp*/
+	opacity: 0.6;
+}
+
+.hero_text {
+	position: absolute;
+	bottom: 40%;
+}
+
+.hero_text h2 {
+	color:#FFFFFF;
+}
+
+
+
+
+/*Curated Collections styling: maintained by Kai-Lee*/
+
+.three_column_grid_items {
+	grid-column-gap: 3rem
+}
+
+.three_column_grid_heading h4 {
+	margin-top: 6rem;
+}
+
+.three_column_items h5 {
+	width:auto;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+.three_column_grid_items .three_column_items:hover img {
+	opacity: 0.7;
+}
+
+
+
+
+
+/*New Arrivals: maintained by Kai-Lee*/
+
+.three_column_grid_heading h3 {
+	margin-top: 6rem;
+}
+
+.five_column_grid_items .three_column_items h5 {
+	margin-top: 2rem;
+}
+
+.left_arrow img {
+	width: 25%;
+}
+
+.right_arrow img {
+	width: 25%;
+}
+
+.three_column_items:hover img {
+	opacity: 0.7;
+}
+
+
+
+
+
+/*Product Page: maintained by Kai-Lee*/
+
+.product_page_grid {
+	margin-top: 6rem;
+}
+
+.product_page_grid .breadcrumbs a {
+	color: white;
+}
+
+.product_page_grid .breadcrumbs p {
+	color: #908272;
+}
+
+.product_page_grid .three_column_grid_items {
+	margin-bottom: 3rem;
+	grid-column-gap: 3rem;
+}
+
+.product_page_row h3 {
+	margin: 0 0 3rem 0;
+}
+
+.page_numbers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page_numbers_items {
+	margin:0 3rem;
+}
+
+.page_numbers_items p {
+	font-size: 1.25rem;
+}
+
+a.page_numbers_items:hover {
+	text-decoration: none;
+	color:white;
+}
+
+a.page_numbers_items:focus {
+	text-decoration: underline;
+}
+
+.page_numbers_arrows:hover img {
+	opacity:0.5;
+}
+
+/*Product Detail: maintained by Kai-Lee*/
+
+.product_info {
+	margin-top: 2rem;
+}
+
+.product_info_selection2 p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.product_info h5 {
+	color: black;
+	margin-top: 0;
+	
+}
+
+.product_info h4 {
+	color: black;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.product_info_quantity {
+	margin-top: 2rem;
+}
+
+.product_info_amount {
+	display: flex;
+	align-items: center;
+}
+
+.product_info_amount_item {
+	margin-right: 1rem;
+}
+
+.product_info_buttons {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.product_info_buttons .white_button {
+	margin-bottom: 0.5rem;
+	align-items: baseline;
+}
+
+/*Advice for which flex tags to use to get the icon and text to line up on this button from my wife, Bri MacBAin*/
+.product_info_buttons a.white_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product_info img {
+	width:auto;
+}
+
+
+
+
+/*Product Detail: maintained by Kai-Lee*/
+
+.product_info {
+	margin-top: 2rem;
+}
+
+.product_info_selection2 p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.product_info h5 {
+	color: black;
+	margin-top: 0;
+	
+}
+
+.product_info h4 {
+	color: black;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.product_info_quantity {
+	margin-top: 2rem;
+}
+
+.product_info_amount {
+	display: flex;
+	align-items: center;
+}
+
+.product_info_amount_item {
+	margin-right: 1rem;
+}
+
+.product_info_buttons {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.product_info_buttons .white_button {
+	margin-bottom: 0.5rem;
+	align-items: baseline;
+}
+
+/*Advice for which flex tags to use to get the icon and text to line up on this button from my wife, Bri MacBAin*/
+.product_info_buttons a.white_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product_info img {
+	width:auto;
+}
+
+
+
+
+/*Craftsmanship Video: maintained by Kai-Lee*/
+
+.hero_grid h3 {
+	margin-top: 6rem;
+}
+
+.play_icon {
+	position: absolute;
+	bottom: 30%;
+	left: 50%;
+}
+
+.play_icon:hover img {
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 59.5em) {
+	.play_icon img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 50em) {
+	.play_icon img {
+		width: 20%;
+	}
+}
+
+
+
+
+
+
+
+/*Our Products In Your Home: maintained by Kai-Lee*/
+
+.in_your_home {
+	margin-top: 6rem;
+}
+
+
+
+
+
+
+/*Footer Menu styling: maintained by Kai-Lee*/
 
 .footer_menu a {
 	text-decoration:none;
