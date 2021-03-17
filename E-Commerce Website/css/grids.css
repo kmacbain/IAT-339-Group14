@@ -378,5 +378,42 @@ a.page_numbers_arrows {
 	}
 }
 
+/* bryan lookbook grid for the pic para module */
+/* para_left_and_picture_right module (most popular look) */
+
+.para_left_and_picture_right {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.para_left_and_picture_right_left_side {
+	display: grid;
+	grid-column: 1 / 6;
+}
+
+.para_left_and_picture_right_right_side {
+	display: grid;
+	grid-column: 8 / 13;
+}
+
+
+
+/* para_right_and_picture_left module (new look) */
+
+.para_right_and_picture_left {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.para_right_and_picture_left_left_side {
+	display: grid;
+	grid-column: 1 / 6;
+}
+
+.para_right_and_picture_left_right_side {
+	display: grid;
+	grid-column: 8 / 13;
+}
+
 
 
