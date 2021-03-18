@@ -415,5 +415,15 @@ a.page_numbers_arrows {
 	grid-column: 8 / 13;
 }
 
+/* the profile picutes module in the about page */
+.three_column_grid_items_profile_picture{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 2 / 12;
+	grid-column-gap: 11rem;
+}
 
-
+.about_the_company{
+	display: grid;
+	justify-items: center;
+}

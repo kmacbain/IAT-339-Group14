@@ -1080,3 +1080,7 @@ input.contact_us {
 .para_left_and_picture_right{
 	margin-top: 4em;
 }
+
+.round_profile_picture{
+	border-radius: 100%;
+}
