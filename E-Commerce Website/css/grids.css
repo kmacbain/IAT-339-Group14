@@ -427,3 +427,24 @@ a.page_numbers_arrows {
 	display: grid;
 	justify-items: center;
 }
+
+/*bryan's contact / shipping info page */
+.contact_page_title_module{
+	display: grid;
+}
+
+.shipping_info_question_grid{
+	display: grid;
+	grid-column-gap: 2rem;
+
+}
+
+.shipping_info_question_grid_left{
+	display: grid;
+	grid-column: 1 / 6;
+}
+
+.shipping_info_question_grid_right{
+	display: grid;
+	grid-column: 8 / 13;
+}
