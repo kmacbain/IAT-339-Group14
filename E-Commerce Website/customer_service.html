@@ -3,15 +3,17 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>The Loft: Customer Service</title>
+    <title>The Loft: Customer Service</title>
 
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/main.css">
@@ -22,8 +24,9 @@
     </head>
 
 
-    <body>
-        <div class="grid_container"> <!-- Site Grid: 12 columns -->
+<body>
+    <div class="grid_container">
+        <!-- Site Grid: 12 columns -->
 
             <header>
                 <!-- Navigation Bar: maintained by Kai-Lee -->
@@ -33,28 +36,21 @@
                         <!-- Navigation bar tutorials:
                         https://www.w3schools.com/css/css_navbar.asp
                         https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-                        <div id="site_main_nav_toolbar">
-                            <ul class="site_main_nav">
+                    <div id="site_main_nav_toolbar">
+                        <ul class="site_main_nav">
 
-                                <li>
-                                    <!-- Tutorial for search bar:
+                            <li>
+                                <!-- Tutorial for search bar:
                                     https://youtu.be/FVH-tXVRErg -->
-                                    <div class="search_bar">
-                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
+                                <div class="search_bar">
+                                    <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
 
-                                        <div class="search_button">
-                                            <!-- How to make the submit button an image taken from:
+                                    <div class="search_button">
+                                        <!-- How to make the submit button an image taken from:
                                             https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
-                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
-                                        </div>
-
+                                        <input type="image" class="search_button" src="img/icons/search_icon.png"
+                                            alt="Search icon">
                                     </div>
-                                </li>
-                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
-                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
-                            </ul>
-                        </div>
-                    </div>
 
                     <div class="main_nav_title_items"><hr></div>
                     
@@ -138,21 +134,55 @@
 
             <main>
 
-            <!-- Section Module x: maintained by xx -->
+                <div class="main_nav_title_items">
+                    <nav class="main_nav">
+                        <a href="index.html">Home</a>
+                        <a href="office_desks.html">Office</a>
+                        <a href="living_cabinets.html">Living</a>
+                        <a href="bedroom_beds.html">Bedroom</a>
+                        <a href="dining_chairs.html">Dining</a>
+                        <a href="lookbook.html">Lookbook</a>
+                    </nav>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- shipping informaion page -->
             <section class="grid_section">
                 <div class="grid_col_2_12">
-                    <!-- module for the shipping info -->
-                    <section>
-                        <h2>Shipping Information</h2>
-                    </section>
-
-                    <!-- contact infor input fields module here -->
-                    <section>
-
-                    </section>
-
-
-
+                    <!-- <div class="contact_outer_grid"> -->
+                        <div class="contact_page_title_module">
+                            <h3>Shipping Information</h3>
+                        </div>
+                        <div class="shipping_info_question_grid">
+                            <div class="shipping_info_question_grid_left">
+                                <h4>What are my shipping options</h4>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                    quisquam est.</p>
+                                <h4>When will I recieve my order</h4>
+                                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                                    sed
+                                    quia non numquam.</p>
+                            </div>
+                            <div class="shipping_info_question_grid_right">
+                                <h4>Ground shipping transit times</h4>
+                                <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi.
+                                </p>
+                                <h4>Shipping cost</h4>
+                                <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                    ipsum
+                                    quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                                    tempora.</p>
+                            </div>
+                        </div>
+                    <!-- </div> -->
                 </div>
             </section>
 
@@ -162,7 +192,9 @@
                 <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
                 <div class="footer_grid">
 
-                    <div class="footer_grid_col"><hr></div>
+                    <div class="footer_grid_col">
+                        <hr>
+                    </div>
 
                     <div class="footer_grid_col">
                         <div class="footer_menu">
@@ -170,20 +202,25 @@
                             <div>
                                 <ul id="footer_menu_links">
                                     <li><a href="about.html" class="about">About</a></li>
-                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
+                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div>
                                 <ul id="footer_menu_socials">
-                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png" alt="Link to The Loft Instagram"></a></li>
-                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png" alt="Link to The Loft Facebook"></a></li>
-                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png" alt="Link to The Loft Twitter"></a></li>
-                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png" alt="Link to The Loft Pinterest"></a></li>
+                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png"
+                                                alt="Link to The Loft Instagram"></a></li>
+                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png"
+                                                alt="Link to The Loft Facebook"></a></li>
+                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png"
+                                                alt="Link to The Loft Twitter"></a></li>
+                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png"
+                                                alt="Link to The Loft Pinterest"></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                        
+
 
                     <div class="newsletter">
                         <form action="#" class="contact_us">
@@ -198,8 +235,8 @@
                 </div>
             </footer>
 
-            </main>
-        </div> <!-- Grid container div -->
-    </body>
+        </main>
+    </div> <!-- Grid container div -->
+</body>
 
 </html>

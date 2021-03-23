@@ -3,15 +3,17 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>The Loft: Lookbook</title>
+    <title>The Loft: Lookbook</title>
 
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/main.css">
@@ -22,8 +24,9 @@
     </head>
 
 
-    <body>
-        <div class="grid_container"> <!-- Site Grid: 12 columns -->
+<body>
+    <div class="grid_container">
+        <!-- Site Grid: 12 columns -->
 
             <header>
                 <!-- Navigation Bar: maintained by Kai-Lee -->
@@ -33,28 +36,21 @@
                         <!-- Navigation bar tutorials:
                         https://www.w3schools.com/css/css_navbar.asp
                         https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-                        <div id="site_main_nav_toolbar">
-                            <ul class="site_main_nav">
+                    <div id="site_main_nav_toolbar">
+                        <ul class="site_main_nav">
 
-                                <li>
-                                    <!-- Tutorial for search bar:
+                            <li>
+                                <!-- Tutorial for search bar:
                                     https://youtu.be/FVH-tXVRErg -->
-                                    <div class="search_bar">
-                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
+                                <div class="search_bar">
+                                    <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
 
-                                        <div class="search_button">
-                                            <!-- How to make the submit button an image taken from:
+                                    <div class="search_button">
+                                        <!-- How to make the submit button an image taken from:
                                             https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
-                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
-                                        </div>
-
+                                        <input type="image" class="search_button" src="img/icons/search_icon.png"
+                                            alt="Search icon">
                                     </div>
-                                </li>
-                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
-                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
-                            </ul>
-                        </div>
-                    </div>
 
                     <div class="main_nav_title_items"><hr></div>
                     
@@ -138,29 +134,152 @@
 
             <main>
 
-            <!-- Section Module x: maintained by xx -->
+                <div class="main_nav_title_items">
+                    <nav class="main_nav">
+                        <a href="index.html">Home</a>
+                        <a href="office_desks.html">Office</a>
+                        <a href="living_cabinets.html">Living</a>
+                        <a href="bedroom_beds.html">Bedroom</a>
+                        <a href="dining_chairs.html">Dining</a>
+                        <a href="lookbook.html">Lookbook</a>
+                    </nav>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!--  Lookbook: maintained by bryan adapted form kai -->
+            <section class="grid_section">
+                <div class="hero_grid">
+                    <!-- Hero image grid for the look book-->
+                    <div class="hero_image">
+                        <picture>
+                            <!-- Hero image -->
+                            <img src="img/lookbook/hero_img.jpg" alt="Hero image of the lookbook page">
+                        </picture>
+                    </div>
+                    <div class="hero_text">
+                        <!-- Text and button overlay -->
+                        <h2>The place where ideas <br> are catered & created</h2>
+<!-- make the link go to the next module on the page  -->
+                        <a href="#take_a_look_button_pointer" class="black_button">Take a Look</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- module with the paragraps on one side and the picture on the other -->
+            <!-- <section class="grid_section">
+                <div class="grid_col_2_12">
+
+                    <section>
+                    </section>
+
+                </div>
+            </section> -->
+
+            <!-- module where the look books will be available to browse though-->
             <section class="grid_section">
                 <div class="grid_col_2_12">
 
                     <section>
-                        <!-- the take a look module with a picutre -->
-                        <h2>The place where ideas are catered & created</h2>
-                        <!-- button to scroll down to a section on the page -->
-                        <a>Take A Look</a>
                     </section>
 
-                    <!-- module with the paragraps on one side and the picture on the other -->
-                    <section>
-                        
-                    </section>
+                </div>
+            </section>
 
-                    <!-- module where the look books will be available to browse though-->
-                    <section>
+            <!-- bryan's section -->
+            <!-- para right pic left module -->
+            <section class="grid_section">
+                <div class="grid_col_2_12">
+                    <div id="take_a_look_button_pointer"class="para_right_and_picture_left">
 
-                    </section> 
+                        <div class="para_right_and_picture_left_left_side">
+                            <picture>
+                                <source media="(min-width:1200px)" srcset="img/lookbook/lookbook_image1.jpg"
+                                    alt="placeholder for the para_right_and_picture_left class">
+                                <img src="img/lookbook/lookbook_image1.jpg"
+                                    alt="image of the template for the para_right_and_picture_left">
+                            </picture>
+                        </div>
+                        <div class="para_right_and_picture_left_right_side">
 
+                            <h4 class="clear">most popular look</h4>
+                            <p class="clear"> is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <!-- para left pic right -->
+            <section class="grid_section">
+                <div class="grid_col_2_12">
+                    <div class="para_left_and_picture_right">
 
+                        <div class="para_left_and_picture_right_left_side">
+                            <h4 class="clear">newest look</h4>
+                            <p class="clear"> is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.
+                            </p>
+                        </div>
+
+                        <div class="para_left_and_picture_right_right_side">
+                            <picture>
+                                <source media="(min-width:1200px)" srcset="img/lookbook/lookbook_image2.jpg"
+                                    alt="placeholder for the para_left_and_picture_right class">
+                                <img src="img/lookbook/lookbook_image2.jpg"
+                                    alt="image of the template for the para_left_and_picture_right">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- complete lookbook maintained by bryan adpted from kai -->
+            <section class="grid_section">
+                <div class="three_column_grid">
+                    <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h4>complete lookbook</h4>
+                        <p>See how other clients have shaped their living spaces with our producsts and made them unique</p>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="three_column_grid_items">
+                        <div class="three_column_items">
+                            <img src="img/lookbook/city_living_look.jpg"
+                                alt="Room 1 decorated with classic industrial interior design">
+                            <h5>city living</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+                        <div class="three_column_items">
+                            <img src="img/lookbook/penthouse_look.jpg"
+                                alt="Room 2 decorated with classic industrial interior design">
+                            <h5>penthouse</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+                        <div class="three_column_items">
+                            <img src="img/lookbook/modern_look.jpg"
+                                alt="Room 3 decorated with classic industrial interior design">
+                            <h5>Modern</h5>
+                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
@@ -170,7 +289,9 @@
                 <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
                 <div class="footer_grid">
 
-                    <div class="footer_grid_col"><hr></div>
+                    <div class="footer_grid_col">
+                        <hr>
+                    </div>
 
                     <div class="footer_grid_col">
                         <div class="footer_menu">
@@ -178,20 +299,25 @@
                             <div>
                                 <ul id="footer_menu_links">
                                     <li><a href="about.html" class="about">About</a></li>
-                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
+                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div>
                                 <ul id="footer_menu_socials">
-                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png" alt="Link to The Loft Instagram"></a></li>
-                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png" alt="Link to The Loft Facebook"></a></li>
-                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png" alt="Link to The Loft Twitter"></a></li>
-                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png" alt="Link to The Loft Pinterest"></a></li>
+                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png"
+                                                alt="Link to The Loft Instagram"></a></li>
+                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png"
+                                                alt="Link to The Loft Facebook"></a></li>
+                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png"
+                                                alt="Link to The Loft Twitter"></a></li>
+                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png"
+                                                alt="Link to The Loft Pinterest"></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                        
+
 
                     <div class="newsletter">
                         <form action="#" class="contact_us">
@@ -206,8 +332,8 @@
                 </div>
             </footer>
 
-            </main>
-        </div> <!-- Grid container div -->
-    </body>
+        </main>
+    </div> <!-- Grid container div -->
+</body>
 
 </html>
