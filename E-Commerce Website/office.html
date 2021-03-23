@@ -17,15 +17,17 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/grids.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
     </head>
 
 
     <body>
-        <div class="grid-container"> <!-- Site Grid: 12 columns -->
+        <div class="grid_container"> <!-- Site Grid: 12 columns -->
 
             <header>
                 <!-- Navigation Bar: maintained by Kai-Lee -->
-                <nav class="main_nav_grid">
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
                     <div class="main_nav_title_items">
                         <div id="site_title"><h1>THE LOFT</h1></div>
                         <!-- Navigation bar tutorials:
@@ -57,29 +59,322 @@
                     <div class="main_nav_title_items"><hr></div>
                     
                     <div class="main_nav_title_items">
-                        <nav class="main_nav">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
                             <a href="index.html">Home</a>
-                            <a href="office_desks.html">Office</a>
-                            <a href="living_cabinets.html">Living</a>
-                            <a href="bedroom_beds.html">Bedroom</a>
-                            <a href="dining_chairs.html">Dining</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="lookbook.html">Lookbook</a>
                         </nav>
                     </div>
                 </nav>
+
             </header>
+
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
 
             <main>
 
-            <!-- Section Module x: maintained by xx -->
-            <section class="grid-section">
-                <div class="grid-col-2-12">
-                    <h2>xx Office Product Page Content Here xx</h2>
+            <!-- Office Product Page Banner: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="hero_grid">
+                    <!-- Hero image grid -->
+                    <div class="hero_image">
+                        <picture>
+                            <!-- Hero image -->
+                            <img src="img/office/desk_hero.jpg"
+                                alt="Hero image of new Industrial furniture in a large loft apartment">
+                        </picture>
+                    </div>
+                    <div class="hero_text">
+                        <!-- Text overlay -->
+                        <h2>Industrial Home<br>Office Space</h2>
+                    </div>
+                </div>
+            </section>
 
 
+            <!-- New Arrivals: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="three_column_grid"> <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h3>Shop New Arrivals</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="office_product_leatherchair.html"><img src="img/office/chairs/leather_chair/image_1.jpg"
+                                alt="Leather office chair"></a>
+                            <h5>Leather Office Chair</h5>
+                            <p>Clean lines and cofortable proportions.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="office_product_filingcabinet.html"><img src="img/office/storage/black_cabinet/image_1.jpg"
+                                alt="Four drawer black filing cabinet"></a>
+                            <h5>File Cabinet</h5>
+                            <p>Design flexibility and optimal surface area in an enduring material with timeless appeal.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="office_product_marbledesk.html"><img src="img/office/desks/image_2.jpg"
+                                alt="Metal and marble desk"></a>
+                            <h5>Marble Desk</h5>
+                            <p>Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture.</p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
 
                 </div>
             </section>
+
+            <!-- Product Grid: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="product_page_grid"> <!-- Product grid -->
+                    
+                    <!-- Breadcrumbs -->
+                    <div class="product_page_row breadcrumbs grid_col_2_12">
+                        <a href="index.html">Home</a>
+                        <p> / </p>
+                        <p class="breadcrumbs_bold">Office</p>
+                    </div>
+
+                    <div class="product_page_row">
+                        <h3>Chairs</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="office_product_leatherchair.html"><img src="img/office/chairs/leather_chair/image_1.jpg"
+                                alt="Leather office chair"></a>
+                            <h5>Leather Office Chair</h5>
+                            <p>Clean lines and cofortable proportions.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/office/chairs/image_2.jpg"
+                                alt="Dark brown leather and metal chair"></a>
+                            <h5>Buckle Chair</h5>
+                            <p>Our equestrian-inspired buckle chair bears all the hallmarks of a prized vintage piece. </p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/office/chairs/image_3.jpg"
+                                alt="Black leather swivel chair"></a>
+                            <h5>Motorcity Leather Desk Chair</h5>
+                            <p>Thickly padded, button-tufted cushions cradle with comfort, and an aluminum base lets it roll and swivel 360 degrees.</p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Desks: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="three_column_grid"> <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h3>Desks</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="office_product_contemporarydesk.html"><img src="img/office/desks/image_1.jpg"
+                                alt="Copper and walnut desk"></a>
+                            <h5>Contemporary Desk</h5>
+                            <p>Solid oak timbers are supported on tapered stanchions of hand-cast metal, the mix of materials and textures imparting a rugged, organic aesthetic.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/office/desks/image_2.jpg"
+                                alt="Metal and marble desk"></a>
+                            <h5>Marble Desk</h5>
+                            <p>Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/office/desks/image_3.jpg"
+                                alt="Mechanical desk"></a>
+                            <h5>Drafting Table</h5>
+                            <p>Drafting table is crafted of cast iron topped with a broad wooden work surface that lifts, lowers and tilts to suit the worker or the task at hand.</p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Desks: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="three_column_grid"> <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h3>Storage</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="office_product_leatherchair.html"><img src="img/office/chairs/leather_chair/image_1.jpg"
+                                alt="Leather office chair"></a>
+                            <h5>Leather Office Chair</h5>
+                            <p>Clean lines and cofortable proportions.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="office_product_filingcabinet.html"><img src="img/office/storage/black_cabinet/image_1.jpg"
+                                alt="Four drawer black filing cabinet"></a>
+                            <h5>File Cabinet</h5>
+                            <p>Design flexibility and optimal surface area in an enduring material with timeless appeal.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="office_product_marbledesk.html"><img src="img/office/desks/image_2.jpg"
+                                alt="Metal and marble desk"></a>
+                            <h5>Marble Desk</h5>
+                            <p>Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture.</p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Curated Collections: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="three_column_grid">
+                    <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h4>Get Inspired by these Curated Collections</h4>
+                        <p>Explore curated collections for your unique brand of style.</p>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="three_column_grid_items">
+                        <div class="three_column_items">
+                            <img src="img/curated_collection/classic_collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Classic</h5>
+                            <p>Timeless and adaptable, this collection would look enhances the charm of any style of home.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <img src="img/curated_collection/vintage_collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Vintage</h5>
+                            <p>For those who appreciate a more retro style.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <img src="img/curated_collection/modern_collection.png"
+                                alt="Room decorated with classic industrial interior design">
+                            <h5>Modern</h5>
+                            <p>The modern collection has all the pieces you need to complete the look of that restored walk-up borwnstoen style loft.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+
 
             <!-- Footer Menu Module: maintained by Kai-Lee -->
             <footer class="grid_section">

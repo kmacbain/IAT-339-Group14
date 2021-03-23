@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/grids.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
     </head>
 
 
@@ -25,7 +27,7 @@
 
             <header>
                 <!-- Navigation Bar: maintained by Kai-Lee -->
-                <nav class="main_nav_grid">
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
                     <div class="main_nav_title_items">
                         <div id="site_title"><h1>THE LOFT</h1></div>
                         <!-- Navigation bar tutorials:
@@ -57,17 +59,87 @@
                     <div class="main_nav_title_items"><hr></div>
                     
                     <div class="main_nav_title_items">
-                        <nav class="main_nav">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
                             <a href="index.html">Home</a>
-                            <a href="office_desks.html">Office</a>
-                            <a href="living_cabinets.html">Living</a>
-                            <a href="bedroom_beds.html">Bedroom</a>
-                            <a href="dining_chairs.html">Dining</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_cabinets.html">Cabinets</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="lookbook.html">Lookbook</a>
                         </nav>
                     </div>
                 </nav>
             </header>
+
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
 
             <main>
 
@@ -78,13 +150,13 @@
                     <div class="hero_image">
                         <picture>
                             <!-- Hero image -->
-                            <img src="img/office/office.png"
+                            <img src="img/office/desk_hero.jpg"
                                 alt="Hero image of new Industrial furniture in a large loft apartment">
                         </picture>
                     </div>
                     <div class="hero_text">
                         <!-- Text overlay -->
-                        <h2>The latest <br> leather sofa sets</h2>
+                        <h2>Industrial Home<br>Office Space<br>- Desks</h2>
                     </div>
                 </div>
             </section>
@@ -107,22 +179,22 @@
                     <div class="five_column_grid_items">
                         
                         <div class="three_column_items">
-                            <a href="office_product_leatherchair.html"><img src="img/product/new_arrivals/image_1.png"
-                                alt="Room decorated with classic industrial interior design"></a>
+                            <a href="office_product_leatherchair.html"><img src="img/office/chairs/leather_chair/image_1.jpg"
+                                alt="Leather office chair"></a>
                             <h5>Leather Office Chair</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <p>Clean lines and cofortable proportions.</p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/new_arrivals/image_2.png"
-                                alt="Room decorated with classic industrial interior design">
+                            <a href="office_product_filingcabinet.html"><img src="img/office/storage/black_cabinet/image_1.jpg"
+                                alt="Four drawer black filing cabinet"></a>
                             <h5>File Cabinet</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <p>Design flexibility and optimal surface area in an enduring material with timeless appeal.</p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/new_arrivals/image_3.png"
-                                alt="Room decorated with classic industrial interior design">
-                            <h5>Contemporary Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="office_product_marbledesk.html"><img src="img/office/desks/image_2.jpg"
+                                alt="Metal and marble desk"></a>
+                            <h5>Marble Desk</h5>
+                            <p>Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture.</p>
                         </div>
                     </div>
 
@@ -154,66 +226,67 @@
                     <!-- Three column item collection, row 1, spans column 2 to 12 -->
                     <div class="three_column_grid_items">
                         <div class="three_column_items">
-                            <a href="office_product_leatherchair.html"><img src="img/product/office/desks/image_1.png"
-                                alt="Industrial style desk in a grey room"></a>
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="office_product_contemporarydesk.html"><img src="img/office/desks/image_1.jpg"
+                                alt="Copper and walnut desk"></a>
+                            <h5>Contemporary Desk</h5>
+                            <p>Solid oak timbers are supported on tapered stanchions of hand-cast metal, the mix of materials and textures imparting a rugged, organic aesthetic.</p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_2.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_2.jpg"
+                                alt="Metal and marble desk"></a>
+                            <h5>Marble Desk</h5>
+                            <p>Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture.</p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_3.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_3.jpg"
+                                alt="Mechanical desk"></a>
+                            <h5>Drafting Table</h5>
+                            <p>Drafting table is crafted of cast iron topped with a broad wooden work surface that lifts, lowers and tilts to suit the worker or the task at hand.</p>
                         </div>
                     </div>
 
                     <!-- Three column item collection, row 2, spans column 2 to 12 -->
                     <div class="three_column_grid_items">
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_4.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_4.jpg"
+                                alt="Sheet metal desk"></a>
+                            <h5>Metal Wrapped Desk</h5>
+                            <p>Hand-wrapped sheet metal, painstakingly constructed. 
+                            Each piece features sheet metal secured by thousands of hand-hammered nails.</p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_5.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_5.jpg"
+                                alt="Solid oak desk"></a>
+                            <h5>Solid Oak Desk</h5>
+                            <p>Reclaimed oak timbers from decades-old buildings, with distressed oak planks for consistency and stability.</p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_6.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_6.jpg"
+                                alt="French desk"></a>
+                            <h5>French Desk</h5>
+                            <p>The crisp geometric profiles are crafted of American white oak that's been sandblasted to impart a subtle texture.</p>
                         </div>
                     </div>
  
                     <!-- Three column item collection, row 3, spans column 2 to 12 -->
                     <div class="three_column_grid_items">
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_4.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_7.jpg"
+                                alt="Concrete desk"></a>
+                            <h5>Concrete Desk</h5>
+                            <p>Interlocking planes of reclaimed pine support a simple concrete top.</p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_8.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_8.jpg"
+                                alt="Mirrored desk"></a>
+                            <h5>Mirrored Desk</h5>
+                            <p>The marriage of cast metal frames and antiqued mirror tabletops gives these simple, structural forms their vintage industrial appeal. </p>
                         </div>
                         <div class="three_column_items">
-                            <img src="img/product/office/desks/image_9.png"
-                                alt="Industrial style desk in a grey room">
-                            <h5>Industrial Style Desk</h5>
-                            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+                            <a href="#"><img src="img/office/desks/image_9.jpg"
+                                alt="Flatiron desk"></a>
+                            <h5>Flatiron Desk</h5>
+                            <p>A welded, riveted steel frame stands on caster wheels, while nicks and imperfections speak of the wood's age and provenance.</p>
                         </div>
                     </div>
 

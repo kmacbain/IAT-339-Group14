@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- All code except those portions with comments indicating otherwise are from the SFU class IAT 339, taught by Paul Brokenshire, in the winter semester of 2021-->
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>The Loft: Collections</title>
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grids.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
+    </head>
+
+
+    <body>
+        <div class="grid_container"> <!-- Site Grid: 12 columns -->
+
+            <header>
+                <!-- Navigation Bar: maintained by Kai-Lee -->
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
+                    <div class="main_nav_title_items">
+                        <div id="site_title"><h1>THE LOFT</h1></div>
+                        <!-- Navigation bar tutorials:
+                        https://www.w3schools.com/css/css_navbar.asp
+                        https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+                        <div id="site_main_nav_toolbar">
+                            <ul class="site_main_nav">
+
+                                <li>
+                                    <!-- Tutorial for search bar:
+                                    https://youtu.be/FVH-tXVRErg -->
+                                    <div class="search_bar">
+                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
+
+                                        <div class="search_button">
+                                            <!-- How to make the submit button an image taken from:
+                                            https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
+                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main_nav_title_items"><hr></div>
+                    
+                    <div class="main_nav_title_items">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
+                            <a href="index.html">Home</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="lookbook.html">Lookbook</a>
+                        </nav>
+                    </div>
+                </nav>
+
+            </header>
+
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
+
+            <main>
+
+            <!-- Office Product Page Banner: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="hero_grid">
+                    <!-- Hero image grid -->
+                    <div class="hero_image">
+                        <picture>
+                            <!-- Hero image -->
+                            <img src="img/new_collections/new_collections_hero.jpg"
+                                alt="Hero image of new Industrial furniture in a large loft apartment">
+                        </picture>
+                    </div>
+                    <div class="hero_text">
+                        <!-- Text overlay -->
+                        <h2>Industrial Home<br>New Collections</h2>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Office Collection: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="three_column_grid"> <!-- 12 column, 2 row grid -->
+
+                    <!-- Breadcrumbs -->
+                    <div class="product_page_row breadcrumbs grid_col_2_12">
+                        <a href="index.html">Home</a>
+                        <p> / </p>
+                        <p class="breadcrumbs_bold">New Collections</p>
+                    </div>
+
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h3>Office</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/office/chairs/image_4.jpg"
+                                alt="Grey leather swivel chair"></a>
+                            <h5>Luke Leather Desk Chair</h5>
+                            <p>Sophisticated and supportive both, its contoured back and flared arms offer a singular embrace.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/office/desks/image_4.jpg"
+                                alt="Sheet metal desk"></a>
+                            <h5>Metal Wrapped Desk</h5>
+                            <p>Hand-wrapped sheet metal, painstakingly constructed. 
+                            Each piece features sheet metal secured by thousands of hand-hammered nails.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/office/storage/image_6.jpg"
+                                alt="Short black metal file cabiet"></a>
+                            <h5>Industrial 3-Drawer File Cabinet</h5>
+                            <p>The clean, linear aesthetic of American industrial design, circa 1940, introduced highly functional furnishings to offices/</p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Livingroom Collection: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="three_column_grid"> <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h3>Livingroom</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/living/coffee_tables/image_6.jpg"
+                                alt="Dark brown wood and metal coffee table"></a>
+                            <h5>Cayden Campaign Coffee Table</h5>
+                            <p>The rustic grain of the solid oak and the hand-cast metal hardware with corner brackets that accent each piece.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/living/side_tables/image_5.jpg"
+                                alt="Dark brown wood and metal Side Table"></a>
+                            <h5>Cayden Campaign Console Side Table</h5>
+                            <p>Subtle details including tapered legs lend refinement to the clean, forthright silhouettes.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/living/sofas/image_7.jpg"
+                                alt="Dark brown leather couch"></a>
+                            <h5>Maxwell Leather Three-Seat-Cushion Sofa</h5>
+                            <p>Clean lines and a streamlined silhouette define its architectural attitude, while sumptuously padded cushions play plush counterpoint. </p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Bedroom Collection: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="three_column_grid"> <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h3>Bedroom</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/nightstands/image_3.jpg"
+                                alt="Dark brown wide wood nightstand"></a>
+                            <h5>Wyeth Split Bamboo 9-Drawer Nightstand</h5>
+                            <p>Inspired by elements of African tribal design, the silhouettes are imbued with a sense of understated, quiet luxury. The warm highlights of the organic bamboo surface are complemented by textured stained oak veneers.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/beds/image_5.jpg"
+                                alt="Dark brown wood canopy bed"></a>
+                            <h5>Cayden Campaign Canopy Bed With Corner Brackets</h5>
+                            <p>European campaign furnishings, echoed in the simple strength of the shapes, the rustic grain of the solid oak and the hand-cast metal brackets that accent each piece.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_4.jpg"
+                                alt="Brown wood and metal dresser"></a>
+                            <h5>Cayden Campaign 5-Drawer Dresser With Corner Brackets</h5>
+                            <p>The solid oak and the hand-cast metal hardware with corner brackets that accent each piece. Subtle details including tapered legs lend refinement to the clean, forthright silhouettes.</p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                </div>
+            </section>
+            
+
+
+            <!-- Footer Menu Module: maintained by Kai-Lee -->
+            <footer class="grid_section">
+
+                <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
+                <div class="footer_grid">
+
+                    <div class="footer_grid_col"><hr></div>
+
+                    <div class="footer_grid_col">
+                        <div class="footer_menu">
+                            <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
+                            <div>
+                                <ul id="footer_menu_links">
+                                    <li><a href="about.html" class="about">About</a></li>
+                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul id="footer_menu_socials">
+                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png" alt="Link to The Loft Instagram"></a></li>
+                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png" alt="Link to The Loft Facebook"></a></li>
+                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png" alt="Link to The Loft Twitter"></a></li>
+                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png" alt="Link to The Loft Pinterest"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                    <div class="newsletter">
+                        <form action="#" class="contact_us">
+                            <label for="email" class="contact_us">Subscribe to our newsletter</label>
+                            <!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
+                            <input type="text" id="email" name="email" placeholder="EMAIL" class="contact_us">
+                            <!-- HTML to fix submit button error given by validator taken from:
+                            https://www.w3schools.com/html/html_forms.asp -->
+                            <input type="submit" value="Subscribe" class="grey_button">
+                        </form>
+                    </div>
+                </div>
+            </footer>
+
+            </main>
+        </div> <!-- Grid container div -->
+    </body>
+
+</html>

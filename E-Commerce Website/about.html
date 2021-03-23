@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/grids.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
     </head>
 
 
@@ -25,7 +27,7 @@
 
             <header>
                 <!-- Navigation Bar: maintained by Kai-Lee -->
-                <nav class="main_nav_grid">
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
                     <div class="main_nav_title_items">
                         <div id="site_title"><h1>THE LOFT</h1></div>
                         <!-- Navigation bar tutorials:
@@ -57,17 +59,82 @@
                     <div class="main_nav_title_items"><hr></div>
                     
                     <div class="main_nav_title_items">
-                        <nav class="main_nav">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
                             <a href="index.html">Home</a>
-                            <a href="office_desks.html">Office</a>
-                            <a href="living_cabinets.html">Living</a>
-                            <a href="bedroom_beds.html">Bedroom</a>
-                            <a href="dining_chairs.html">Dining</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="lookbook.html">Lookbook</a>
                         </nav>
                     </div>
                 </nav>
+
             </header>
+
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
 
             <main>
 

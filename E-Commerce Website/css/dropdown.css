@@ -18,3 +18,27 @@
 	flex: 1 1 100%;
 }
 
+.hidden {
+	display:none;
+}
+
+/*Cursor hand appears when cursor is over the menu title to indicate interactability*/
+.nav_top_link{
+	cursor:pointer;
+}
+
+.box_item_nav a:focus {
+	outline:none;
+}
+
+.dropdown_wrapper{
+	position: absolute;
+	/*Allows dropdown menu to appear above page elements*/
+	z-index:100;
+	background-color: #131313;
+}
+
+.menu_wrapper{
+	position: relative;
+	display:inline-block;
+}

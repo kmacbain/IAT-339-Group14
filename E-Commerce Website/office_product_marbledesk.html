@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!-- All code except those portions with comments indicating otherwise are from the SFU class IAT 339, taught by Paul Brokenshire, in the winter semester of 2021-->
+<!-- Website copy from:
+https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat10180124-->
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>The Loft: Marble Desk</title>
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grids.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
+    </head>
+
+
+    <body>
+        <div class="grid_container"> <!-- Site Grid: 12 columns -->
+
+            <header>
+                <!-- Navigation Bar: maintained by Kai-Lee -->
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
+                    <div class="main_nav_title_items">
+                        <div id="site_title"><h1>THE LOFT</h1></div>
+                        <!-- Navigation bar tutorials:
+                        https://www.w3schools.com/css/css_navbar.asp
+                        https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+                        <div id="site_main_nav_toolbar">
+                            <ul class="site_main_nav">
+
+                                <li>
+                                    <!-- Tutorial for search bar:
+                                    https://youtu.be/FVH-tXVRErg -->
+                                    <div class="search_bar">
+                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
+
+                                        <div class="search_button">
+                                            <!-- How to make the submit button an image taken from:
+                                            https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
+                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main_nav_title_items"><hr></div>
+                    
+                    <div class="main_nav_title_items">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
+                            <a href="index.html">Home</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_cabinets.html">Cabinets</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="lookbook.html">Lookbook</a>
+                        </nav>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
+
+
+            <main>
+
+            <!-- Product Details Images: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="product_grid">
+                    <div class="product_grid_col_thumb">
+                        <img class="product_grid_col_thumb_img" src="img/office/desks/marble_desk/image_1.jpg"
+                            alt="Marble and steel desk">
+                        <img class="product_grid_col_thumb_img" src="img/office/desks/marble_desk/image_2.jpg"
+                            alt="Marble and steel desk at an angle">
+                        <img class="product_grid_col_thumb_img" src="img/office/desks/marble_desk/image_3.jpg"
+                            alt="Corner detail of marble and steel desk">
+                    </div>
+                    <img class="product_grid_col_feature" src="img/office/desks/marble_desk/image_1.jpg"
+                            alt="Marble and steel desk">
+                </div>
+            </section> <!-- End of Product Details Images section -->
+
+
+            <!-- Product Detail Description: maintained by Kai-Lee -->
+            <section class="grid_section">
+                <div class="product_grid white_background">
+                    <div class="product_info">  
+                        <div class="product_info_section1">
+                            <div class="breadcrumbs">
+                                <a href="index.html">Home</a>
+                                <p> / </p>
+                                <a href="office.html">Office</a>
+                                <p> / </p>
+                                <p class="breadcrumbs_bold">Desks</p> 
+                            </div>
+                            <h5>Description</h5>
+                            <p class="clamp_text">Inspired by the sculptural works of Salvador Dalí and Diego Giacometti, merges the rustic sensibility of hand-forged metal with cool Italian Carrara marble. Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture. The pounded, tapered silhouettes are a rich counterpoint to the smooth, honed stone.</p>
+                            <p>65” W x 9” L x 60” H</p>
+                            <ul class="list_items">
+                                <li><p>Top crafted of honed Italian Carrara marble over a wood core</p></li>
+                                <li><p>Frame is forged of solid metal and hammered by hand</p></li>
+                                <li><p>Forged Iron finish is crafted of solid iron</p></li>
+                                <li><p>This item is artisan crafted with meticulous care.</p></li>
+                                <li><p>Use coasters under beverages to prevent marks and stains</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="product_info_selection2">
+                            <div>
+                                <p>Office Desk</p>
+                                <h4>White Marble and Steel DEsk</h4>
+                                <p>$10,300</p>
+                            </div>
+                            <div class="product_info_quantity">
+                                <p>Quantity</p>
+                            </div>
+                            <div class="product_info_amount">
+                                <a href="#" class="product_info_amount_item"><img src="img/icons/minus_icon.png" alt="Decrease number of items to be added to cart"></a>
+                                <p class="product_info_amount_item">1</p>
+                                <a href="#" class="product_info_amount_item"><img src="img/icons/plus_icon.png" alt="Increase number of items to be added to cart"></a>
+                            </div>
+                            <div class="product_info_buttons">
+                                <a href="#" class="grey_button">Add to Bag</a>
+                                <a href="#" class="white_button"><img src="img/icons/share_icon.png" alt="Share product on social media">Share</a>
+                                <a href="#" class="white_button">Add to Wishlist</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Product Grid section -->
+            </section> <!-- End of Product Detail section -->
+
+
+
+            <!-- Craftsmanship Video: maintained by Kai-Lee -->
+            <section class="grid_section"> <!-- Section grid -->
+                <div class="hero_grid"> <!-- Hero image grid -->
+                    <h3 class="grid_col_2_12">A Focus on Materials and Craftsmanship</h3>
+                    <div class="hero_image">
+                        <picture>
+                            <!-- Hero image -->
+                            <img src="img/product/video.png"
+                                alt="Hero image of new Industrial furniture in a large loft apartment">
+                        </picture>
+                    </div>
+                    <div class="play_icon"> <!-- Icon overlay -->
+                        <a href="#"><img src="img/icons/play_icon.png"
+                                alt="Play a video about the making of our products"></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Our Products In Your Home: maintained by Kai-Lee -->
+            <section class="grid_section in_your_home">
+                <div class="three_column_grid"> <!-- Three column grid -->
+
+                    <div class="three_column_grid_heading"> <!-- 12 column, 2 row grid -->
+                        
+                        <h3>Our Products in Your Home</h4> <!-- First row title -->
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/product/your_home/image_1.png"
+                                alt="Room decorated with classic industrial interior design"></a>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/product/your_home/image_2.png"
+                                alt="Room decorated with classic industrial interior design"></a>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/product/your_home/image_3.png"
+                                alt="Room decorated with classic industrial interior design"></a>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Footer Menu Module: maintained by Kai-Lee -->
+            <footer class="grid_section">
+
+                <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
+                <div class="footer_grid">
+
+                    <div class="footer_grid_col"><hr></div>
+
+                    <div class="footer_grid_col">
+                        <div class="footer_menu">
+                            <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
+                            <div>
+                                <ul id="footer_menu_links">
+                                    <li><a href="about.html" class="about">About</a></li>
+                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul id="footer_menu_socials">
+                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png" alt="Link to The Loft Instagram"></a></li>
+                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png" alt="Link to The Loft Facebook"></a></li>
+                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png" alt="Link to The Loft Twitter"></a></li>
+                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png" alt="Link to The Loft Pinterest"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                    <div class="newsletter">
+                        <form action="#" class="contact_us">
+                            <label for="email" class="contact_us">Subscribe to our newsletter</label>
+                            <!-- Suggestion to use placeholder instead of value attribute so that text in field disappears once the user types comes from my wife, Bri-->
+                            <input type="text" id="email" name="email" placeholder="EMAIL" class="contact_us">
+                            <!-- HTML to fix submit button error given by validator taken from:
+                            https://www.w3schools.com/html/html_forms.asp -->
+                            <input type="submit" value="Subscribe" class="grey_button">
+                        </form>
+                    </div>
+                </div>
+            </footer>
+
+            </main>
+        </div> <!-- Grid container div -->
+    </body>
+
+</html>

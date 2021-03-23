@@ -17,57 +17,124 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grids.css">
         <link rel="stylesheet" href="css/normalize.css">
-	</head>
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
+    </head>
 
 
-	<body>
-        <div class="grid-container"> <!-- Site Grid: 12 columns -->
+    <body>
+        <div class="grid_container"> <!-- Site Grid: 12 columns -->
 
-		    <header>
+            <header>
                 <!-- Navigation Bar: maintained by Kai-Lee -->
-                <nav class="main-nav-grid black-background">
-                    <div class="main-nav-title-items">
-                        <div id="site-title"><h1>THE LOFT</h1></div>
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
+                    <div class="main_nav_title_items">
+                        <div id="site_title"><h1>THE LOFT</h1></div>
                         <!-- Navigation bar tutorials:
                         https://www.w3schools.com/css/css_navbar.asp
                         https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-                        <div id="site-main-nav-toolbar">
-                            <ul class="site-main-nav">
+                        <div id="site_main_nav_toolbar">
+                            <ul class="site_main_nav">
 
                                 <li>
                                     <!-- Tutorial for search bar:
                                     https://youtu.be/FVH-tXVRErg -->
-                                    <div class="search-bar">
-                                        <input type="text" class="search-bar" placeholder="Search" aria-label="Search Bar">
+                                    <div class="search_bar">
+                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
 
-                                        <div class="search-button">
+                                        <div class="search_button">
                                             <!-- How to make the submit button an image taken from:
                                             https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
-                                            <input type="image" class="search-button" src="img/icons/Search-Icon.png" alt="Search icon">
+                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
                                         </div>
 
                                     </div>
                                 </li>
-                                <li><a href="sign-in.html" class="sign-in">Sign In</a></li>
-                                <li><a href="cart.html"><img src="img/icons/Cart-Icon.png" alt="Cart icon"></a></li>
+                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="main-nav-title-items"><hr></div>
+                    <div class="main_nav_title_items"><hr></div>
                     
-                    <div class="main-nav-title-items">
-                        <nav class="main-nav">
+                    <div class="main_nav_title_items">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
                             <a href="index.html">Home</a>
-                            <a href="office.html">Office</a>
-                            <a href="living.html">Living</a>
-                            <a href="bedroom.html">Bedroom</a>
-                            <a href="dining.html">Dining</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="lookbook.html">Lookbook</a>
                         </nav>
                     </div>
                 </nav>
-		    </header>
+
+            </header>
+
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
 
             <main>
 

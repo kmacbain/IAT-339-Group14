@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/grids.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
     </head>
 
 
@@ -25,7 +27,7 @@
 
             <header>
                 <!-- Navigation Bar: maintained by Kai-Lee -->
-                <nav class="main_nav_grid">
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
                     <div class="main_nav_title_items">
                         <div id="site_title"><h1>THE LOFT</h1></div>
                         <!-- Navigation bar tutorials:
@@ -57,40 +59,240 @@
                     <div class="main_nav_title_items"><hr></div>
                     
                     <div class="main_nav_title_items">
-                        <nav class="main_nav">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
                             <a href="index.html">Home</a>
-                            <a href="office_desks.html">Office</a>
-                            <a href="living_cabinets.html">Living</a>
-                            <a href="bedroom_beds.html">Bedroom</a>
-                            <a href="dining_chairs.html">Dining</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="lookbook.html">Lookbook</a>
                         </nav>
                     </div>
                 </nav>
             </header>
 
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
+
             <main>
 
-            <!-- Product Page Banner: maintained by Kai-Lee -->
+            <!-- Office Product Page Banner: maintained by Kai-Lee -->
             <section class="grid_section">
-                <div class="grid_col_2_12">
-                    <h2>Product Page Banner Module Here</h2>
+                <div class="hero_grid">
+                    <!-- Hero image grid -->
+                    <div class="hero_image">
+                        <picture>
+                            <!-- Hero image -->
+                            <img src="img/bedroom/bedroom_hero.jpg"
+                                alt="Hero image of new Industrial furniture in a large loft apartment">
+                        </picture>
+                    </div>
+                    <div class="hero_text">
+                        <!-- Text overlay -->
+                        <h2>Industrial Home<br>Bedroom<br>- Dressers</h2>
+                    </div>
                 </div>
             </section>
+
 
             <!-- New Arrivals: maintained by Kai-Lee -->
             <section class="grid_section">
-                <div class="grid_col_2_12">
-                    <h2>New Arrivals Module Here</h2>
+                <div class="three_column_grid"> <!-- 12 column, 2 row grid -->
+
+                    <div class="three_column_grid_heading">
+                        <!-- First row heading -->
+                        <h3>Shop New Arrivals</h3>
+                    </div>
+
+                    <div class="left_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
+                    <!-- Three column item collection, spans column 2 to 12 -->
+                    <div class="five_column_grid_items">
+                        
+                        <div class="three_column_items">
+                            <a href="office_product_leatherchair.html"><img src="img/office/chairs/leather_chair/image_1.jpg"
+                                alt="Leather office chair"></a>
+                            <h5>Leather Office Chair</h5>
+                            <p>Clean lines and cofortable proportions.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="office_product_filingcabinet.html"><img src="img/office/storage/black_cabinet/image_1.jpg"
+                                alt="Four drawer black filing cabinet"></a>
+                            <h5>File Cabinet</h5>
+                            <p>Design flexibility and optimal surface area in an enduring material with timeless appeal.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="office_product_marbledesk.html"><img src="img/office/desks/image_2.jpg"
+                                alt="Metal and marble desk"></a>
+                            <h5>Marble Desk</h5>
+                            <p>Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture.</p>
+                        </div>
+                    </div>
+
+                    <div class="right_arrow">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to previous page"></a>
+                    </div>
+
                 </div>
             </section>
 
+
             <!-- Product Grid: maintained by Kai-Lee -->
             <section class="grid_section">
-                <div class="grid_col_2_12">
-                    <h2>Product Grid   Module Here</h2>
+                <div class="product_page_grid"> <!-- Product grid -->
+                    
+                    <!-- Breadcrumbs -->
+                    <div class="product_page_row breadcrumbs grid_col_2_12">
+                        <a href="index.html">Home</a>
+                        <p> / </p>
+                        <a href="bedroom.html">Bedroom</a>
+                        <p> / </p>
+                        <p class="breadcrumbs_bold">Dressers</p>
+                    </div>
+
+                    <div class="product_page_row">
+                        <h3>Dressers</h3>
+                    </div>
+
+                    <!-- Three column item collection, row 1, spans column 2 to 12 -->
+                    <div class="three_column_grid_items">
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_1.jpg"
+                                alt="Dark brown wide wood dresser"></a>
+                            <h5>St. James 7-Drawer Dresser</h5>
+                            <p>Distinguished by hand-carved fluted cornices, corbels and dentil detailing, our timeless collection is expertly constructed of hardwood with enduring mortise-and-tenon joinery.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_2.jpg"
+                                alt="Dark brown narrow wood dresser"></a>
+                            <h5>St. James 5-Drawer Narrow Dresser</h5>
+                            <p>Distinguished by hand-carved fluted cornices, corbels and dentil detailing, our timeless collection is expertly constructed of hardwood with enduring mortise-and-tenon joinery.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_3.jpg"
+                                alt="Dark brown wide wood dresser"></a>
+                            <h5>Wyeth Split Bamboo 9-Drawer Dresser</h5>
+                            <p>Inspired by elements of African tribal design, the silhouettes are imbued with a sense of understated, quiet luxury. The warm highlights of the organic bamboo surface are complemented by textured stained oak veneers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Three column item collection, row 2, spans column 2 to 12 -->
+                    <div class="three_column_grid_items">
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_4.jpg"
+                                alt="Brown wood and metal dresser"></a>
+                            <h5>Cayden Campaign 5-Drawer Dresser With Corner Brackets</h5>
+                            <p>The solid oak and the hand-cast metal hardware with corner brackets that accent each piece. Subtle details including tapered legs lend refinement to the clean, forthright silhouettes.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_5.jpg"
+                                alt="Dark brown wide wood dresser"></a>
+                            <h5>Wyeth Split Bamboo 6-Drawer Dresser</h5>
+                            <p>Inspired by elements of African tribal design, the silhouettes are imbued with a sense of understated, quiet luxury. The warm highlights of the organic bamboo surface are complemented by textured stained oak veneers.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_6.jpg"
+                                alt="Dark brown narrow wood dresser"></a>
+                            <h5>Wyeth Split Bamboo 5-Drawer Dresser</h5>
+                            <p>Inspired by elements of African tribal design, the silhouettes are imbued with a sense of understated, quiet luxury. The warm highlights of the organic bamboo surface are complemented by textured stained oak veneers.</p>
+                        </div>
+                    </div>
+ 
+                    <!-- Three column item collection, row 3, spans column 2 to 12 -->
+                    <div class="three_column_grid_items">
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_7.jpg"
+                                alt="Brown wood and metal narrow dresser"></a>
+                            <h5>Cayden Campaign 5-Drawer Narrow Dresser With Corner Brackets</h5>
+                            <p>The solid oak and the hand-cast metal hardware with corner brackets that accent each piece. Subtle details including tapered legs lend refinement to the clean, forthright silhouettes.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_8.jpg"
+                                alt="Brown narrow wood dresser"></a>
+                            <h5>Cayden Campaign 5-Drawer Narrow Dresser</h5>
+                            <p>The simple strength of the shapes and the rustic grain of the solid oak. Subtle details including tapered legs and beveled trim lend refinement to the clean, forthright silhouettes.</p>
+                        </div>
+                        <div class="three_column_items">
+                            <a href="#"><img src="img/bedroom/dressers/image_9.jpg"
+                                alt="Dark brown wide wood dresser"></a>
+                            <h5>St. James 3-Drawer Dresser</h5>
+                            <p>Distinguished by hand-carved fluted cornices, corbels and dentil detailing, our timeless collection is expertly constructed of hardwood with enduring mortise-and-tenon joinery.</p>
+                        </div>
+                    </div>
+
+                    <div class="page_numbers grid_col_2_12">
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/left_arrow.png" alt="Go to previous page"></a>
+                        <a href="#" class="page_numbers_items"><p>1</p></a>
+                        <a href="#" class="page_numbers_items"><p>2</p></a>
+                        <a href="#" class="page_numbers_items"><p>3</p></a>
+                        <a href="#" class="page_numbers_arrows"><img src="img/icons/right_arrow.png" alt="Go to next page"></a>
+                    </div>
                 </div>
             </section>
+
 
             <!-- Footer Menu Module: maintained by Kai-Lee -->
             <footer class="grid_section">

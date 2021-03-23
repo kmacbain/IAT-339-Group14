@@ -1,0 +1,255 @@
+/* All code except those portions with comments indicating otherwise are from the SFU class IAT 339, taught by Paul Brokenshire, in the winter semester of 2021*/
+
+
+
+/*Main navigation bar: maintained by Kai-Lee*/
+
+@media screen and (max-width: 57em) {
+	.main_nav {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	#site_main_nav_toolbar {
+		/*Advice for using the inherit value for the position property so that flex tags can be used on the toolbar elemnts which I had previously set to an absolute value from my wife, Bri*/
+		position: inherit;
+		justify-content: center;
+	}
+
+	.site_main_nav {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	ul.site_main_nav {
+		align-items: center;
+	}
+
+	input.search_bar {
+		border:1px solid white;
+	}
+
+	.site_main_nav li {
+		margin-left: 0;
+		margin-top: 0.5rem;
+	}
+	
+	.dropdown_wrapper{
+		position: relative;
+		background-color: #434343;
+		flex-direction: column;
+	}
+}
+
+
+
+
+/*Hero Image: maintained by Kai-Lee*/
+
+@media screen and (max-width: 57em) {
+	.hero_text {
+		bottom:30%;
+	}
+
+	.hero_text h2 {
+		font-size: 1.75rem;
+	}
+
+	.hero_text a {
+		font-size: 0.75rem;
+	}
+}
+
+@media screen and (max-width: 43em) {
+	.hero_text {
+		bottom:20%;
+	}
+
+	.hero_text h2 {
+		font-size: 1.5rem;
+	}
+
+	.hero_text a {
+		font-size: 0.6rem;
+	}
+
+	.hero_text .black_button {
+		padding: 0.5rem 1rem;
+	}
+}
+
+
+
+
+/*Curated Collections: maintained by Kai-Lee*/
+
+@media screen and (max-width: 54em) {
+	.three_column_grid_items {
+		grid-template-columns: 1fr;
+	}
+
+	.three_column_items {
+		padding: 3rem 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.three_column_items img {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin-right: 0;
+		margin: 0;
+	}
+
+	.three_column_items h5 {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+
+	.three_column_items p {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+
+/*New Arrivals: maintained by Kai-Lee*/
+
+@media screen and (max-width: 45em) {
+	.five_column_grid_items {
+		grid-template-columns: 1fr;
+	}
+
+	.left_arrow img {
+	width: 0%;
+	}
+
+	.right_arrow img {
+		width: 0%;
+	}
+
+	.three_column_items p {
+		/*Fix alignment later*/
+	}
+}
+
+
+
+
+/*Product Page: maintained by Kai-Lee*/
+
+@media screen and (max-width: 57.5em) {
+	.product_page_grid .three_column_grid_items {
+		grid-template-columns: 1fr;
+	}
+}
+
+
+
+
+/*Product detail Images: maintained by Kai-Lee*/
+
+@media screen and (max-width: 62.5em) {
+	.product_grid .product_grid_col_thumb {
+	    grid-column: 2 / 12;
+	    display:grid;
+	    grid-template-columns: repeat(4, 1fr);
+	    margin-right: 0;
+	    column-gap: 0.5rem;
+	    /*Trick to reverse order of the feature image and the thumbnails by using the order tag taught to me by my wife, Bri MacBain*/
+	    order:2;
+	}
+
+	.product_grid .product_grid_col_feature {
+	    grid-column: 2 / 12;
+	    order:1;
+	    margin-bottom: 0.5rem
+	}
+}
+
+/*Product detail Description: maintained by Kai-Lee*/
+
+@media screen and (max-width: 62.5em) {
+	.product_info {
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+	}
+
+	.product_info_selection1 {
+		justify-content: center;
+	}
+
+	.product_info_selection1 p {
+		width: auto;
+	}
+
+	.product_info_selection2 {
+		margin-top: 3rem;
+		width: fit-content;
+	}
+}
+
+@media screen and (max-width: 37.5em) {
+	.clamp_text {
+		width: auto;
+	}
+}
+
+
+
+
+/*Craftsmanship Video: maintained by Kai-Lee*/
+
+@media screen and (max-width: 59.5em) {
+	.play_icon img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 50em) {
+	.play_icon img {
+		width: 30%;
+	}
+}
+
+
+
+
+
+/*Footer navigation and newsletter: maintained by Kai-Lee*/
+
+@media screen and (max-width: 32em) {
+	.footer_menu {
+		grid-template-columns: 1fr;
+	}
+
+	#footer_menu_links {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	#footer_menu_links li {
+		display:flex;
+		justify-content: center;
+	}
+
+	#footer_menu_links a {
+		margin-bottom: 1rem;
+		margin-right: 0;
+	}
+
+	#footer_menu_socials {
+		justify-content: center;
+	}
+}
+
+
+
