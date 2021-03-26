@@ -1076,3 +1076,11 @@ input.contact_us {
 .round_profile_picture{
 	border-radius: 100%;
 }
+
+.contact_page_title_module{
+	margin-top: 5em;
+}
+
+#contact_us_title{
+	margin-bottom: 1.5em;
+}

@@ -279,5 +279,14 @@ a.page_numbers_arrows {
 	grid-column: 8 / 13;
 }
 
-
+.contact_form {
+	grid-column: 2 / 12;
+	margin-top: 1rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+	border-style: solid;
+	border-width: thin;
+	border-color: #DDDDDD;
+	margin-top: 5em;
+}
 

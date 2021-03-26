@@ -15,25 +15,27 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap"
         rel="stylesheet">
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/grids.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/dropdown.css">
-        <link rel="stylesheet" href="css/breakpoints.css">
-    </head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grids.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+</head>
 
 
 <body>
     <div class="grid_container">
         <!-- Site Grid: 12 columns -->
 
-            <header>
-                <!-- Navigation Bar: maintained by Kai-Lee -->
-                <nav class="main_nav_grid" aria-label="Main navigation bar">
-                    <div class="main_nav_title_items">
-                        <div id="site_title"><h1>THE LOFT</h1></div>
-                        <!-- Navigation bar tutorials:
+        <header>
+            <!-- Navigation Bar: maintained by Kai-Lee -->
+            <nav class="main_nav_grid" aria-label="Main navigation bar">
+                <div class="main_nav_title_items">
+                    <div id="site_title">
+                        <h1>THE LOFT</h1>
+                    </div>
+                    <!-- Navigation bar tutorials:
                         https://www.w3schools.com/css/css_navbar.asp
                         https://www.w3schools.com/css/css_navbar_horizontal.asp-->
                     <div id="site_main_nav_toolbar">
@@ -52,138 +54,154 @@
                                             alt="Search icon">
                                     </div>
 
-                    <div class="main_nav_title_items"><hr></div>
-                    
-                    <div class="main_nav_title_items">
-                        <nav class="main_nav" aria-label="Secondary navigation menu">
-                            <a href="index.html">Home</a>
-
-                      <!-- Drop down menu options for Office -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="office">Office</a>
-                                <div class="box dropdown_wrapper" id="dropdown_office">
-                                    <div class="box_item_nav">
-                                        <a href="office_chairs.html">Chairs</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="office_desks.html">Desks</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="office_storage.html">Storage</a>
-                                    </div>
                                 </div>
-                            </div>
-
-                        <!-- Drop down menu options for Living -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="living">Living</a>
-                                <div class="box dropdown_wrapper" id="dropdown_living">
-                                    <div class="box_item_nav">
-                                        <a href="living_coffee_tables.html">Coffee Tables</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="living_consoles.html">Consoles</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="living_side_tables.html">Side Tables</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="living_sofas.html">Sofas</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Drop down menu options for Bedroom -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="bedroom">Bedroom</a>
-                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
-                                    <div class="box_item_nav">
-                                        <a href="bedroom_beds.html">Beds</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="bedroom_dressers.html">Dressers</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="bedroom_nightstands.html">Nightstands</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Drop down menu options for Dining -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="dining">Dining</a>
-                                <div class="box dropdown_wrapper" id="dropdown_dining">
-                                    <div class="box_item_nav">
-                                        <a href="dining_chairs.html">Chairs</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="dining_tables.html">Tables</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a href="lookbook.html">Lookbook</a>
-                        </nav>
+                            </li>
+                            <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                            <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
+                        </ul>
                     </div>
-                </nav>
-
-            </header>
-
-            <!-- Run javascript for drop down menu in main navigation bar -->
-            <script src="js/dropdown.js"></script>
-
-            <main>
+                </div>
 
                 <div class="main_nav_title_items">
-                    <nav class="main_nav">
+                    <hr>
+                </div>
+
+                <div class="main_nav_title_items">
+                    <nav class="main_nav" aria-label="Secondary navigation menu">
                         <a href="index.html">Home</a>
-                        <a href="office_desks.html">Office</a>
-                        <a href="living_cabinets.html">Living</a>
-                        <a href="bedroom_beds.html">Bedroom</a>
-                        <a href="dining_chairs.html">Dining</a>
+
+                        <!-- Drop down menu options for Office -->
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="office">Office</a>
+                            <div class="box dropdown_wrapper" id="dropdown_office">
+                                <div class="box_item_nav">
+                                    <a href="office_chairs.html">Chairs</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="office_desks.html">Desks</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="office_storage.html">Storage</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drop down menu options for Living -->
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="living">Living</a>
+                            <div class="box dropdown_wrapper" id="dropdown_living">
+                                <div class="box_item_nav">
+                                    <a href="living_coffee_tables.html">Coffee Tables</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="living_consoles.html">Consoles</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="living_side_tables.html">Side Tables</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="living_sofas.html">Sofas</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drop down menu options for Bedroom -->
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="bedroom">Bedroom</a>
+                            <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                <div class="box_item_nav">
+                                    <a href="bedroom_beds.html">Beds</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="bedroom_dressers.html">Dressers</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="bedroom_nightstands.html">Nightstands</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drop down menu options for Dining -->
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="dining">Dining</a>
+                            <div class="box dropdown_wrapper" id="dropdown_dining">
+                                <div class="box_item_nav">
+                                    <a href="dining_chairs.html">Chairs</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="dining_tables.html">Tables</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <a href="lookbook.html">Lookbook</a>
                     </nav>
                 </div>
             </nav>
+
         </header>
 
+        <!-- Run javascript for drop down menu in main navigation bar -->
+        <script src="js/dropdown.js"></script>
         <main>
 
             <!-- shipping informaion page -->
             <section class="grid_section">
                 <div class="grid_col_2_12">
                     <!-- <div class="contact_outer_grid"> -->
-                        <div class="contact_page_title_module">
-                            <h3>Shipping Information</h3>
+                    <div class="contact_page_title_module">
+                        <h3>Shipping Information</h3>
+                    </div>
+                    <div class="shipping_info_question_grid">
+                        <div class="shipping_info_question_grid_left">
+                            <h4>What are my shipping options</h4>
+                            <p>Standard shipping is free for all orders</p>
+                            <p>Express shipping is a flat rate of $300 for canada</p>
+                            <h4>When will I recieve my order</h4>
+                            <p>All orders are subject to processing time that is separate and apart from the time it
+                                takes for a shipment to reach its destination. Depending on a number of factors,
+                                standard
+                                domestic orders may take up to 4 business days (excluding Saturdays, Sundays, and
+                                Holidays) to process. </p>
                         </div>
-                        <div class="shipping_info_question_grid">
-                            <div class="shipping_info_question_grid_left">
-                                <h4>What are my shipping options</h4>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est.</p>
-                                <h4>When will I recieve my order</h4>
-                                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                                    sed
-                                    quia non numquam.</p>
-                            </div>
-                            <div class="shipping_info_question_grid_right">
-                                <h4>Ground shipping transit times</h4>
-                                <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore
-                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi.
-                                </p>
-                                <h4>Shipping cost</h4>
-                                <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                                    ipsum
-                                    quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                                    tempora.</p>
-                            </div>
+                        <div class="shipping_info_question_grid_right">
+                            <h4>Ground shipping transit times</h4>
+                            <p>Standard shipping - 3 to 6 business days</p>
+                            <p>Express shipping - 2 to 4 business days</p>
+                            <h4>Shipping cost</h4>
+                            <p>Standard shipping is free for all canadian orders. </p>
+                            <p>Express shipping is $300 for all canadian orders. </p>
                         </div>
+                    </div>
                     <!-- </div> -->
                 </div>
+            </section>
+
+            <section>
+                <div class="checkout_main">
+                    <div class="contact_form">
+                        <h5 id="contact_us_title">Contact Us</h5>
+                        <div class="text_column1">
+                            <label for="fname">*First Name</label><br>
+                            <input type="text" name="fname" id="fname" value="Text Field"><br>
+                        </div>
+                        <div class="text_column1">
+                            <label for="lname">*Last Name</label><br>
+                            <input type="text" name="lname" id="lname" value="Text Field"><br>
+                        </div>
+                        <div class="text_column2">
+                            <label for="email">*Email Address</label><br>
+                            <input type="text" name="email" id="email" value="Text Field"><br>
+                        </div>
+                        <div class="text_column2">
+                            <label for="city">*City</label><br>
+                            <input type="text" name="city" id="city" value="Text Field"><br>
+                        </div>
+                        <div class="text_column2">
+                            <label for="country">*Country</label><br>
+                            <input type="text" name="country" id="country" value="Text Field"><br>
+                        </div>
+
             </section>
 
             <!-- Footer Menu Module: maintained by Kai-Lee -->
@@ -220,7 +238,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="newsletter">
                         <form action="#" class="contact_us">
