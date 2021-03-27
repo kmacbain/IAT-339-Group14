@@ -3,147 +3,156 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>The Loft: Checkout</title>
+    <title>The Loft: Checkout</title>
 
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/grids.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/dropdown.css">
-        <link rel="stylesheet" href="css/breakpoints.css">
-    </head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grids.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+</head>
 
 
-    <body>
-        <div class="grid_container"> <!-- Site Grid: 12 columns -->
+<body>
+    <div class="grid_container">
+        <!-- Site Grid: 12 columns -->
 
-            <header>
-                <!-- Navigation Bar: maintained by Kai-Lee -->
-                <nav class="main_nav_grid" aria-label="Main navigation bar">
-                    <div class="main_nav_title_items">
-                        <div id="site_title"><h1>THE LOFT</h1></div>
-                        <!-- Navigation bar tutorials:
+        <header>
+            <!-- Navigation Bar: maintained by Kai-Lee -->
+            <nav class="main_nav_grid" aria-label="Main navigation bar">
+                <div class="main_nav_title_items">
+                    <div id="site_title">
+                        <h1>THE LOFT</h1>
+                    </div>
+                    <!-- Navigation bar tutorials:
                         https://www.w3schools.com/css/css_navbar.asp
                         https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-                        <div id="site_main_nav_toolbar">
-                            <ul class="site_main_nav">
+                    <div id="site_main_nav_toolbar">
+                        <ul class="site_main_nav">
 
-                                <li>
-                                    <!-- Tutorial for search bar:
+                            <li>
+                                <!-- Tutorial for search bar:
                                     https://youtu.be/FVH-tXVRErg -->
-                                    <div class="search_bar">
-                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
+                                <div class="search_bar">
+                                    <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
 
-                                        <div class="search_button">
-                                            <!-- How to make the submit button an image taken from:
+                                    <div class="search_button">
+                                        <!-- How to make the submit button an image taken from:
                                             https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
-                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
-                                        </div>
-
+                                        <input type="image" class="search_button" src="img/icons/search_icon.png"
+                                            alt="Search icon">
                                     </div>
-                                </li>
-                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
-                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
-                            </ul>
-                        </div>
+
+                                </div>
+                            </li>
+                            <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                            <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="main_nav_title_items"><hr></div>
-                    
-                    <div class="main_nav_title_items">
-                        <nav class="main_nav" aria-label="Secondary navigation menu">
-                            <a href="index.html">Home</a>
+                <div class="main_nav_title_items">
+                    <hr>
+                </div>
 
-                      <!-- Drop down menu options for Office -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="office">Office</a>
-                                <div class="box dropdown_wrapper" id="dropdown_office">
-                                    <div class="box_item_nav">
-                                        <a href="office_chairs.html">Chairs</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="office_desks.html">Desks</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="office_storage.html">Storage</a>
-                                    </div>
+                <div class="main_nav_title_items">
+                    <nav class="main_nav" aria-label="Secondary navigation menu">
+                        <a href="index.html">Home</a>
+
+                        <!-- Drop down menu options for Office -->
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="office">Office</a>
+                            <div class="box dropdown_wrapper" id="dropdown_office">
+                                <div class="box_item_nav">
+                                    <a href="office_chairs.html">Chairs</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="office_desks.html">Desks</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="office_storage.html">Storage</a>
                                 </div>
                             </div>
+                        </div>
 
                         <!-- Drop down menu options for Living -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="living">Living</a>
-                                <div class="box dropdown_wrapper" id="dropdown_living">
-                                    <div class="box_item_nav">
-                                        <a href="living_coffee_tables.html">Coffee Tables</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="living_consoles.html">Consoles</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="living_side_tables.html">Side Tables</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="living_sofas.html">Sofas</a>
-                                    </div>
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="living">Living</a>
+                            <div class="box dropdown_wrapper" id="dropdown_living">
+                                <div class="box_item_nav">
+                                    <a href="living_coffee_tables.html">Coffee Tables</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="living_consoles.html">Consoles</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="living_side_tables.html">Side Tables</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="living_sofas.html">Sofas</a>
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Drop down menu options for Bedroom -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="bedroom">Bedroom</a>
-                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
-                                    <div class="box_item_nav">
-                                        <a href="bedroom_beds.html">Beds</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="bedroom_dressers.html">Dressers</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="bedroom_nightstands.html">Nightstands</a>
-                                    </div>
+                        <!-- Drop down menu options for Bedroom -->
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="bedroom">Bedroom</a>
+                            <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                <div class="box_item_nav">
+                                    <a href="bedroom_beds.html">Beds</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="bedroom_dressers.html">Dressers</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="bedroom_nightstands.html">Nightstands</a>
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Drop down menu options for Dining -->
-                            <div class="menu_wrapper">
-                                <a class="nav_top_link" id="dining">Dining</a>
-                                <div class="box dropdown_wrapper" id="dropdown_dining">
-                                    <div class="box_item_nav">
-                                        <a href="dining_chairs.html">Chairs</a>
-                                    </div>
-                                    <div class="box_item_nav">
-                                        <a href="dining_tables.html">Tables</a>
-                                    </div>
+                        <!-- Drop down menu options for Dining -->
+                        <div class="menu_wrapper">
+                            <a class="nav_top_link" id="dining">Dining</a>
+                            <div class="box dropdown_wrapper" id="dropdown_dining">
+                                <div class="box_item_nav">
+                                    <a href="dining_chairs.html">Chairs</a>
+                                </div>
+                                <div class="box_item_nav">
+                                    <a href="dining_tables.html">Tables</a>
                                 </div>
                             </div>
+                        </div>
 
-                            <a href="lookbook.html">Lookbook</a>
-                        </nav>
-                    </div>
-                </nav>
+                        <a href="lookbook.html">Lookbook</a>
+                    </nav>
+                </div>
+            </nav>
 
-            </header>
+        </header>
 
-            <!-- Run javascript for drop down menu in main navigation bar -->
-            <script src="js/dropdown.js"></script>
+        <!-- Run javascript for drop down menu in main navigation bar -->
+        <script src="js/dropdown.js"></script>
 
-            <main>
+        <main>
 
             <!-- Section Module x: maintained by xx -->
             <section class="grid-section">
                 <div class="grid-col-2-12">
                     <div class="checkout_module">
                         <header>
-                            <h4>Checkout <span><input type="button" name="returntocart" value="RETURN TO CART"></span></h4>
+                            <h4>Checkout <span><input type="button" name="returntocart" value="RETURN TO CART"></span>
+                            </h4>
                         </header>
                         <div class="checkout_main">
                             <div class="checkout_form">
@@ -180,7 +189,7 @@
                                     <label for="zcode">*Postal or Zip Code</label><br>
                                     <input type="text" name="zcode" id="zcode" value="Text Field"><br>
                                 </div>
-                                
+
                             </div>
                             <div class="checkout_form2">
                                 <h5>Payment Details</h5>
@@ -201,11 +210,11 @@
                                     <input type="text" name="scode" id="scode" value="Text Field"><br>
                                 </div>
                             </div>
-                        
+
                             <aside class="checkout_sidebar">
                                 <h5>Order Summary</h5>
                                 <section>
-                                    <p>Item 1 
+                                    <p>Item 1
                                         <span>$8000</span>
                                     </p>
                                     <p>item 2
@@ -247,7 +256,9 @@
                 <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
                 <div class="footer_grid">
 
-                    <div class="footer_grid_col"><hr></div>
+                    <div class="footer_grid_col">
+                        <hr>
+                    </div>
 
                     <div class="footer_grid_col">
                         <div class="footer_menu">
@@ -255,20 +266,25 @@
                             <div>
                                 <ul id="footer_menu_links">
                                     <li><a href="about.html" class="about">About</a></li>
-                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
+                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div>
                                 <ul id="footer_menu_socials">
-                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png" alt="Link to The Loft Instagram"></a></li>
-                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png" alt="Link to The Loft Facebook"></a></li>
-                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png" alt="Link to The Loft Twitter"></a></li>
-                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png" alt="Link to The Loft Pinterest"></a></li>
+                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png"
+                                                alt="Link to The Loft Instagram"></a></li>
+                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png"
+                                                alt="Link to The Loft Facebook"></a></li>
+                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png"
+                                                alt="Link to The Loft Twitter"></a></li>
+                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png"
+                                                alt="Link to The Loft Pinterest"></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                        
+
 
                     <div class="newsletter">
                         <form action="#" class="contact_us">
@@ -283,8 +299,8 @@
                 </div>
             </footer>
 
-            </main>
-        </div> <!-- Grid container div -->
-    </body>
+        </main>
+    </div> <!-- Grid container div -->
+</body>
 
 </html>

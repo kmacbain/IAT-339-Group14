@@ -17,22 +17,25 @@ main {
 
 
 /*Site Wide Grid Classes*/
-.grid_container { /*12 column Site grid*/
- 	display: grid;
+.grid_container {
+	/*12 column Site grid*/
+	display: grid;
 	min-height: 100vh;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto auto;
 }
 
-.grid_section { /*Grid applied to each section*/
+.grid_section {
+	/*Grid applied to each section*/
 	display: grid;
 	/*How to force columns to stay the same width:
 	https://css-tricks.com/equal-width-columns-in-css-grid-are-kinda-weird/*/
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    margin:0;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	margin: 0;
 }
 
-.grid_col_2_12 { /*Column spacing for columns spanning from column 2 to 12*/
+.grid_col_2_12 {
+	/*Column spacing for columns spanning from column 2 to 12*/
 	grid-column: 2 / 12;
 }
 
@@ -44,7 +47,7 @@ main {
 .main_nav_grid {
 	display: grid;
 	grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	grid-column: span 12;
 }
 
@@ -82,7 +85,7 @@ main {
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-template-columns: repeat(12, 1fr);
-    grid-column: span 12;
+	grid-column: span 12;
 }
 
 .three_column_grid .three_column_grid_heading {
@@ -109,7 +112,7 @@ main {
 }
 
 .left_arrow {
-	grid-column:1;
+	grid-column: 1;
 }
 
 .right_arrow {
@@ -137,7 +140,7 @@ a.page_numbers_arrows {
 .product_page_grid {
 	display: grid;
 	grid-template-rows: repeat(5, auto);
-    grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	grid-column: span 12;
 }
 
@@ -153,22 +156,22 @@ a.page_numbers_arrows {
 .product_grid {
 	display: grid;
 	grid-template-rows: auto auto;
-    grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	grid-column: span 12;
-	padding:3rem 0;
+	padding: 3rem 0;
 }
 
 .product_grid .product_grid_col_thumb {
-    grid-column: 3/ 4;
-    margin-right:0.5rem;
+	grid-column: 3/ 4;
+	margin-right: 0.5rem;
 }
 
-.product_grid .product_grid_col_thumb_img{
+.product_grid .product_grid_col_thumb_img {
 	margin-bottom: 0.5rem;
 }
 
 .product_grid .product_grid_col_feature {
-    grid-column: 4/ 9;
+	grid-column: 4/ 9;
 }
 
 /*Product detail Description: maintained by Kai-Lee*/
@@ -188,17 +191,17 @@ a.page_numbers_arrows {
 .footer_grid {
 	display: grid;
 	grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: span 12;
-    margin-top: 12rem;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: span 12;
+	margin-top: 12rem;
 }
 
-.footer_grid .footer_grid_col{
-    grid-column: 2/ 12;
+.footer_grid .footer_grid_col {
+	grid-column: 2/ 12;
 }
 
 .footer_menu {
-	display:grid;
+	display: grid;
 	grid-column-start: 1;
 	grid-column-end: 11;
 	grid-template-columns: 1fr 1fr;
@@ -207,7 +210,7 @@ a.page_numbers_arrows {
 .newsletter {
 	grid-column: span 12;
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 /* bryan lookbook grid for the pic para module */
@@ -246,35 +249,35 @@ a.page_numbers_arrows {
 }
 
 /* the profile picutes module in the about page */
-.three_column_grid_items_profile_picture{
+.three_column_grid_items_profile_picture {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 2 / 12;
 	grid-column-gap: 11rem;
 }
 
-.about_the_company{
+.about_the_company {
 	display: grid;
 	justify-items: center;
 }
 
 /*bryan's contact / shipping info page */
-.contact_page_title_module{
+.contact_page_title_module {
 	display: grid;
 }
 
-.shipping_info_question_grid{
+.shipping_info_question_grid {
 	display: grid;
 	grid-column-gap: 2rem;
 
 }
 
-.shipping_info_question_grid_left{
+.shipping_info_question_grid_left {
 	display: grid;
 	grid-column: 1 / 6;
 }
 
-.shipping_info_question_grid_right{
+.shipping_info_question_grid_right {
 	display: grid;
 	grid-column: 8 / 13;
 }
@@ -289,4 +292,3 @@ a.page_numbers_arrows {
 	border-color: #DDDDDD;
 	margin-top: 5em;
 }
-
