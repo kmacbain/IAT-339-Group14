@@ -330,21 +330,11 @@
 
 	.para_right_and_picture_left_left_side {
 		padding: 3rem 0;
-		/* display: flex;
-		flex-direction: column; */
 	}
 
-	/* .para_right_and_picture_left_left_side picture {
-		display: flex;
-		justify-content: center;
-		padding: 0;
-		margin-right: 0;
-		margin: 0;
-	} */
 
 	.para_right_and_picture_left_right_side {
 		padding: 3rem 0;
-		/* display: flex; */
 		flex-direction: column;
 	}
 
@@ -385,6 +375,13 @@
 	}
 
 	.para_left_and_picture_right_left_side picture {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		text-align: center;
+	}
+
+	.para_left_and_picture_right_left_side p{
 		display: flex;
 		justify-content: center;
 		width: 100%;
