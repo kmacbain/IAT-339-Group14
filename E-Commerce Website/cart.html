@@ -3,372 +3,185 @@
 
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>The Loft: Checkout</title>
+        <title>The Loft: Shopping Cart</title>
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap"
-        rel="stylesheet">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grids.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/dropdown.css">
-    <link rel="stylesheet" href="css/breakpoints.css">
-    <link rel="stylesheet" type="text/css" href="css/checkout.css">
-
-    <script type="text/javascript" src="js/store.js" async></script>
-
-</head>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grids.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
+    </head>
 
 
-<body>
-    <div class="grid_container">
-        <!-- Site Grid: 12 columns -->
+    <body>
+        <div class="grid_container"> <!-- Site Grid: 12 columns -->
 
-        <header>
-            <!-- Navigation Bar: maintained by Kai-Lee -->
-            <nav class="main_nav_grid" aria-label="Main navigation bar">
-                <div class="main_nav_title_items">
-                    <div id="site_title">
-                        <h1>THE LOFT</h1>
-                    </div>
-                    <!-- Navigation bar tutorials:
+            <header>
+                <!-- Navigation Bar: maintained by Kai-Lee -->
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
+                    <div class="main_nav_title_items">
+                        <div id="site_title"><h1>THE LOFT</h1></div>
+                        <!-- Navigation bar tutorials:
                         https://www.w3schools.com/css/css_navbar.asp
                         https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-                    <div id="site_main_nav_toolbar">
-                        <ul class="site_main_nav">
+                        <div id="site_main_nav_toolbar">
+                            <ul class="site_main_nav">
 
-                            <li>
-                                <!-- Tutorial for search bar:
+                                <li>
+                                    <!-- Tutorial for search bar:
                                     https://youtu.be/FVH-tXVRErg -->
-                                <div class="search_bar">
-                                    <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
+                                    <div class="search_bar">
+                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
 
-                                    <div class="search_button">
-                                        <!-- How to make the submit button an image taken from:
+                                        <div class="search_button">
+                                            <!-- How to make the submit button an image taken from:
                                             https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
-                                        <input type="image" class="search_button" src="img/icons/search_icon.png"
-                                            alt="Search icon">
+                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
+                                        </div>
+
                                     </div>
-
-                                </div>
-                            </li>
-                            
-                            <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
-                        </ul>
+                                </li>
+                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-                <div class="main_nav_title_items">
-                    <hr>
-                </div>
+                    <div class="main_nav_title_items"><hr></div>
+                    
+                    <div class="main_nav_title_items">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
+                            <a href="index.html">Home</a>
 
-                <div class="main_nav_title_items">
-                    <nav class="main_nav" aria-label="Secondary navigation menu">
-                        <a href="index.html">Home</a>
-
-                        <!-- Drop down menu options for Office -->
-                        <div class="menu_wrapper">
-                            <a class="nav_top_link" id="office">Office</a>
-                            <div class="box dropdown_wrapper" id="dropdown_office">
-                                <div class="box_item_nav">
-                                    <a href="office_chairs.html">Chairs</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="office_desks.html">Desks</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="office_storage.html">Storage</a>
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
                         <!-- Drop down menu options for Living -->
-                        <div class="menu_wrapper">
-                            <a class="nav_top_link" id="living">Living</a>
-                            <div class="box dropdown_wrapper" id="dropdown_living">
-                                <div class="box_item_nav">
-                                    <a href="living_coffee_tables.html">Coffee Tables</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="living_consoles.html">Consoles</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="living_side_tables.html">Side Tables</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="living_sofas.html">Sofas</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Drop down menu options for Bedroom -->
-                        <div class="menu_wrapper">
-                            <a class="nav_top_link" id="bedroom">Bedroom</a>
-                            <div class="box dropdown_wrapper" id="dropdown_bedroom">
-                                <div class="box_item_nav">
-                                    <a href="bedroom_beds.html">Beds</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="bedroom_dressers.html">Dressers</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="bedroom_nightstands.html">Nightstands</a>
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Drop down menu options for Dining -->
-                        <div class="menu_wrapper">
-                            <a class="nav_top_link" id="dining">Dining</a>
-                            <div class="box dropdown_wrapper" id="dropdown_dining">
-                                <div class="box_item_nav">
-                                    <a href="dining_chairs.html">Chairs</a>
-                                </div>
-                                <div class="box_item_nav">
-                                    <a href="dining_tables.html">Tables</a>
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <a href="lookbook.html">Lookbook</a>
-                    </nav>
-                </div>
-            </nav>
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
 
-        </header>
+                            <a href="lookbook.html">Lookbook</a>
+                        </nav>
+                    </div>
+                </nav>
 
-        <!-- Run javascript for drop down menu in main navigation bar -->
-        <script src="js/dropdown.js"></script>
+            </header>
 
-        <main>
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
+
+            <main>
 
             <!-- Section Module x: maintained by xx -->
             <section class="grid-section">
-<form id="regForm" action="">
+                <div class="grid-col-2-12">
+                    <div class="shopping_container">
+                        <header>
+                            <h4>Cart</h4>
+                        </header>
+                        <div class="image_cart">
+                            <img src="img/product1.png" alt="productpicture">
+                        </div>
+                        <div class="shopping_cart">
+                            <ul>
+                                <li class="li1"><h3>COPPER AND WALNUT DESK</h3></li>
+                                <li class="li2"><h3><label>Quantity</label><a href="">-</a><input class="quantity_number2" type="number" name="productquantity" value="1"><a href="">+</a></h3></li>
+                                <li class="li3"><h3>$8,000</h3></li>
+                            </ul>
+                            <h4>DESCRIPTION</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis mauris ligula vel augue.</p>
+                            <ul>
+                                <li class="li4">65” W x 9” L x 60” H</li>
+                                <li class="li5"><input class="remove_item" type="button" name="removeitem" value="REMOVE"></li>
+                            </ul>
+                        </div>
+                        <div class="image_cart">
+                            <img src="img/product1.png" alt="productpicture">
+                        </div>
+                        <div class="shopping_cart">
+                            <ul>
+                                <li class="li1"><h3>COPPER AND WALNUT DESK</h3></li>
+                                <li class="li2"><h3><label>Quantity</label><a href="">-</a><input class="quantity_number2" type="number" name="productquantity" value="1"><a href="">+</a></h3></li>
+                                <li class="li3"><h3>$8,000</h3></li>
+                            </ul>
+                            <h4>DESCRIPTION</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eros tellus. Cras vel nibh eleifend dolor ullamcorper semper. Morbi non mollis lectus. Praesent mattis accumsan ex et tincidunt. Nam molestie, ante non feugiat ornare, nunc magna aliquet quam, ac lobortis mauris ligula vel augue.</p>
+                            <ul>
+                                <li class="li4">65” W x 9” L x 60” H</li>
+                                <li class="li5"><input class="remove_item" type="button" name="removeitem" value="REMOVE"></li>
+                            </ul>
+                        </div>
+                    </div>
 
 
 
-<!-- One "tab" for each step in the form: -->
-<div class="tab">
-    <h2>CART</h2>
-    <div class="shopping_container">
-        <div class="shopping_row">
-            <div class="image_cart">
-                <img src="img/office/desks/marble_desk/image_1.jpg" alt="Marble and steel desk">
-            </div>
-            <div class="shopping_cart">
-                <ul>
-                    <li class="li1"><h3 id="whitedesk">WHITE MARBLE AND STELL DESK</h3></li>
-                    
-                    <li class="li3 cart_price"><h3 id="whitedeskprice">$10,300</h3></li>
-                </ul>
-                <h4>DESCRIPTION</h4>
-                <ul>
-                    <li class="li4">Inspired by the sculptural works of Salvador Dalí and Diego Giacometti, merges the rustic sensibility of hand-forged metal with cool Italian Carrara marble. Employing an ancient fabrication process, artisans hand hammer the metal bars to reveal an alive, imperfect and organic texture. The pounded, tapered silhouettes are a rich counterpoint to the smooth, honed stone. <br><br>65” W x 9” L x 60” H</li>
-                    <li class="li2"><h3><label>Quantity</label><input class="cart_quantity" type="number" name="productquantity" value="1"></h3></li>
-                    <li class="li5"><input class="remove_item black_button" type="button" name="removeitem" value="REMOVE"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="shopping_row">
-            <div class="image_cart">
-                <img src="img/office/desks/contemporary_desk/image_1.jpg" alt="Copper and walnut desk">
-            </div>
-            <div class="shopping_cart">
-                <ul>
-                    <li class="li1"><h3 id="copperdesk">COPPER AND WALNUT DESK</h3></li>
-                    <li class="li3 cart_price"><h3 id="copperdeskprice">$8,300</h3></li>
-                </ul>
-                <h4>DESCRIPTION</h4>
-                <ul>
-                    <li class="li4">Inspired by the American Industrial Age Solid oak timbers are supported on tapered stanchions of hand-cast metal, the mix of materials and textures imparting a rugged, organic aesthetic. Carefully calibrated proportions lend refinement. <br><br>65” W x 9” L x 60” H</li>
-                    <li class="li2"><h3><label>Quantity</label><input class="cart_quantity" type="number" name="productquantity" value="1"></h3></li>
-                    <li class="li5"><input class="remove_item black_button" type="button" name="removeitem" value="REMOVE"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="shopping_row">
-            <div class="image_cart">
-                <img src="img/office/storage/black_cabinet/image_1.jpg" alt="Black filing cabinet">
-            </div>
-            <div class="shopping_cart">
-                <ul>
-                    <li class="li1"><h3 id="blackcabinet">BLACK METAL FOUR DRAWER CABINET</h3></li>
-                    
-                    <li class="li3 cart_price"><h3 id="blackcabinetprice">$1,700</h3></li>
-                </ul>
-                <h4>DESCRIPTION</h4>
-                <ul>
-                    <li class="li4">The clean, linear aesthetic of American industrial design, circa 1940, introduced highly functional furnishings to offices – and forward-thinking homes – across the country. Our reproductions offer design flexibility and optimal surface area in an enduring material with timeless appeal. Combine desktops and storage in multiple configurations to maximize the space available. <br><br>65” W x 9” L x 60” H</li>
-                    <li class="li2"><h3><label>Quantity</label><input class="cart_quantity" type="number" name="productquantity" value="1"></h3></li>
-                    <li class="li5"><input class="remove_item black_button" type="button" name="removeitem" value="REMOVE"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="shopping_row">
-            <div class="image_cart">
-                <img src="img/office/chairs/leather_chair/image_1.jpg" alt="Leather chair in brown">
-            </div>
-            <div class="shopping_cart">
-                <ul>
-                    <li class="li1"><h3 id="brownchair">BROWN LEATHER OFFICE CHAIR</h3></li>
-                    
-                    <li class="li3 cart_price"><h3 id="brownchairprice">$2,900</h3></li>
-                </ul>
-                <h4>DESCRIPTION</h4>
-                
-                <ul>
-                    <li class="li4"> Clean lines meet comfortable proportions in 1960s design, the inspiration for our desk chair – with tailored minimal stitching to secure its padded upholstery and lightly curved corners. <br><br>65” W x 9” L x 60” </li>
-                    <li class="li2"><h3><label>Quantity</label><input class="cart_quantity" type="number" name="productquantity" value="1"></h3></li>
-                    <li class="li5"><input class="remove_item black_button" type="button" name="removeitem" value="REMOVE"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="total_cart">
-            <h3>TOTAL  <span class="cart_total_price">$23200</span></h3>
-            
-        </div>
-    </div>
-
-</div>
-
-<div class="tab"><h2>CHECKOUT</h2>
-  <div class="row">
-          <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> *Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John Clarkson">
-            <label for="email"><i class="fa fa-envelope"></i> *Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> *Address</label>
-            <input type="text" id="adr" name="address" placeholder="101 W. 11th Street">
-            <label for="city"><i class="fa fa-institution"></i> *City</label>
-            <input type="text" id="city" name="city" placeholder="Vancouver">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="provence">*Provence</label>
-                <input type="text" id="provence" name="provence" placeholder="NY">
-              </div>
-              <div class="col-50">
-                <label for="zip">*Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="A0A0A0">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-50">
-            <h3>Payment</h3>
-            <label for="cname">*Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John Clarkson">
-            <label for="ccnum">*Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">*Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">*Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">*CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-</div>
-
-<div class="tab"><h2>CHECKOUT</h2>
-  <div class="row">
-  <div class="col-75">
-    <div class="container">
-      
-        <div class="row">
-          <div class="col-50">
-            <h3>Billing Address</h3>
-            <label id="fnamelabel"></label>
-            
-            <label id="emaillabel"></label>
-
-            <label id="adrlabel"></i></label>
-            <label id="citylabel"></i></label>
-
-            <div class="row">
-              <div class="col-50">
-                <label id="provencelabel"></label>
-              </div>
-              <div class="col-50">
-                <label id="ziplabel"></label>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-50">
-            <h3>Payment</h3>
-            <label id="cnamelabel"></label>
-            <label id="ccnumlabel"></label>
-            <label id="expmonthlabel"></label>
-            <div class="row">
-              <div class="col-50">
-                <label id="expyearlabel"></label>
-              </div>
-              <div class="col-50">
-                <label id="cvvlabel"></label>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-    </div>
-  </div>
-  <div class="col-25">
-    <div class="container">
-      <h4>Cart <span class="price"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p ><a href="office_product_marbledesk.html" id="white_desk">Product 1</a> <span class="price" id="whitedesk_price">$15</span></p>
-      <p ><a href="office_product_contemporarydesk.html" id="copper_desk">Product 2</a> <span class="price" id="copperdesk_price">$5</span></p>
-      <p ><a href="office_product_filingcabinet.html" id="black_cabinet">Product 3</a> <span class="price" id="blackcabinet_price">$8</span></p>
-      <p ><a href="office_product_leatherchair.html" id="brown_chair">Product 4</a> <span class="price" id="brownchair_price">$2</span></p>
-      <hr>
-      <p>Total <span class="price_final"><b>$23200</b></span></p>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="tab">
-    
-</div>
-
-<div class="checkout_btn">
-  <div>
-    <button type="button" id="nextBtn" class="black_button" onclick="nextPrev(1); getInput();  addItemToCart()">Next</button>
-    <button type="button" id="prevBtn" class="black_button" onclick="nextPrev(-1)">Previous</button>
-  </div>
-</div>
-
-<!-- Circles which indicates the steps of the form: -->
-<div class="checkout_circles">
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-</div>
-
-</form>
-<script type="text/javascript" src="js/checkout.js"></script>
-
+                </div>
             </section>
 
             <!-- Footer Menu Module: maintained by Kai-Lee -->
@@ -377,35 +190,28 @@
                 <!-- Basic code for forms taken from: https://www.w3schools.com/html/html_forms.asp -->
                 <div class="footer_grid">
 
-                    <div class="footer_grid_col">
-                        <hr>
-                    </div>
+                    <div class="footer_grid_col"><hr></div>
 
                     <div class="footer_grid_col">
                         <div class="footer_menu">
                             <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
                             <div>
-                                <ul id="footer_menu_links">
-                                    <li><a href="about.html" class="about">About</a></li>
-                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a>
-                                    </li>
-                                </ul>
+                                <li><a href="about.html" class="about">About</a></li>
+                                    <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
+                                    <li><a href="citations.html" class="citations">Citations</a></li>
+                                    <li><a href="https://github.com/kmacbain/IAT-339-Group14" class="github">Github Repository</a></li>
                             </div>
                             <div>
                                 <ul id="footer_menu_socials">
-                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png"
-                                                alt="Link to The Loft Instagram"></a></li>
-                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png"
-                                                alt="Link to The Loft Facebook"></a></li>
-                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png"
-                                                alt="Link to The Loft Twitter"></a></li>
-                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png"
-                                                alt="Link to The Loft Pinterest"></a></li>
+                                    <li><a href="https://www.instagram.com/"><img src="img/icons/instagram_icon.png" alt="Link to The Loft Instagram"></a></li>
+                                    <li><a href="https://www.facebook.com/"><img src="img/icons/facebook_icon.png" alt="Link to The Loft Facebook"></a></li>
+                                    <li><a href="https://twitter.com/"><img src="img/icons/twitter_icon.png" alt="Link to The Loft Twitter"></a></li>
+                                    <li><a href="https://www.pinterest.ca/"><img src="img/icons/pinterest_icon.png" alt="Link to The Loft Pinterest"></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
+                        
 
                     <div class="newsletter">
                         <form action="#" class="contact_us">
@@ -420,8 +226,8 @@
                 </div>
             </footer>
 
-        </main>
-    </div> <!-- Grid container div -->
-</body>
+            </main>
+        </div> <!-- Grid container div -->
+    </body>
 
 </html>

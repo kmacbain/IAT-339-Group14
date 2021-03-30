@@ -7,35 +7,142 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>UI Pattern Elements</title>
+		<title>The Loft: Industrial Furniture</title>
 
-		<!-- help linking Google fonts from my wife, Bri -->
+		<!-- Google fonts -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
 
+        <!-- Stylesheets -->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grids.css">
-        <link rel="stylesheet" href="css/styleguide.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/breakpoints.css">
 	</head>
 
 
 	<body>
-		<!-- Styleguide Navigation section -->
-		<div class="grid_container"> <!-- Site Grid -->
-			<header id="title">
-            <h1>The Loft Style Guide</h1>
-			    <nav class="main_nav">
-	                <a href="index.html">Main</a>
-				    <a href="wireframes.html">Wireframes</a>
-				    <a href="citations.html">Citations</a>
-					<a href="conventions.html">Conventions</a>
-			    </nav>
+        <div class="grid_container"> <!-- Site Grid: 12 columns -->
+
+		    <header>
+                <!-- Navigation Bar: maintained by Kai-Lee -->
+                <nav class="main_nav_grid" aria-label="Main navigation bar">
+                    <div class="main_nav_title_items">
+                        <div id="site_title"><h1>THE LOFT</h1></div>
+                        <!-- Navigation bar tutorials:
+                        https://www.w3schools.com/css/css_navbar.asp
+                        https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+                        <div id="site_main_nav_toolbar">
+                            <ul class="site_main_nav">
+
+                                <li>
+                                    <!-- Tutorial for search bar:
+                                    https://youtu.be/FVH-tXVRErg -->
+                                    <div class="search_bar">
+                                        <input type="text" class="search_bar" placeholder="Search" aria-label="Search Bar">
+
+                                        <div class="search_button">
+                                            <!-- How to make the submit button an image taken from:
+                                            https://stackoverflow.com/questions/14199788/how-do-i-use-an-image-as-a-submit-button -->
+                                            <input type="image" class="search_button" src="img/icons/search_icon.png" alt="Search icon">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main_nav_title_items"><hr></div>
+                    
+                    <div class="main_nav_title_items">
+                        <nav class="main_nav" aria-label="Secondary navigation menu">
+                            <a href="index.html">Home</a>
+
+                      <!-- Drop down menu options for Office -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="office">Office</a>
+                                <div class="box dropdown_wrapper" id="dropdown_office">
+                                    <div class="box_item_nav">
+                                        <a href="office_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_desks.html">Desks</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="office_storage.html">Storage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Drop down menu options for Living -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="living">Living</a>
+                                <div class="box dropdown_wrapper" id="dropdown_living">
+                                    <div class="box_item_nav">
+                                        <a href="living_coffee_tables.html">Coffee Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_consoles.html">Consoles</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_side_tables.html">Side Tables</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="living_sofas.html">Sofas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Bedroom -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="bedroom">Bedroom</a>
+                                <div class="box dropdown_wrapper" id="dropdown_bedroom">
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_beds.html">Beds</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_dressers.html">Dressers</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="bedroom_nightstands.html">Nightstands</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Drop down menu options for Dining -->
+                            <div class="menu_wrapper">
+                                <a class="nav_top_link" id="dining">Dining</a>
+                                <div class="box dropdown_wrapper" id="dropdown_dining">
+                                    <div class="box_item_nav">
+                                        <a href="dining_chairs.html">Chairs</a>
+                                    </div>
+                                    <div class="box_item_nav">
+                                        <a href="dining_tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="lookbook.html">Lookbook</a>
+                        </nav>
+                    </div>
+                </nav>
+
 		    </header>
 
-			<main>
-				<h2>Style Guide: Citations</h2>
+            <!-- Run javascript for drop down menu in main navigation bar -->
+            <script src="js/dropdown.js"></script>
 
-					<h3>Kai-Lee's Citations</h3>
+            <main>
+
+            	<section class="grid_section">
+	                <div class="grid_col_2_12">
+						<h2>Style Guide: Citations</h2>
+
+							<h3>Kai-Lee's Citations</h3>
 
 							<h4>Landing Page</h4>
 							<h5>New Arrivals Hero Image</h5>
@@ -349,34 +456,40 @@
 
 							<p>Line Awesome. (n.d). Twitter icon. Retrieved from https://icons8.com/line-awesome</p>
 
-							
 
-					<h3>Bryan's Citations</h3>
 
-					<ul>
-	                    <li><a href="https://www.w3schools.com/tags/tag_form.asp">Form tag</a></li>
-	                    <li><a href="https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/">Fonts from google install</a></li>
-	                    <li><a href="https://fonts.google.com/">Google fonts</a></li>
-	                    <li><a href="https://www.youtube.com/watch?v=4VGyXW2rA4w&t=1100s&ab_channel=dcode">Put Video In here</a></li>
-	                    <li><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_label">Submit button</a></li>
-	                    <li><a href="https://www.w3schools.com/css/css_form.asp">Input tag</a></li>
-	                    <li><a href="https://www.youtube.com/watch?v=nxyk6yKD56c&ab_channel=WesBos">Centering items </a></li>
-	                    <li><a href="https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja">Nested grid</a></li>
-	                </ul>
 
-					<ul>
-	                    <li>Css forms. (n.d.). Retrieved February 09, 2021, from https://www.w3schools.com/css/css_form.asp</li>
-	                    <li>D. (n.d.). Youtube video. Retrieved February 09, 2021, from https://www.youtube.com/watch?v=4VGyXW2rA4w&amp;t=1100s&amp;ab_channel=dcode/li>
-	                    <li>FreeCodeCamp.org. (2020, March 05). How to use Google fonts in your next web design project. Retrieved February 09, 2021, from https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/</li>
-	                    <li>Google fonts. (n.d.). Retrieved February 09, 2021, from https://fonts.google.com/</li>
-	                    <li>Html tag. (n.d.). Retrieved February 09, 2021, from https://www.w3schools.com/tags/tag_form.asp</li>
-	                    <li>The label element. (n.d.). Retrieved February 09, 2021, from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_label</li>
-	                </ul>
 
-					<h3>Derek's Citations</h3>
-					<p>Coyier, C. (2020, December 21). A complete guide to flexbox. Retrieved February 09, 2021, from https://css-tricks.com/snippets/css/a-guide-to-flexbox/</p>
-					<p>Coyier, C. (2013, March 29). Add (+/-) button Number Incrementers. Retrieved February 09, 2021, from https://css-tricks.com/number-increment-buttons/</p>
-					<p>W3schools (n.d.). CSS horizontal navigation bar. Retrieved February 09, 2021, from https://www.w3schools.com/css/css_navbar_horizontal.asp</p>
+
+							<h3>Bryan's Citations</h3>
+
+							<ul>
+			                    <li><a href="https://www.w3schools.com/tags/tag_form.asp">Form tag</a></li>
+			                    <li><a href="https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/">Fonts from google install</a></li>
+			                    <li><a href="https://fonts.google.com/">Google fonts</a></li>
+			                    <li><a href="https://www.youtube.com/watch?v=4VGyXW2rA4w&t=1100s&ab_channel=dcode">Put Video In here</a></li>
+			                    <li><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_label">Submit button</a></li>
+			                    <li><a href="https://www.w3schools.com/css/css_form.asp">Input tag</a></li>
+			                    <li><a href="https://www.youtube.com/watch?v=nxyk6yKD56c&ab_channel=WesBos">Centering items </a></li>
+			                    <li><a href="https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja">Nested grid</a></li>
+			                </ul>
+
+							<ul>
+			                    <li>Css forms. (n.d.). Retrieved February 09, 2021, from https://www.w3schools.com/css/css_form.asp</li>
+			                    <li>D. (n.d.). Youtube video. Retrieved February 09, 2021, from https://www.youtube.com/watch?v=4VGyXW2rA4w&amp;t=1100s&amp;ab_channel=dcode/li>
+			                    <li>FreeCodeCamp.org. (2020, March 05). How to use Google fonts in your next web design project. Retrieved February 09, 2021, from https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/</li>
+			                    <li>Google fonts. (n.d.). Retrieved February 09, 2021, from https://fonts.google.com/</li>
+			                    <li>Html tag. (n.d.). Retrieved February 09, 2021, from https://www.w3schools.com/tags/tag_form.asp</li>
+			                    <li>The label element. (n.d.). Retrieved February 09, 2021, from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_label</li>
+			                </ul>
+
+							<h3>Derek's Citations</h3>
+							<p>Coyier, C. (2020, December 21). A complete guide to flexbox. Retrieved February 09, 2021, from https://css-tricks.com/snippets/css/a-guide-to-flexbox/</p>
+							<p>Coyier, C. (2013, March 29). Add (+/-) button Number Incrementers. Retrieved February 09, 2021, from https://css-tricks.com/number-increment-buttons/</p>
+							<p>W3schools (n.d.). CSS horizontal navigation bar. Retrieved February 09, 2021, from https://www.w3schools.com/css/css_navbar_horizontal.asp</p>
+
+						</div>
+					</section>
 
 			</main>
 
