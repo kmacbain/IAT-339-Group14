@@ -21,8 +21,6 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/dropdown.css">
         <link rel="stylesheet" href="css/breakpoints.css">
-
-        <script type="text/javascript" src="js/store.js" async></script>
     </head>
 
 
@@ -54,8 +52,8 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
 
                                     </div>
                                 </li>
-                                
-                                <li><a href="checkout - Copy.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
+                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
+                                <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -159,7 +157,7 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
                         <img class="product_grid_col_thumb_img" src="img/office/desks/marble_desk/image_3.jpg"
                             alt="Corner detail of marble and steel desk">
                     </div>
-                    <img class="product_grid_col_feature shop_item_image" src="img/office/desks/marble_desk/image_1.jpg"
+                    <img class="product_grid_col_feature" src="img/office/desks/marble_desk/image_1.jpg"
                             alt="Marble and steel desk">
                 </div>
             </section> <!-- End of Product Details Images section -->
@@ -192,8 +190,8 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
                         <div class="product_info_selection2">
                             <div>
                                 <p>Office Desk</p>
-                                <h4 class="shop_item_title">White Marble and Steel DEsk</h4>
-                                <p class="shop_item_price">$10,300</p>
+                                <h4>White Marble and Steel DEsk</h4>
+                                <p>$10,300</p>
                             </div>
                             <div class="product_info_quantity">
                                 <p>Quantity</p>
@@ -204,7 +202,7 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
                                 <a href="#" class="product_info_amount_item"><img src="img/icons/plus_icon.png" alt="Increase number of items to be added to cart"></a>
                             </div>
                             <div class="product_info_buttons">
-                                <a href="#" class="grey_button add_to_shop" type="button">Add to Bag</a>
+                                <a href="#" class="grey_button">Add to Bag</a>
                                 <a href="#" class="white_button"><img src="img/icons/share_icon.png" alt="Share product on social media">Share</a>
                                 <a href="#" class="white_button">Add to Wishlist</a>
                             </div>
@@ -212,6 +210,7 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
                     </div>
                 </div> <!-- End of Product Grid section -->
             </section> <!-- End of Product Detail section -->
+
 
 
             <!-- Craftsmanship Video: maintained by Kai-Lee -->
@@ -240,6 +239,15 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
                     <div class="three_column_grid_heading"> <!-- 12 column, 2 row grid -->
                         
                         <h3>Our Products in Your Home</h4> <!-- First row title -->
+                        <form action="#" method="POST" enctype="multipart/form-data" name="my_form" class="submit_photo">
+                            <!-- Solution to turn file input into button from:
+                            https://stackoverflow.com/questions/572768/styling-an-input-type-file-button/25825731#25825731 -->
+                            <div id="submit_photo_button" class="grey_button" onclick="getFile()">Click to upload</div>
+                            <div style='height:0px; width:0px; overflow: hidden;'><input id="upload_file" type="file" value="upload" onchange="sub(this)" /></div>
+                            <input type="submit" value="Submit" class="black_button">
+                        </form>
+                        <!-- Run javascript for drop down menu in main navigation bar -->
+                        <script src="js/submit_photo.js"></script>
                     </div>
 
                     <div class="left_arrow">
@@ -283,10 +291,10 @@ https://rh.com/catalog/product/product.jsp?productId=prod19180044&categoryId=cat
                         <div class="footer_menu">
                             <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
                             <div>
-                                <ul id="footer_menu_links">
-                                    <li><a href="about.html" class="about">About</a></li>
+                                <li><a href="about.html" class="about">About</a></li>
                                     <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
-                                </ul>
+                                    <li><a href="citations.html" class="citations">Citations</a></li>
+                                    <li><a href="https://github.com/kmacbain/IAT-339-Group14" class="github">Github Repository</a></li>
                             </div>
                             <div>
                                 <ul id="footer_menu_socials">

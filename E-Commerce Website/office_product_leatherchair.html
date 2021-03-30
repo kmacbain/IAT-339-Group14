@@ -52,7 +52,7 @@ https://rh.com/catalog/product/product.jsp?productId=prod6740334&categoryId=sear
 
                                     </div>
                                 </li>
-                                
+                                <li><a href="sign_in.html" class="sign_in">Sign In</a></li>
                                 <li><a href="cart.html"><img src="img/icons/cart_icon.png" alt="Cart icon"></a></li>
                             </ul>
                         </div>
@@ -236,6 +236,15 @@ https://rh.com/catalog/product/product.jsp?productId=prod6740334&categoryId=sear
                     <div class="three_column_grid_heading"> <!-- 12 column, 2 row grid -->
                         
                         <h3>Our Products in Your Home</h4> <!-- First row title -->
+                        <form action="#" method="POST" enctype="multipart/form-data" name="my_form" class="submit_photo">
+                            <!-- Solution to turn file input into button from:
+                            https://stackoverflow.com/questions/572768/styling-an-input-type-file-button/25825731#25825731 -->
+                            <div id="submit_photo_button" class="grey_button" onclick="getFile()">Click to upload</div>
+                            <div style='height:0px; width:0px; overflow: hidden;'><input id="upload_file" type="file" value="upload" onchange="sub(this)" /></div>
+                            <input type="submit" value="Submit" class="black_button">
+                        </form>
+                        <!-- Run javascript for drop down menu in main navigation bar -->
+                        <script src="js/submit_photo.js"></script>
                     </div>
 
                     <div class="left_arrow">
@@ -279,10 +288,10 @@ https://rh.com/catalog/product/product.jsp?productId=prod6740334&categoryId=sear
                         <div class="footer_menu">
                             <!-- How to nest grids taken from: https://www.youtube.com/watch?v=211A79O_jX8&ab_channel=TheNetNinja -->
                             <div>
-                                <ul id="footer_menu_links">
-                                    <li><a href="about.html" class="about">About</a></li>
+                                <li><a href="about.html" class="about">About</a></li>
                                     <li><a href="customer_service.html" class="customer_service">Customer Service</a></li>
-                                </ul>
+                                    <li><a href="citations.html" class="citations">Citations</a></li>
+                                    <li><a href="https://github.com/kmacbain/IAT-339-Group14" class="github">Github Repository</a></li>
                             </div>
                             <div>
                                 <ul id="footer_menu_socials">
