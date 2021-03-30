@@ -1,0 +1,218 @@
+#regForm {
+  border-style: solid;
+  border-color: white; 
+  margin: 6rem auto;
+  padding: 2.5rem;
+  width: 70%;
+  min-width: 20rem;
+}
+
+.search_bar input {
+  padding: 0;
+  width: auto;
+}
+
+/* Style the input fields */
+input {
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #aaaaaa;
+}
+
+
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.3rem;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: yellow;
+}
+
+.image_cart img {
+  width: 15rem;
+}
+
+ul {
+  float: left;
+}
+
+h2 {
+  margin: 0;
+}
+
+.total_cart h3{
+  border-top: solid;
+  padding-top: 1rem;
+  text-align: right;
+  word-spacing: 2rem;
+  font-size: 2.5rem;
+}
+
+.shopping_cart .li1 h3 {
+  font-size: 2rem;
+}
+
+.black_button {
+  margin: 0;
+  float: right;
+}
+
+
+
+.shopping_row input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.cart_quantity {
+  outline: 1px solid rgb(255, 255, 255);
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.black_button:hover {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 1rem;
+}
+
+.container {
+  background-color: #131313;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.row input {
+  width: 100%;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #131313;
+  color: #DDDDDD;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+label input {
+  width: auto;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+}
+
+.price_final {
+  float: right;
+}
+
+.checkout_btn {
+  margin-top: 2rem;
+  overflow:auto;
+}
+
+.checkout_btn div {
+  float: right;
+}
+
+.checkout_circles {
+  text-align:center;
+  margin-top:3rem;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+  color: black;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 50rem) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 1rem;
+  }
+  .image_cart {
+    grid-column: 1 / 11;
+  }
+  .image_cart img {
+    width: 100%;
+    padding: 2rem;
+  }
+  .shopping_cart {
+    border: none;
+  }
+  .li1, .li3, .li5, .li2, h2, .total_cart h3{
+    width: 100%;
+    text-align: center;
+  }
+  h4, .li4 {
+    display: none;
+  }
+}
