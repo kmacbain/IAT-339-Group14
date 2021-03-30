@@ -1,3 +1,7 @@
+/* 
+Tutorial from :
+https://www.w3schools.com/howto/howto_js_form_steps.asp?
+*/
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -12,6 +16,7 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
+    // Tutorial from https://www.w3schools.com/jsref/prop_loc_href.asp
     location.href = "index.html";
   } else if (n == (x.length - 2)) {
     document.getElementById("nextBtn").innerHTML = "Checkout";

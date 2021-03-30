@@ -1,3 +1,5 @@
+// Tutorial from https://www.youtube.com/watch?v=YeFzkC2awTM
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -70,7 +72,11 @@ function updateCartTotal() {
 	document.getElementsByClassName('cart_total_price')[0].innerText = '$' + total
 	document.getElementsByClassName('price_final')[0].innerText = '$' + total
 }
-
+/* 
+Tutorial from: 
+https://stackoverflow.com/questions/17943035/how-to-get-label-text-value-form-a-html-page
+https://www.w3schools.com/jsref/prop_text_value.asp
+*/
 function getInput() {
   var fname = document.getElementById("fname").value;
   var email = document.getElementById("email").value;
